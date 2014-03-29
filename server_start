@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 # vim: set ft=shell
 
-#source ./etc/environment.dev
+source ./etc/environment
 source ~/.nvm/nvm.sh
 
 nvm use 0.10.26
