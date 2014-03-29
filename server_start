@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+# vim: set ft=shell
+
+#source ./etc/environment.dev
+source ~/.nvm/nvm.sh
+
+nvm use 0.10.26
+
+node ./server/server.js
