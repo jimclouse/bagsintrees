@@ -1,0 +1,28 @@
+{
+  "name": "BagsInTrees",
+  "version": "0.0.0",
+  "authors": [
+    "Jim Clouse <bagsintrees@mail.com>"
+  ],
+  "description": "Mapping the world's bags in trees",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "bagsintrees"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.bagsintrees.org",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0"
+  }
+}
