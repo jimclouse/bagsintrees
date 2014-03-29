@@ -11,7 +11,8 @@
     "bagsintrees"
   ],
   "dependencies": {
-    "express": "3.x"
+    "express": "3.x",
+    "request": "2.33.0"
   },
   "author": "Jim Clouse <bagsintrees@mail.com>",
   "license": "MIT"
