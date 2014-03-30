@@ -3,7 +3,5 @@
 
 source ./etc/environment
 source ~/.nvm/nvm.sh
-
 nvm use 0.10.26
-
 node ./server/server.js
