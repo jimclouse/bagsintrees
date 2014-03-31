@@ -1,3 +1,7 @@
 ## Bags In Trees
 
-Mapping the plastic bags stuck in trees around the world
+Mapping the world's plastic bagscape
+
+## About
+
+An angular / node.js app using redis as storage
