@@ -1,2 +1,4 @@
 etc/environment
 redis-*
+.DS_Store
+dump.rdb

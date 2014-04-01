@@ -1,8 +1,16 @@
 'use strict'
-
-var express = require('express');
-var app = express();
+var path = require('path');
 var redis = require("redis"), client = redis.createClient();
+var engines = require('consolidate');
+var express = require('express');
+
+var app = express();
+app.configure(function(){
+    app.engine('html', engines.mustache);
+    app.use(express.static(__dirname + '/public'));
+    app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+    app.use(app.router)
+});
 
 app.get('/load/all', function(req, res){
     var request = require('request');
@@ -49,10 +57,10 @@ app.get('/bags/all', function(req, res) {
     });  
 });
 
+app.get('/', function(req, res) {
+    res.render('index.html', {});
+});
+
 var server = app.listen(3000, function() {
     console.log('Listening on port %d', server.address().port);
 });
-
-
-
-
