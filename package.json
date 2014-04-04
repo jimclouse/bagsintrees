@@ -15,8 +15,7 @@
     "request": "2.33.0",
     "redis": "0.10.1",
     "mustache": "0.8.1",
-    "consolidate": "0.10.0",
-    "browserify-middleware": "2.5.0"
+    "consolidate": "0.10.0"
   },
   "author": "Jim Clouse <bagsintrees@mail.com>",
   "license": "MIT"
