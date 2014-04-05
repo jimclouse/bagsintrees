@@ -1,1 +1,1 @@
-angular.module('bagsInTrees', ['bagsCtrl']);
+angular.module('bagsInTrees', ['bagsCtrl', 'bagService']);
