@@ -11,4 +11,7 @@ angular.module('bagCtrl', [])
         $scope.loadFromInstagram = function() {
             $http.post("/load/all");
         }
+
+        // on controller startup
+        $scope.getAllBags();
     });
