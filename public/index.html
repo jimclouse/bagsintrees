@@ -19,13 +19,15 @@
     <body ng-controller="mainCtrl">
         
         #bagsintrees
-        <br/>
-        {{greeting}}<br/>
-        {{bags}}<br/>
-        <!--div ng-include="views/main.html"></div-->
+
+
+        <div ng-repeat="bag in bags">
+            <img src="{{bag.thumbnail_url}}">
+        </div>
         
-        <a href="" ng-click="loadFromInstagram()">Load Instagram Data</a>
-        <a href="" ng-click="getAllBags()">Show Data</a>
+        
+        <button ng-click="loadFromInstagram()">Load Instagram Data</button>
+        <button ng-click="getAllBags()">Show Data</button>
 
     </body>
 
