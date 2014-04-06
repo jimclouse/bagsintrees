@@ -17,27 +17,23 @@
         <script src="/js/app.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPHAR954yYejzbG-BfS-g_x2KAxDYOods&sensor=false"></script>
         <script type="text/javascript">
-          function initialize() {
-            var mapOptions = {
-              center: new google.maps.LatLng(42.397, -71.0),
-              zoom: 8
-            };
-            var map = new google.maps.Map(document.getElementById("map-canvas"),
-                mapOptions);
-          }
-          google.maps.event.addDomListener(window, 'load', initialize);
+          
         </script>
     </head>
     <body ng-controller="mainCtrl">
-        
-        #bagsintrees
+        <div id="panel"> 
+            <div id="header">
+                <span id="pageTitle">#bagsintrees</span>
+            </div>
+        </div>
 
 
         <!-- <div ng-repeat="bag in bags">
             <img src="{{bag.thumbnail_url}}">
         </div> -->
-
-        <div id="map-canvas"/>
+        <div ng-show="viewMap">
+            <div id="map-canvas"/>
+        </div>
         
         
         <button class="btn" ng-click="loadFromInstagram()">Load Instagram Data</button>
