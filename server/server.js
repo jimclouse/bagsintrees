@@ -57,33 +57,11 @@ app.get('/bags/all', function(req, res) {
         if (err) {
             return console.error("error response - " + err);
         }
-        var p = client.mget(keys, function(err, obj) {
+        client.mget(keys, function(err, obj) {
             res.send(_.map(obj, function(val) {
                         return JSON.parse(val);
-                    }));
+            }));
         });
-            
-        // p.map do |j|
-        //     job = JSON.parse(j)
-        //     job['created'] = Time.at(job['created'])
-        //     job
-        //   end
-        // var returnObj = {};
-        // for (var j = 0; j < keys.length; j++) {
-        //     var photo = keys[j];
-        //     returnObj[photo] = (function() {
-        //             client.HGETALL(photo, function(err, obj) {
-        //             if (err) {
-        //                 // do something like callback(err) or whatever
-        //                 console.log("redis error");
-        //             } 
-        //             else {
-        //                 return obj    
-        //             }
-        //         });
-        //     });
-        // }
-        //res.send(p);
     });
 });
 
