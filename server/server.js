@@ -4,7 +4,6 @@ var redis = require("redis"), client = redis.createClient();
 var engines = require('consolidate');
 var _ = require('underscore');
 var express = require('express');
-var bags = require('./routes/bags');
 
 var app = express();
 app.set('root', process.cwd()) // Need this to find the project root directory
