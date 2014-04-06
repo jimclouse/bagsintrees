@@ -55,6 +55,7 @@ app.get('/bags/all', function(req, res) {
             client.HGETALL(photo, function(err, obj) {
                 res.send(photo + " - " + JSON.stringify(obj));
             });
+            break
         }
     });  
 });
