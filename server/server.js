@@ -2,7 +2,9 @@
 var path = require('path');
 var redis = require("redis"), client = redis.createClient();
 var engines = require('consolidate');
+var _ = require('underscore');
 var express = require('express');
+var bags = require('./routes/bags');
 
 var app = express();
 app.set('root', process.cwd()) // Need this to find the project root directory
@@ -14,9 +16,9 @@ app.configure(function(){
     app.use(app.router)
 });
 
-app.get('/load/all', function(req, res){
+app.post('/load/all', function(req, res){
     var request = require('request');
-    var CLIENT_ID = process.env['CLIENT_ID'];
+    var CLIENT_ID = "02d4b5e6622e4a118d0f3828b72eb6bd" //process.env['CLIENT_ID'];
     var tagInfo = "https://api.instagram.com/v1/tags/bagsintrees?client_id=" + CLIENT_ID;
     var allTags = "https://api.instagram.com/v1/tags/bagsintrees/media/recent?client_id=" + CLIENT_ID;
 
@@ -29,14 +31,14 @@ app.get('/load/all', function(req, res){
             var data = body.data;
             for (var i = 0; i < data.length; i++) {
                 var photo = data[i];
-                if(!photo.location) {console.log(photo)}
-                else {
-                    client.HMSET("p:" + photo.id, {"created" : photo.created_time,
+                if(photo.location) {
+                    client.SET("p:" + photo.id, JSON.stringify({"created" : photo.created_time,
                                                    "thumbnail_url": photo.images.thumbnail.url,
                                                    "low_res_url": photo.images.low_resolution.url,
                                                    "latitude": photo.location.latitude,
                                                    "longitude": photo.location.longitude,
-                                               });
+                                               }));
+                    client.ZADD('pics', photo.created_time, "p:" + photo.id);
                 }
             }  
         }
@@ -44,24 +46,45 @@ app.get('/load/all', function(req, res){
     })
 });
 
+// main site route
+app.get('/', function(req, res) {
+    res.render('index.html', {});
+});
+
+// client routes
 app.get('/bags/all', function(req, res) {
-    client.keys("p:*", function (err, photos) {
+    client.zrevrange(["pics", 0, 150], function (err, keys) {
         if (err) {
             return console.error("error response - " + err);
         }
-
-        for (var j = 0; j < photos.length; j++) {
-            var photo = photos[j];
-            client.HGETALL(photo, function(err, obj) {
-                res.send(photo + " - " + JSON.stringify(obj));
-            });
-            break
-        }
-    });  
-});
-
-app.get('/', function(req, res) {
-    res.render('index.html', {});
+        var p = client.mget(keys, function(err, obj) {
+            res.send(_.map(obj, function(val) {
+                        return JSON.parse(val);
+                    }));
+        });
+            
+        // p.map do |j|
+        //     job = JSON.parse(j)
+        //     job['created'] = Time.at(job['created'])
+        //     job
+        //   end
+        // var returnObj = {};
+        // for (var j = 0; j < keys.length; j++) {
+        //     var photo = keys[j];
+        //     returnObj[photo] = (function() {
+        //             client.HGETALL(photo, function(err, obj) {
+        //             if (err) {
+        //                 // do something like callback(err) or whatever
+        //                 console.log("redis error");
+        //             } 
+        //             else {
+        //                 return obj    
+        //             }
+        //         });
+        //     });
+        // }
+        //res.send(p);
+    });
 });
 
 var server = app.listen(3001, function() {
