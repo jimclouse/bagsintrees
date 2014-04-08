@@ -1,10 +1,14 @@
 html { height: 100% }
 body { height: 100%; margin: 0; padding: 0 }
 
+.right-align {
+    text-align: right;
+}
+
+#full { height: 98% }
 #map-canvas { height: 98% }
 
-
-#header {
+.header {
     width: 100%;
     max-height:100px;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
@@ -13,9 +17,37 @@ body { height: 100%; margin: 0; padding: 0 }
     padding-left: 4px;
 }
 
-#pageTitle {
-    font-size: 4em;
+.header-small {
+    width: 100%;
+    max-height:100px;
+    background-color: #fff;
+    padding-bottom: 8px;
+    padding-left: 4px;
+}
+
+.pageTitle {
+    font-weight: 700;
+    font-size: 63px;
+    font-family: 'PT Sans';
     line-height: 1;
+}
+
+.pageTitle a {
+    text-decoration: none;
+    color: #000;
+}
+
+.pageTitle a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+#navigation {
+    margin-top:17px;
+}
+
+.twitter-link {
+    color: #9AE4E8;
 }
 
 #panel {

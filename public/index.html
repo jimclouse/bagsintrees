@@ -7,6 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=9">
 
         <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="/css/bagsintrees.css">
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -21,27 +22,21 @@
         </script>
     </head>
     <body ng-controller="mainCtrl">
-        <div id="panel"> 
-            <div id="header">
-                <span id="pageTitle">#bagsintrees</span>
-            </div>
-            <div id="content" class="container">
+       <div id="panel"> 
+            <div ng-include="'views/header.html'"></div>
+            <div id="content" class="container" ng-show="view=='main'">
                 <div><div class="numberCircle">1</div>&nbsp;Photograph a bag caught in a tree</div>
                 <div><div class="numberCircle">2</div>&nbsp;Tag it with #bagsintrees</div>
                 <div><div class="numberCircle">3</div>&nbsp;Post it to Instagram</div>
             </div>
+            <div id="full" ng-show="view=='map'">
+                <div id="map-canvas"></div>
+            </div>
         </div>
-
-
-        <!-- <div ng-repeat="bag in bags">
-            <img src="{{bag.thumbnail_url}}">
-        </div> -->
-        <div ng-show="viewMap">
-            <div id="map-canvas"/>
-        </div>
-        
+            
         
         <button class="btn" ng-click="loadFromInstagram()">Load Instagram Data</button>
+
 
     </body>
 
