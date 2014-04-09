@@ -33,5 +33,7 @@ angular.module('bagCtrl', [])
             }
         }
 
+        $scope.slide = 'slide-left';
+
         $scope.goHome();
     });
