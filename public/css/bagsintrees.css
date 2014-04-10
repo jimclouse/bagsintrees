@@ -10,7 +10,7 @@ body { height: 100%; margin: 0; padding: 0 }
 
 .header {
     width: 100%;
-    max-height:100px;
+    height: 70px;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
     background: rgba(255, 255, 255, .7);
     padding-bottom: 8px;
@@ -55,20 +55,46 @@ body { height: 100%; margin: 0; padding: 0 }
     margin: 0px;
     width: 100%;
     height: 100%;
-    background-image: url('../img/photo.JPG');
-    background-size: 100%;
-    background-origin: content
+
 }
 
-#content {
+#page-main {
+    padding: 100px 0 0 0;
+    margin: 0px;
+    width: 100%;
+    background-image: url('../img/photo.JPG');
+    background-size: 100%;
+    background-origin: content;
+}
+
+#page-about {
+    background-color: #c0c0c0;
+    color: #FFF;
+    font-size: 1.3em;
+}
+
+.bags-page {
+    width: 100%;
+    /* Firefox */
+    height: -moz-calc(100% - 70px);
+    /* WebKit */
+    height: -webkit-calc(100% - 70px);
+    /* Opera */
+    height: -o-calc(100% - 70px);
+    /* Standard */
+    height: calc(100% - 70px);
+}
+
+.bags-transparent-panel {
     font-size:2em;
     color: #000;
-    position: fixed;
+    margin: 0 auto;
+    /*position: fixed;
     top: 40%;
-    left: 50%;
+    left: 50%; 
 
     margin-top: -100px;
-    margin-left: -325px;
+    margin-left: -325px; */
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
     background: rgba(255, 255, 255, .7);
     -moz-border-radius: 12px;

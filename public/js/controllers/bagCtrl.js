@@ -33,6 +33,10 @@ angular.module('bagCtrl', [])
             }
         }
 
+        $scope.changeView = function(viewName) {
+            $scope.view = viewName;
+        }
+
         $scope.slide = 'slide-left';
 
         $scope.goHome();
