@@ -2,11 +2,24 @@ angular.module('bagCtrl', [])
     
     .controller('mainCtrl', function($scope, $http, bags) {
 
+        var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&"></div></div>';
+        var infowindow = new google.maps.InfoWindow({
+            content: ''
+        });
+
         $scope.getAllBags = function() {
             bags.getAll(function(data) {
                     $scope.bags = data;
                     for (var i = 0; i < data.length; i++) {
-                        new google.maps.Marker({position: new google.maps.LatLng(data[i].latitude, data[i].longitude), map: $scope.globalMap});
+                        var marker = new google.maps.Marker({position: new google.maps.LatLng(data[i].latitude, data[i].longitude), 
+                                                        map: $scope.globalMap,
+                                                        thumb: data[i].thumbnail_url
+                    });
+                        google.maps.event.addListener(marker, 'mouseover', function() {
+                            infowindow.content = infowindowContent.replace('&imageurl&', this.thumb);
+                            infowindow.open($scope.globalMap, this);
+                        });
+
                     }
                 });
         }
