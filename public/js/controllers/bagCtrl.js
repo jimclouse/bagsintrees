@@ -1,6 +1,6 @@
 angular.module('bagCtrl', [])
     
-    .controller('mainCtrl', function($scope, $http, bags) {
+    .controller('mainCtrl', function($scope, $http, $window, bags) {
 
         var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&"></div></div>';
         var infowindow = new google.maps.InfoWindow({
@@ -48,6 +48,10 @@ angular.module('bagCtrl', [])
 
         $scope.changeView = function(viewName) {
             $scope.view = viewName;
+        }
+
+        $scope.mailLink = function() {
+            $window.location = "mailto:bagsintrees@mail.com?subject=Bags In Trees Are Everywhere!";
         }
 
         $scope.slide = 'slide-left';

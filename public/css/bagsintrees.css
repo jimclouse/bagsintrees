@@ -71,6 +71,23 @@ body { height: 100%; margin: 0; padding: 0 }
     background-color: #c0c0c0;
     color: #FFF;
     font-size: 1.3em;
+    background-image: url('../img/green_cup.png');
+    background-origin: content;
+}
+
+#page-next {
+    color: #000;
+    font-size: 1.3em;
+    background-image: url('../img/fresh_snow.png');
+    background-origin: content;
+}
+
+#page-faq {
+    color: #FFF;
+    font-size: 1.3em;
+    background-image: url('../img/scratchTexture.jpg');
+    background-size: 100%;
+    background-origin: content;
 }
 
 .bags-page {
