@@ -6,7 +6,7 @@ body { height: 100%; margin: 0; padding: 0 }
 }
 
 
-#map-canvas { height: 98% }
+#map-canvas { height: 100% }
 
 .header {
     width: 100%;
@@ -23,6 +23,16 @@ body { height: 100%; margin: 0; padding: 0 }
     background-color: #fff;
     padding-bottom: 8px;
     padding-left: 4px;
+}
+
+#footer {
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    font-size: .8em;
+    text-align: center;
+    color: #000;
+    border-top: 1px solid black;
 }
 
 .navItem {
@@ -102,13 +112,13 @@ body { height: 100%; margin: 0; padding: 0 }
 #page-container {
     width: 100%;
     /* Firefox */
-    height: -moz-calc(100% - 70px);
+    height: -moz-calc(100% - 90px);
     /* WebKit */
-    height: -webkit-calc(100% - 70px);
+    height: -webkit-calc(100% - 90px);
     /* Opera */
-    height: -o-calc(100% - 70px);
+    height: -o-calc(100% - 90px);
     /* Standard */
-    height: calc(100% - 70px);
+    height: calc(100% - 90px);
 }
 
 .bags-page {
