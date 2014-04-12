@@ -11,33 +11,22 @@
         <link rel="stylesheet" type="text/css" href="/css/bagsintrees.css">
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
         <script src="/bower_components/angular/angular.min.js"></script>
+        <script src="/bower_components/angular-route/angular-route.min.js"></script>
+        <script src="/bower_components/angular-animate/angular-animate.js"></script>
+        
         <!-- angular scripts -->
         <script src="/js/controllers/bagCtrl.js"></script>
         <script src="/js/services/bagService.js"></script>
         <script src="/js/app.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPHAR954yYejzbG-BfS-g_x2KAxDYOods&sensor=false"></script>
-        <script type="text/javascript">
-          
-        </script>
     </head>
     <body ng-controller="mainCtrl">
-       <div id="panel"> 
+       <div id="panel">
             <div ng-include="'views/header.html'"></div>
-            <div ng-include="'views/main.html'" class="bags-page" ng-show="view=='main'" id="page-main" ng-class="slide"></div>
-            <div ng-include="'views/about.html'" class="bags-page" ng-show="view=='about'" id="page-about" ng-class="slide"></div>
-            <div ng-include="'views/next.html'" class="bags-page" ng-show="view=='next'" id="page-next" ng-class="slide"></div>
-            <div ng-include="'views/faq.html'" class="bags-page" ng-show="view=='faq'" id="page-faq" ng-class="slide"></div>
-            <div id="full" ng-show="view=='map'" ng-class="slide">
-                <div id="map-canvas"></div>
-            </div>
+            <div ng-view id="page-container"></div>
         </div>
-            
-        
         <!--button class="btn" ng-click="loadFromInstagram()">Load Instagram Data</button-->
-
-
     </body>
-
-
 </html>

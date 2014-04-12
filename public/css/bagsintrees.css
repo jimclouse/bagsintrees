@@ -5,7 +5,7 @@ body { height: 100%; margin: 0; padding: 0 }
     text-align: right;
 }
 
-#full { height: 98% }
+
 #map-canvas { height: 98% }
 
 .header {
@@ -90,7 +90,11 @@ body { height: 100%; margin: 0; padding: 0 }
     background-origin: content;
 }
 
-.bags-page {
+#page-map {
+
+}
+
+#page-container {
     width: 100%;
     /* Firefox */
     height: -moz-calc(100% - 70px);
@@ -100,6 +104,11 @@ body { height: 100%; margin: 0; padding: 0 }
     height: -o-calc(100% - 70px);
     /* Standard */
     height: calc(100% - 70px);
+}
+
+.bags-page {
+    width: 100%;
+    height: 100%;
 }
 
 .bags-transparent-panel {
@@ -148,65 +157,41 @@ body { height: 100%; margin: 0; padding: 0 }
     display: inline-block;
 }
 
-/* Animation for ng-show */
+/* page transition animations */
+.slide.ng-leave {
+    -webkit-animation: moveToBottom .6s ease both;
+    -moz-animation: moveToBottom .6s ease both;
+    animation: moveToBottom .6s ease both;
+}
 
-.slide-left.ng-hide-remove,
-.slide-left.ng-hide-add,
-.slide-right.ng-hide-remove,
-.slide-right.ng-hide-add {
+.slide.ng-enter {
+    -webkit-animation: moveFromTop .6s ease both;
+    -moz-animation: moveFromTop .6s ease both;
+    animation: moveFromTop .6s ease both;
+}
+
+.slide.ng-enter.ng-enter-active, .slide.ng-leave {
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background: inherit;
-    -ms-transition: 5s ease-in-out;
-    -webkit-transition: 5s ease-in-out;
-    transition:  5s ease-in-out;
-}
-.slide-left.ng-hide-remove {
-    z-index: 101;
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-}
-
-.slide-left.ng-show-add, .errAnimate.ng-show-remove {
-    /* this needs to be here to make it visible during the animation
-       since the .ng-hide class is already on the element rendering
-       it as hidden. */
-    display:none!important;
-}
-.slide-left.ng-hide-remove.ng-hide-remove-active {
     -webkit-transform: translateX(0);
     transform: translateX(0);
 }
 
-.slide-left.ng-hide-add {
-    z-index: 100;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
+@-webkit-keyframes moveFromTop {
+    from { -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveFromTop {
+    from { -moz-transform: translateX(-100%); }
+}
+@keyframes moveFromTop {
+    from { transform: translateX(-100%); }
 }
 
-.slide-left.ng-hide-add.ng-hide-add-active {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+@-webkit-keyframes moveToBottom {
+    to { -webkit-transform: translateX(100%); }
 }
-
-.slide-right.ng-hide-remove {
-    z-index: 100;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+@-moz-keyframes moveToBottom {
+    to { -moz-transform: translateX(100%); }
 }
-
-.slide-right.ng-hide-remove.ng-hide-remove-active {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
-
-.slide-right.ng-hide-add {
-    z-index: 101;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
-
-.slide-right.ng-hide-add.ng-hide-add-active {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
+@keyframes moveToBottom {
+    to { transform: translateX(100%); }
 }
