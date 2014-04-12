@@ -6,11 +6,6 @@ angular.module('bagCtrl', [])
             $window.location = "mailto:bagsintrees@mail.com?subject=Bags In Trees Are Everywhere!";
         }
 
-        // $scope.$on('$viewContentLoaded', function() {
-        //     //$scope.viewClass = 'slide';
-        // });
-
-
     })
     .controller('mapCtrl', function($scope, $http, $window, bags) {
         var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&"></div></div>';

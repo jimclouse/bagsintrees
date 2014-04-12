@@ -25,6 +25,11 @@ body { height: 100%; margin: 0; padding: 0 }
     padding-left: 4px;
 }
 
+.navItem {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 .pageTitle {
     font-weight: 700;
     font-size: 63px;
