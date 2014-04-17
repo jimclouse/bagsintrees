@@ -39,7 +39,12 @@ h2 {
 
 #map-canvas { height: 600px; width: 100%;}
 
-#sticky_header {
+#sticky-header-wrapper {
+    width: 100%;
+    height: 70px;
+}
+
+#sticky-header {
     width: 100%;
     height: 70px;
     background: rgb(164, 168, 117); /* Fall-back for browsers that don't support rgba */
