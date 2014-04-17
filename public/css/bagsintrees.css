@@ -125,6 +125,7 @@ h2 {
     background-image: url('../img/city-bag.jpg');
     background-size: 100%;
     background-origin: content;
+    background-repeat: no;
 }
 
 #page-main {
@@ -151,29 +152,34 @@ h2 {
 #page-next {
     background-color: #fff;
     text-align: center;
-    /*background-image: url('../img/fresh_snow.png');
-    background-origin: content;*/
+    background-image: url('../img/tree-ring.jpg');
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no;
 }
 #page-next-2 {
     padding-top: 40px;
-    background-color: #96BEEB;
-
+    background-color: #fff;
     text-align: center;
-    /*background-image: url('../img/fresh_snow.png');
-    background-origin: content;*/
 }
 #page-next-3 {
     padding-top: 40px;
     text-align: center;
-    background-color: #fff;
+    background-image: url('../img/temp-1.jpg');
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no;
+    color: #fff;
 }
 #page-next-4 {
     padding-top: 40px;
     text-align: center;
-    background-image: url('../img/photo.JPG');
+    background-image: url('../img/city-outline.jpg');
     background-size: 100%;
     background-origin: content;
-    background-position: 0 -700px;
+    background-repeat: no;
+    height: 300px;
+    
 }
 
 #page-container {

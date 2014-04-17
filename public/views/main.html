@@ -1,5 +1,5 @@
 <div>
-    <div id="page-main">
+    <div id="page-main" class="js-Parallaxify">
         <div class="bags-transparent-panel">
             <div><div class="numberCircle">1</div>&nbsp;Photograph a bag caught in a tree</div>
             <div><div class="numberCircle">2</div>&nbsp;Tag it with #bagsintrees</div>
@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="container-fluid next-panel" id="page-next">
+    <div class="container-fluid next-panel js-Parallaxify" id="page-next">
         <h2>What Next?</h2>
         <br/>
         Every image tagged with #bagsintrees is mapped on a Google Map.<br/>Using the map, we'll be able to see the extent of the plastic pollution in trees throughout the world.
@@ -19,18 +19,25 @@
         <br/>
         Now that we've mapped all the bags in trees,<br/>what can this information be used for?
     </div>
-    <div class="container-fluid next-panel" id="page-next-2">
+    <div class="container-fluid next-panel js-Parallaxify" id="page-next-2">
             Cities can leverage the geo-located data to locate and retrieve bags.<br/><br/>
             This is already being done in New York by the "Bag Snaggers" at the <a href="http://www.nyrp.org/greening_sustainability/bag_snagging_program" target="blank">New York Restoration Project (NYRP)</a>.<br/>
             NYRP relies on phone calls and emails to locate the bags, but may be able to rely on #bagsintrees in the future.<br/><br/>
             Could your city do the same?
     </div>
-    <div class="container-fluid next-panel" id="page-next-3">
+    <div class="container-fluid next-panel js-Parallaxify" id="page-next-3">
             The movement to ban or dis-incentivize the use of plastic bags is underway in cities and counties through the United States and other countries. Data collected on #bagsintrees can be used by groups promoting these causes to show the prevelance and distribution of bags in thier area.<br/><br/>
             It could also be used to contrast areas with bag bans in place to those without such laws.<br/><br/>
             Know of a cause that could use this data? Send them an email, <a href="mailto:">telling them about Bags In Trees</a>.
     </div>
-    <div class="container-fluid next-panel" id="page-next-4">
+    <div class="container-fluid next-panel js-Parallaxify" id="page-next-4">
         I'm sure there are many other uses out there. If you have any idea, <a href="" ng-click="mailLink()">please share it with me</a>.
     </div>
 </div>
+<script>
+    new Parallaxify({
+      elements: ".js-Parallaxify" // default
+    , backgroundYMin: 100 // default
+    , backgroundYMax: 0 // default
+    }).registerUpdate()
+</script>
