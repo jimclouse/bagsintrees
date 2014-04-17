@@ -1,0 +1,31 @@
+{
+  "name": "parallaxify",
+  "version": "0.1.0",
+  "description": "Add parallax effect to your existing pages",
+  "main": "src/parallaxify.js",
+  "authors": [
+    "Maxime Thirouin <m@moox.io>"
+  ],
+  "homepage": "https://github.com/MoOx/parallaxify",
+  "keywords": [
+    "parallax",
+    "background",
+    "background-position",
+    "scroll",
+    "scrolling",
+    "animation"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

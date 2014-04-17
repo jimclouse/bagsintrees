@@ -1,0 +1,30 @@
+{
+  "name": "ng-parallax",
+  "version": "0.1.7",
+  "main": "angular-parallax.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json",
+    "src",
+    "example",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-scroll": ">=0.5.1"
+  },
+  "homepage": "https://github.com/durated/angular-parallax",
+  "_release": "0.1.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.7",
+    "commit": "0753ca835bf999666938a2ba69beebc27b9da846"
+  },
+  "_source": "git://github.com/durated/angular-parallax.git",
+  "_target": "*",
+  "_originalSource": "ng-parallax"
+}

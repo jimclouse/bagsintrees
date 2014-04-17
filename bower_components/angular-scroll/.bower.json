@@ -23,6 +23,6 @@
     "commit": "cf540f247f39169e43da0b917bcb45daf960241e"
   },
   "_source": "git://github.com/durated/angular-scroll.git",
-  "_target": "*",
+  "_target": ">=0.5.1",
   "_originalSource": "angular-scroll"
 }
