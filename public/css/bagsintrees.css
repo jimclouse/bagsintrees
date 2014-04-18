@@ -89,6 +89,7 @@ h2 {
     line-height: 1;
     font-weight: 700;
     font-size: 63px;
+    cursor: pointer;
 }
 
 .pageTitle a {
