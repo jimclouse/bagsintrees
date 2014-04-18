@@ -18,13 +18,15 @@ request({url: allTags, json: true}, function (err, response, body) {
         for (var i = 0; i < data.length; i++) {
             var photo = data[i];
             if(photo.location) {
-                client.SET("p:" + photo.id, JSON.stringify({"created" : photo.created_time,
-                                               "thumbnail_url": photo.images.thumbnail.url,
-                                               "low_res_url": photo.images.low_resolution.url,
-                                               "latitude": photo.location.latitude,
-                                               "longitude": photo.location.longitude,
-                                               "user": photo.user.username,
-                                               "caption": photo.caption.text
+                client.SET("p:" + photo.id, JSON.stringify({
+                                              "id": photo.id,
+                                              "created" : photo.created_time,
+                                              "thumbnail_url": photo.images.thumbnail.url,
+                                              "low_res_url": photo.images.low_resolution.url,
+                                              "latitude": photo.location.latitude,
+                                              "longitude": photo.location.longitude,
+                                              "user": photo.user.username,
+                                              "caption": photo.caption.text
                                            }));
                 client.ZADD('pics', photo.created_time, "p:" + photo.id);
             }

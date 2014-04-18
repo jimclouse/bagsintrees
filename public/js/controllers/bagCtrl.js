@@ -21,6 +21,7 @@ angular.module('bagCtrl', [])
         var infowindow = new google.maps.InfoWindow({
             content: ''
         });
+        var markerTimeout;
 
         // obtain user's location or use default
         function establishLocation() {
@@ -53,18 +54,22 @@ angular.module('bagCtrl', [])
             bags.getAll(function(data) {
                     $scope.bags = data;
                     for (var i = 0; i < data.length; i++) {
-                        var marker = new google.maps.Marker({position: new google.maps.LatLng(data[i].latitude, data[i].longitude), 
+                        var marker = new google.maps.Marker({position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
                                                         map: $scope.globalMap,
                                                         thumb: data[i].thumbnail_url,
                                                         user: data[i].user,
                                                         caption: data[i].caption
                     });
                         google.maps.event.addListener(marker, 'mouseover', function() {
+                            clearTimeout(markerTimeout);
                             infowindow.content = infowindowContent.replace('&imageurl&', this.thumb)
                                                                   .replace('&user&', this.user)
                                                                   .replace('&caption&', this.caption);
                             infowindow.open($scope.globalMap, this);
                         });
+                        google.maps.event.addListener(marker, 'mouseout', function() {
+                            markerTimeout = setTimeout(function () {infowindow.close();}, 2000);
+                        })
 
                     }
                 });
