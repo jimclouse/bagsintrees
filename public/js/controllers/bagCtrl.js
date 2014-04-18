@@ -17,7 +17,7 @@ angular.module('bagCtrl', [])
 
     })
     .controller('mapCtrl', function($scope, $http, $q, $cookies, $window, bags) {
-        var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&"></div></div>';
+        var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&"><br/>&caption&<br/>&user&</div></div>';
         var infowindow = new google.maps.InfoWindow({
             content: ''
         });
@@ -55,10 +55,14 @@ angular.module('bagCtrl', [])
                     for (var i = 0; i < data.length; i++) {
                         var marker = new google.maps.Marker({position: new google.maps.LatLng(data[i].latitude, data[i].longitude), 
                                                         map: $scope.globalMap,
-                                                        thumb: data[i].thumbnail_url
+                                                        thumb: data[i].thumbnail_url,
+                                                        user: data[i].user,
+                                                        caption: data[i].caption
                     });
                         google.maps.event.addListener(marker, 'mouseover', function() {
-                            infowindow.content = infowindowContent.replace('&imageurl&', this.thumb);
+                            infowindow.content = infowindowContent.replace('&imageurl&', this.thumb)
+                                                                  .replace('&user&', this.user)
+                                                                  .replace('&caption&', this.caption);
                             infowindow.open($scope.globalMap, this);
                         });
 

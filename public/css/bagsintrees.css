@@ -67,6 +67,9 @@ h4 {
     padding-bottom: 8px;
     padding-left: 4px;
     height: 70px;
+    position: fixed;
+    top:0;
+    left:0;
     webkit-transition:all 0.8s ease-out;
     -moz-transition:all 0.8s ease-out;
     -o-transition:all 0.8s ease-out;
@@ -74,15 +77,13 @@ h4 {
 }
 
 .header-large {
-    position: relative;
+    height: 70px;
     background: rgb(164, 168, 117); /* Fall-back for browsers that don't support rgba */
     background: rgba(255, 255, 255, .5); /*(96, 170, 133, .7); 60/141/197*/
 }
 .header-small {
-    position: fixed;
+    height: 70px;
     background-color: #e7e7e7;
-    top:0;
-    left:0;
     border-bottom: 1px solid #bdbdbd;
 }
 
