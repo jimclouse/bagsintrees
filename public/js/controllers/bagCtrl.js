@@ -1,6 +1,15 @@
 angular.module('bagCtrl', [])
     
-    .controller('mainCtrl', function($scope, $document) {
+    .controller('mainCtrl', function($scope, $rootScope, $location, $log, $document) {
+
+        $rootScope.$on("$locationChangeStart", function(event, next, current) { 
+            if ( next.substring(next.indexOf('#/')+2, next.length) === "") {
+                $('#sticky-header').removeClass('header-small').addClass('header-large');
+            }
+            else {
+                $('#sticky-header').removeClass('header-large').addClass('header-small');
+            }
+        });
 
         $scope.mailLink = function() {
             $window.location = "mailto:bagsintrees@mail.com?subject=Bags In Trees Are Everywhere!";

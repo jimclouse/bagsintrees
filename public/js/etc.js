@@ -9,17 +9,10 @@ $(function() {
          
         // if we've scrolled more than the navigation, change its position to fixed to stick to top,
         // otherwise change it back to relative
-        //console.log(scroll_top + ' == ' + sticky_header_offset_top);
         if (scroll_top > sticky_header_offset_top) { 
-            //$('#sticky-header').css({ });
             $('#sticky-header').removeClass('header-large').addClass('header-small');
-            $('#pageTitle').removeClass('pageTitle-large').addClass('pageTitle-small');
-            $('#navigation').removeClass('navigation-large').addClass('navigation-small');
-
         } else {
             $('#sticky-header').removeClass('header-small').addClass('header-large');
-            $('#pageTitle').removeClass('pageTitle-small').addClass('pageTitle-large');
-            $('#navigation').removeClass('navigation-small').addClass('navigation-large');
         }   
     };
 
