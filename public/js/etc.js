@@ -21,6 +21,12 @@ $(function() {
      
     // and run it again every time you scroll
     $(window).scroll(function() {
-         sticky_header();
+        if (window.location.hash === '#/') { // only do scrolling check on main page
+            sticky_header();
+        }
     });
+    // set initial header for non-main pages
+    if (window.location.hash !== '#/') {
+        $('#sticky-header').removeClass('header-large').addClass('header-small');
+    }
 });
