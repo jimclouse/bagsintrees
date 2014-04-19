@@ -9,6 +9,7 @@ angular.module('bagCtrl', [])
             else {
                 $('#sticky-header').removeClass('header-large').addClass('header-small');
             }
+            $(window).scrollTop(0); // need this to force position to top of page rather than where user had scrolled on previous page
         });
 
         $scope.mailLink = function() {
