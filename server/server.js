@@ -9,10 +9,13 @@ var app = express();
 app.set('root', process.cwd()) // Need this to find the project root directory
 
 app.configure(function(){
+    console.log(app.get("root") + '/public/img/favicon.ico');
+    app.use(express.favicon(app.get("root") + '/public/img/favicon.ico'));
     app.engine('html', engines.mustache);
     app.use(express.static(app.get("root") + '/public'));
     app.use('/bower_components',  express.static(app.get("root") + '/bower_components'));
-    app.use(app.router)
+    app.use(app.router);
+
 });
 
 // main site route
