@@ -1,6 +1,6 @@
 angular.module('bagCtrl', [])
     
-    .controller('mainCtrl', function($scope, $rootScope, $location, $log, $document) {
+    .controller('mainCtrl', function($scope, $rootScope, $window, $location, $log, $document) {
 
         $rootScope.$on("$locationChangeStart", function(event, next, current) { 
             if ( next.substring(next.indexOf('#/')+2, next.length) === "") {
