@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     color: #3c3c3c;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
 }
@@ -97,7 +97,7 @@ h4 {
 }
 .header-small {
     height: 70px;
-    background-color: #e7e7e7;
+    background-color: #fff; /* #e7e7e7 */
     border-bottom: 1px solid #bdbdbd;
 }
 
@@ -114,10 +114,9 @@ h4 {
 }
 
 .pageTitle {
-    font-family: 'PT Sans';
     line-height: 1;
     font-weight: 700;
-    font-size: 3.7em;
+    font-size: 3.2em;
     cursor: pointer;
 }
 
@@ -173,7 +172,6 @@ h4 {
 }
 
 .bags-transparent-panel {
-    font-family: 'Helvetica';
     font-size: 25px;
     font-weight: 500;
     margin: 0 auto;
@@ -245,7 +243,7 @@ h4 {
     background-image: url('../img/bag-tree-4-lg.jpg');
     background-size: 100%;
     background-origin: content;
-    background-repeat: no;
+    background-repeat: no-repeat;
 }
 
 #page-next-3-inner {
