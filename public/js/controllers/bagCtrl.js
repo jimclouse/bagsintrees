@@ -69,7 +69,7 @@ angular.module('bagCtrl', [])
                             infowindow.open($scope.globalMap, this);
                         });
                         google.maps.event.addListener(marker, 'mouseout', function() {
-                            markerTimeout = setTimeout(function () {infowindow.close();}, 2000);
+                            markerTimeout = setTimeout(function () {infowindow.close();}, 50);
                         })
 
                     }
