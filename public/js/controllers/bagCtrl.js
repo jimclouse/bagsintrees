@@ -40,7 +40,7 @@ angular.module('bagCtrl', [])
                     });
                 }
                 else { //geolocation IS NOT available
-                    setGeoLoc(42.3581, -71.0636, 9);
+                    setGeoLoc(42.3581, -71.0636, 14);
                     deferred.resolve();
                 }
             }
