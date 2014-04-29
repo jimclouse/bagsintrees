@@ -32,7 +32,7 @@ angular.module('bagCtrl', [])
                 deferred.resolve();
             }
             else {
-                if (navigator.geolocation) {
+                if (1===2 && navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function(position) {
                         setGeoLoc(position.coords.latitude, position.coords.longitude, 12);
                         deferred.resolve();
@@ -40,7 +40,7 @@ angular.module('bagCtrl', [])
                     });
                 }
                 else { //geolocation IS NOT available
-                    setGeoLoc(42.397, -90.03, 8);
+                    setGeoLoc(42.3581, -71.0636, 9);
                     deferred.resolve();
                 }
             }
