@@ -1,14 +1,21 @@
 #! /usr/bin/env bash
 # vim: set ft=shell
+SHELL = /bin/bash
 
 default: server redis
 
 server:
-	SHELL = /bin/bash
 	apt-get update; 
-	apt-get install -y git curl;
-	git clone https://github.com/npm/npm.git;
-	cd npm; make install;
+	sudo apt-get install g++ curl libssl-dev apache2-utils
+	sudo apt-get install git-core
+
+	#git clone https://github.com/npm/npm.git;
+	#cd npm; make install;
+
+	git clone git://github.com/ry/node.git
+	cd node && ./configure && make && make install
+
+	apt-get install -y nginx
 
 	source ~/.nvm/nvm.sh
 	nvm use 0.10.26
