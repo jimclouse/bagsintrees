@@ -5,6 +5,14 @@ var engines = require('consolidate');
 var _ = require('underscore');
 var express = require('express');
 
+/* get the port situated based on environment */
+if (process.env['ENVIRONMENT'] == "production") {
+    var _port = 80;
+}
+else {
+    var _port = 3011;
+}
+
 var app = express();
 app.set('root', process.cwd()) // Need this to find the project root directory
 
@@ -38,6 +46,7 @@ app.get('/bags/all', function(req, res) {
     });
 });
 
-var server = app.listen(3001, function() {
+
+var server = app.listen(_port, function() {
     console.log('#BagsInTrees now listening to the rustle of plastic on port %d', server.address().port);
 });
