@@ -18,7 +18,7 @@ angular.module('bagCtrl', [])
 
     })
     .controller('mapCtrl', function($scope, $http, $q, $cookies, $window, bags) {
-        var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&"><br/>&caption&<br/>&user&</div></div>';
+        var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&" width="150" height="150"><br/>&caption&<br/>&user&</div></div>';
         var infowindow = new google.maps.InfoWindow({
             content: ''
         });
@@ -69,7 +69,7 @@ angular.module('bagCtrl', [])
                             infowindow.open($scope.globalMap, this);
                         });
                         google.maps.event.addListener(marker, 'mouseout', function() {
-                            markerTimeout = setTimeout(function () {infowindow.close();}, 50);
+                            markerTimeout = setTimeout(function () {infowindow.close();}, 200);
                         })
 
                     }
