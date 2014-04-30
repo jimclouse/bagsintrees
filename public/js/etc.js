@@ -29,4 +29,35 @@ $(function() {
     if (window.location.hash !== '#/') {
         $('#sticky-header').removeClass('header-large').addClass('header-small');
     }
+
+
+    function layoutHandler(){
+        if(window.innerWidth < 900) {
+            updateSizeClass('size-mobile');
+        }
+        else if(window.innerWidth < 1200) {
+            updateSizeClass('size-medium');
+        } 
+        else {
+            updateSizeClass('size-full');
+        }
+    }
+
+    function updateSizeClass(c) {
+        if ($('body').hasClass(c)) {
+            return; // do nothing
+        }
+        _.each($('body').attr('class').split(' '), function(value, key, list) {
+            if(value.indexOf('size-') > -1) {
+                $('body').removeClass(value);
+            }
+        });
+        console.log(c);
+        $('body').addClass(c);
+        return;
+    }
+    
+    window.onresize = _.throttle(layoutHandler, 500);
+    layoutHandler();
+
 });

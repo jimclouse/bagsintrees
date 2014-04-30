@@ -69,18 +69,87 @@ h4 {
     position: inherit;
 }
 
+/* *****************
+size layout css patterns 
+******************** */
+.size-full .pageTitle {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 3.2em;
+}
+
+.size-full .header-large {
+    height: 70px;
+}
+
+.size-full .header-small {
+    height: 70px;
+}
+
+.size-full #sticky-header-wrapper {
+    height: 70px;
+}
+
+.size-full #sticky-header {
+    padding-bottom: 8px;
+    padding-left: 4px;
+    height: 70px;
+}
+
+/* medium */
+.size-medium .pageTitle {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 2.6em;
+}
+.size-medium .header-large {
+    height: 60px;
+}
+.size-medium .header-small {
+    height: 60px;
+}
+.size-medium #sticky-header-wrapper {
+    height: 60px;
+}
+.size-medium #sticky-header {
+    padding-bottom: 6px;
+    padding-left: 4px;
+    height: 60px;
+}
+
+/* mobile */
+.size-mobile .pageTitle {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+.size-mobile .header-large {
+    height: 45px;
+}
+.size-mobile .header-small {
+    height: 45px;
+}
+.size-mobile #sticky-header-wrapper {
+    height: 45px;
+}
+.size-mobile #sticky-header {
+    padding-bottom: 6px;
+    padding-left: 4px;
+    height: 45px;
+}
+
+/* ********************
+ end size specific css 
+ ******************** */
+
 #map-canvas { height: 600px; width: 100%;}
 
 #sticky-header-wrapper {
     width: 100%;
-    height: 70px;
 }
 
 #sticky-header {
     width: 100%;
-    padding-bottom: 8px;
-    padding-left: 4px;
-    height: 70px;
     position: fixed;
     top:0;
     left:0;
@@ -91,12 +160,10 @@ h4 {
 }
 
 .header-large {
-    height: 70px;
     background: rgb(164, 168, 117); /* Fall-back for browsers that don't support rgba */
     background: rgba(255, 255, 255, .5); /*(96, 170, 133, .7); 60/141/197*/
 }
 .header-small {
-    height: 70px;
     background-color: #fff; /* #e7e7e7 */
     border-bottom: 1px solid #bdbdbd;
 }
@@ -116,7 +183,6 @@ h4 {
 .pageTitle {
     line-height: 1;
     font-weight: 700;
-    font-size: 3.2em;
     cursor: pointer;
 }
 
