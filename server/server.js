@@ -14,6 +14,7 @@ app.configure(function(){
     app.engine('html', engines.mustache);
     app.use(express.static(app.get("root") + '/public'));
     app.use('/bower_components',  express.static(app.get("root") + '/bower_components'));
+    app.use('/node_modules',  express.static(app.get("root") + '/node_modules'));
     app.use(app.router);
 
 });
