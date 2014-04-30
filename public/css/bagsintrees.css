@@ -183,16 +183,6 @@ h4 {
     width: 650px;
 }
 
-.bags-transparent-panel a {
-    color: #3c3c3c;
-    text-decoration: underline;
-}
-
-.bags-transparent-panel a:hover {
-    color: #0978a7;
-    text-decoration: underline;
-}
-
 .numberCircle {
     border-radius: 50%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
