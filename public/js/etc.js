@@ -59,5 +59,10 @@ $(function() {
     
     window.onresize = _.throttle(layoutHandler, 500);
     layoutHandler();
-
 });
+
+function beginScrollNext() {
+    $('html,body').animate({
+        scrollTop: $('#page-next').offset().top - 75 // TODO - CHANGE 70 to responsive header height
+    }, 800);
+}
