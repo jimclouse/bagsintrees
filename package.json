@@ -16,7 +16,8 @@
     "redis": "0.10.1",
     "mustache": "0.8.1",
     "consolidate": "0.10.0",
-    "underscore": "1.6.0"
+    "underscore": "1.6.0",
+    "colors": "*"
   },
   "author": "Jim Clouse <bagsintrees@mail.com>",
   "license": "MIT"
