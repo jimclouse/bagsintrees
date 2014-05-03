@@ -1,4 +1,4 @@
-etc/environment
+etc/*
 redis-*
 .DS_Store
 dump.rdb
