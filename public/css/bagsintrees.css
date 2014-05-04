@@ -370,6 +370,17 @@ size layout css patterns
     background-color: rgba(255, 255, 255, 0.9);
 }
 
+#page-404 {
+    text-align: center;
+    padding: 40px;
+    min-height: 400px;
+    color: #fff;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(100, 100, 100, .60);
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
 /* page transition animations */
 .slide.ng-leave {
     -webkit-animation: moveToBottom .6s ease both;

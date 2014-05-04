@@ -17,5 +17,11 @@ angular.module('bagsInTrees', ['ngRoute', 'ngAnimate', 'ngCookies', 'bagCtrl', '
                 templateUrl : 'views/map.html',
                 controller  : 'mapCtrl'
             })
+            .when('/404', {
+                templateUrl : 'views/404.html'
+            })
+            .otherwise({
+                redirectTo: '/404'
+            });
     });
 
