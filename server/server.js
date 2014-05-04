@@ -48,6 +48,11 @@ app.get('/bags/all', function(req, res) {
     });
 });
 
+//The 404 Route (ALWAYS Keep this as the last route)
+app.get('*', function(req, res){
+    res.redirect('/#/404');
+});
+
 var server = app.listen(_port, function() {
     console.log('#BagsInTrees now listening to the rustle of plastic on port %d'.green, server.address().port);
 });
