@@ -17,14 +17,14 @@ function fetchBags() {
   console.log(getLogDate() + '*** Loading bags from Instagram');
   request({url: allTags, json: true}, function (err, response, body) {
       if (err) {
-          console.error(getLogDate() + "get failed: " + err);
-          return;
+          console.log(getLogDate() + "get failed: " + err);
+          client.end();
       }
       if (!err && response.statusCode == 200) {
           var data = body.data;
           for (var i = 0; i < data.length; i++) {
               var photo = data[i];
-              if(photo.location) {
+              if(photo.location && photo.type == "image") {
                   client.SET("p:" + photo.id, JSON.stringify({
                                                 "id": photo.id,
                                                 "created" : photo.created_time,
