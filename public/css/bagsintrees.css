@@ -151,6 +151,7 @@ size layout css patterns
 #sticky-header {
     width: 100%;
     position: fixed;
+    z-index: 20;
     top:0;
     left:0;
     webkit-transition:all 0.8s ease-out;
