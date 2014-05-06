@@ -32,10 +32,10 @@ $(function() {
 
 
     function layoutHandler(){
-        if(window.innerWidth < 900) {
+        if(window.innerWidth < 600) {
             updateSizeClass('size-mobile');
         }
-        else if(window.innerWidth < 1200) {
+        else if(window.innerWidth < 900) {
             updateSizeClass('size-medium');
         } 
         else {
