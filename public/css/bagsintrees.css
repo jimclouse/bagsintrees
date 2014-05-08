@@ -114,6 +114,12 @@ size layout css patterns
     padding: 100px 0 0 0;
     height: 650px;
 }
+.size-full .navigation {
+    display: block;
+}
+.size-full .navigation-mobile {
+    display: none;
+}
 
 /* medium */
 .size-medium .pageTitle {
@@ -158,6 +164,12 @@ size layout css patterns
     padding: 40px 0 0 0;
     height: 450px;
 }
+.size-medium .navigation {
+    display: block;
+}
+.size-medium .navigation-mobile {
+    display: none;
+}
 
 /* mobile */
 .size-mobile {
@@ -166,21 +178,21 @@ size layout css patterns
 .size-mobile .pageTitle {
     line-height: 1;
     font-weight: 700;
-    font-size: 2.0em;
+    font-size: 2.1em;
 }
 .size-mobile .header-large {
-    height: 45px;
+    height: 35px;
 }
 .size-mobile .header-small {
-    height: 45px;
+    height: 35px;
 }
 .size-mobile #sticky-header-wrapper {
-    height: 45px;
+    height: 35px;
 }
 .size-mobile #sticky-header {
     padding-bottom: 6px;
     padding-left: 4px;
-    height: 45px;
+    height: 35px;
 }
 .size-mobile #panel {
     background-image: url('../img/city-bag-600.jpg');
@@ -201,8 +213,14 @@ size layout css patterns
     font-weight: 500;
 }
 .size-mobile #page-main {
-    padding: 40px 0 0 0;
+    padding: 35px 0 0 0;
     height: 420px;
+}
+.size-mobile .navigation {
+    display: none;
+}
+.size-mobile .navigation-mobile {
+    display: block;
 }
 /* ********************
  end size specific css 
@@ -267,12 +285,23 @@ size layout css patterns
     margin-top:17px;
     color: #4D4834;
 }
-
 .navigation a {
     color: #3c3c3c;
 }
-
 .navigation a:hover {
+    text-decoration: underline;
+    color: #0978a7;
+}
+
+.navigation-mobile {
+    margin-top:5px;
+    padding-top: 5px;
+    color: #4D4834;
+}
+.navigation-mobile a {
+    color: #3c3c3c;
+}
+.navigation-mobile a:hover {
     text-decoration: underline;
     color: #0978a7;
 }
