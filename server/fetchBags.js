@@ -36,6 +36,7 @@ function fetchBags() {
                                                 "caption": photo.caption.text
                                              }));
                   client.ZADD('pics', photo.created_time, "p:" + photo.id);
+                  client.SET("latestId", photo.id);
               }
           }
           console.log(getLogDate() + "Processed " + data.length + " bags");
