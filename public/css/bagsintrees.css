@@ -25,7 +25,6 @@ a:hover {
 
 h2 {
     text-align: center;
-    font-size: 50px;
 }
 
 h3 {
@@ -38,10 +37,18 @@ h4 {
 }
 
 .whiteLink {
-    color: #fff;
     text-decoration: underline;
 }
 .whiteLink:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.arrowLink {
+    color: #fff;
+    text-decoration: underline;
+}
+.arrowLink:hover {
     color: orange;
     text-decoration: underline;
 }
@@ -72,6 +79,12 @@ h4 {
 /* *****************
 size layout css patterns 
 ******************** */
+.size-full h2 {
+    font-size: 50px;
+}
+.size-full .whitelink {
+    color: #fff;
+}
 .size-full .pageTitle {
     line-height: 1;
     font-weight: 700;
@@ -120,8 +133,21 @@ size layout css patterns
 .size-full .navigation-mobile {
     display: none;
 }
+.size-full #full-pin-img {
+    display: block;
+}
+.size-full #mobile-pin-img {
+    display: none;
+}
+
 
 /* medium */
+.size-medium h2 {
+    font-size: 50px;
+}
+.size-medium .whitelink {
+    color: #fff;
+}
 .size-medium .pageTitle {
     line-height: 1;
     font-weight: 700;
@@ -170,15 +196,27 @@ size layout css patterns
 .size-medium .navigation-mobile {
     display: none;
 }
+.size-medium #full-pin-img {
+    display: block;
+}
+.size-medium #mobile-pin-img {
+    display: none;
+}
 
 /* mobile */
+.size-mobile h2 {
+    font-size: 30px;
+}
+.size-mobile .whitelink {
+    color: #3c3c3c;
+}
 .size-mobile {
-    font-size: 12px;
+    font-size: 16px;
 }
 .size-mobile .pageTitle {
     line-height: 1;
     font-weight: 700;
-    font-size: 2.1em;
+    font-size: 2.0em;
 }
 .size-mobile .header-large {
     height: 35px;
@@ -222,6 +260,20 @@ size layout css patterns
 .size-mobile .navigation-mobile {
     display: block;
 }
+.size-mobile #full-pin-img {
+    display: none;
+}
+.size-mobile #mobile-pin-img {
+    display: block;
+}
+
+.size-mobile .mobile-hr {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 14px;
+    border-top: 1px solid #3c3c3c;
+}
+
 /* ********************
  end size specific css 
  ******************** */
@@ -345,6 +397,12 @@ size layout css patterns
     display: inline-block;
 }
 
+#mobile-pin-img {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 #page-next {
     text-align: left;
     background-color: rgb(255,255,255);
@@ -355,22 +413,53 @@ size layout css patterns
     background-repeat: no;*/
 }
 
-#page-next-2 {
+.size-full #page-next-2 {
     height: 360px;
     background-color: #fff;
     background-image: url('../img/citySilhouette.jpg');
     background-repeat: no-repeat;
     background-origin: content;
 }
-#page-next-2-inner {
+.size-full #page-next-2-inner {
     height: 100%;
     padding-top: 1em;
     text-align: center;
     background-color: rgb(255,255,255);
     background-color: rgba(255, 255, 255, 0.9);
 }
+.size-medium #page-next-2 {
+    height: 360px;
+    background-color: #fff;
+    background-image: url('../img/citySilhouette.jpg');
+    background-repeat: no-repeat;
+    background-origin: content;
+}
+.size-medium #page-next-2-inner {
+    height: 100%;
+    padding-top: 1em;
+    text-align: center;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.size-mobile #page-next-2 {
+    height: 360px;
+    background-color: #fff;
+    background-image: url('../img/citySilhouette.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: content;
+    margin-bottom: 15px;
+}
+.size-mobile #page-next-2-inner {
+    height: 100%;
+    padding-top: 1em;
+    text-align: center;
+    padding: 2%;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0.9);
+}
 
-#page-next-3 {
+.size-full #page-next-3 {
     padding: 40px 10% 40px 10%;
     text-align: center;
     background-image: url('../img/bag-tree-4-lg.jpg');
@@ -379,7 +468,7 @@ size layout css patterns
     background-repeat: no-repeat;
 }
 
-#page-next-3-inner {
+.size-full #page-next-3-inner {
     text-align: center;
     padding: 40px;
     color: #fff;
@@ -388,8 +477,42 @@ size layout css patterns
     -moz-border-radius: 12px;
     border-radius: 12px;
 }
+.size-medium #page-next-3 {
+    padding: 40px 10% 40px 10%;
+    text-align: center;
+    background-image: url('../img/bag-tree-4-lg.jpg');
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat;
+}
+.size-medium #page-next-3-inner {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(100, 100, 100, .60);
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+.size-mobile #page-next-3 {
+    /*padding: 40px 10% 40px 10%;
+    text-align: center;
+    background-image: url('../img/bag-tree-4-lg.jpg');
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat; */
+}
+.size-mobile #page-next-3-inner {
+    text-align: center;
+    padding: 2%;
+    /*color: #fff;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    /* background: rgba(100, 100, 100, .60);
+    -moz-border-radius: 12px;
+    border-radius: 12px; */
+}
 
-#page-next-4 {
+.size-full #page-next-4 {
     height: 360px;   
     background-image: url('../img/bag-tree-3-lg.jpg');
     background-repeat: no-repeat;
@@ -397,8 +520,7 @@ size layout css patterns
     text-align: center;
     padding: 40px 10% 40px 10%;
 }
-
-#page-next-4-inner {
+.size-full  #page-next-4-inner {
     text-align: center;
     padding: 40px;
     color: #fff;
@@ -406,6 +528,31 @@ size layout css patterns
     background: rgba(100, 100, 100, .60);
     -moz-border-radius: 12px;
     border-radius: 12px;
+}
+.size-medium #page-next-4 {
+    height: 360px;   
+    background-image: url('../img/bag-tree-3-lg.jpg');
+    background-repeat: no-repeat;
+    background-origin: content;
+    text-align: center;
+    padding: 40px 10% 40px 10%;
+}
+.size-medium  #page-next-4-inner {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(100, 100, 100, .60);
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+.size-mobile #page-next-4 {
+    height: 100px;   
+}
+.size-mobile  #page-next-4-inner {
+    text-align: center;
+    height: 100%;
+    padding: 2%;
 }
 
 #page-container {
