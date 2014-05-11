@@ -1,5 +1,6 @@
 'use strict'
 var path = require('path');
+var fetchBags = require('./fetchBags');
 var redis = require("redis"), client = redis.createClient();
 var engines = require('consolidate');
 var _ = require('underscore');
@@ -25,6 +26,8 @@ app.configure(function() {
     app.use('/node_modules',  express.static(app.get("root") + '/node_modules'));
     app.use('/bower_components',  express.static(app.get("root") + '/bower_components'));
     app.use(express.static(app.get("root") + '/public'));
+    app.use(express.json());       // to support JSON-encoded bodies
+    app.use(express.urlencoded()); // to support URL-encoded bodies
     app.use(app.router);
 
 });
@@ -32,6 +35,18 @@ app.configure(function() {
 // main site route
 app.get('/', function(req, res) {
     res.render('index.html', {});
+});
+
+// route for setting up instagram subscription
+app.get('/igrm/newbag', function(req, res) {
+    res.send(req.query['hub.challenge']);
+});
+
+// route for setting up instagram subscription
+app.post('/igrm/newbag', function(req, res) {
+    fetchBags.fetch();
+    console.log("done");
+    res.send('OK');
 });
 
 // client routes

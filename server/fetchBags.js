@@ -13,7 +13,7 @@ function getLogDate() {
 /**
   controller method starts the download.
 **/
-function fetchBags() {
+function fetch() {
   console.log((getLogDate() + '*** Loading bags from Instagram').blue);
   client.GET("min_tag_id", function(err, reply) {
     if(reply) {
@@ -22,6 +22,7 @@ function fetchBags() {
     processBags(tagUrl);
   });
 }
+exports.fetch = fetch;
 
 /** 
   actual worker method: downloads data from Instagram and saves to redis 
@@ -54,7 +55,6 @@ function processBags(url) {
                                               "caption": photo.caption.text
                                            }));
                 client.ZADD('pics', photo.created_time, "p:" + photo.id);
-                client.SET("latestId", photo.id);
             }
         }
         console.log((getLogDate() + "Processed " + data.length + " bags").green);
@@ -82,6 +82,6 @@ client.PING(function(res) {
     client.end();
   }
   else {
-    fetchBags();
+    fetch();
   }
 });
