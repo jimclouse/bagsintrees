@@ -1,9 +1,10 @@
 'use strict'
-var redis = require("redis"), client = redis.createClient();
+var redis = require("redis");
 var request = require('request');
 var colors = require('colors');
 var CLIENT_ID = process.env['CLIENT_ID'];
 var tagUrl = "https://api.instagram.com/v1/tags/bagsintrees/media/recent?client_id=" + CLIENT_ID;
+var client;
 
 function getLogDate() {
   var d = new Date;
@@ -14,12 +15,14 @@ function getLogDate() {
   controller method starts the download.
 **/
 function fetch() {
+  client = redis.createClient();
   console.log((getLogDate() + '*** Loading bags from Instagram').blue);
   client.GET("min_tag_id", function(err, reply) {
+    var url = tagUrl;
     if(reply) {
-      tagUrl = tagUrl + '&min_tag_id=' + reply;
+      url = url + '&min_tag_id=' + reply;
     }
-    processBags(tagUrl);
+    processBags(url);
   });
 }
 exports.fetch = fetch;
@@ -65,7 +68,7 @@ function processBags(url) {
     }
 
     //recurse process bags if there is another
-    if(body.pagination.next_url) {
+    if(body.pagination && body.pagination.next_url) {
       processBags(body.pagination.next_url)
     }          
 
@@ -76,12 +79,12 @@ function processBags(url) {
 /**
   main: Only do work if Redis is running
 **/
-client.PING(function(res) {
-  if(res) {
-    console.error(getLogDate() + "Unable to establish connection to redis server");
-    client.end();
-  }
-  else {
-    fetch();
-  }
-});
+// client.PING(function(res) {
+//   if(res) {
+//     console.error(getLogDate() + "Unable to establish connection to redis server");
+//     client.end();
+//   }
+//   else {
+//     //fetch();
+//   }
+// });
