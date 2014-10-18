@@ -2,3 +2,4 @@ etc/*
 redis-*
 .DS_Store
 dump.rdb
+unusedImages
