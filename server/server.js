@@ -9,7 +9,7 @@ var colors = require('colors');
 
 /* get the port situated based on environment */
 if (process.env['ENVIRONMENT'] == "production") {
-    var _port = 80;
+    var _port = 8080;
 }
 else {
     var _port = 3011;
@@ -22,19 +22,11 @@ app.set('root', process.cwd()) // Need this to find the project root directory
 
 app.configure(function() {
     app.use(express.favicon(app.get("root") + '/public/img/favicon.ico'));
-    app.engine('html', engines.mustache);
     app.use('/node_modules',  express.static(app.get("root") + '/node_modules'));
     app.use('/bower_components',  express.static(app.get("root") + '/bower_components'));
     app.use(express.static(app.get("root") + '/public'));
     app.use(express.json());       // to support JSON-encoded bodies
     app.use(express.urlencoded()); // to support URL-encoded bodies
-    app.use(app.router);
-
-});
-
-// main site route
-app.get('/', function(req, res) {
-    res.render('index.html', {});
 });
 
 // route for setting up instagram subscription
@@ -44,8 +36,10 @@ app.get('/igrm/newbag', function(req, res) {
 
 // route for setting up instagram subscription
 app.post('/igrm/newbag', function(req, res) {
-    fetchBags.fetch();
-    console.log("done");
+    setTimeout(function() {
+        fetchBags.fetch();    
+        console.log("done");
+    }, 10);
     res.send('OK');
 });
 
