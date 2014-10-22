@@ -3,3 +3,4 @@ redis-*
 .DS_Store
 dump.rdb
 unusedImages
+npm-debug.log

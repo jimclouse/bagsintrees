@@ -7,7 +7,7 @@ default: server redis
 server:
 	apt-get update; 
 	sudo apt-get install g++ curl libssl-dev apache2-utils upstart
-	sudo apt-get install git-core build-essential libssl-dev
+	sudo apt-get install git-core build-essential libssl-dev monit
 
 	#git clone https://github.com/npm/npm.git;
 	#cd npm; make install;
