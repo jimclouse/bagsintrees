@@ -20,6 +20,9 @@ server:
 
 	# not sure we need nginx anymore: apt-get install -y nginx
 
+	# copy over upstart script
+	sudo cp upstart-bags.conf /etc/init/
+
 	source ~/.nvm/nvm.sh
 	nvm use 0.10.26
 	
