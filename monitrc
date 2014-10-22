@@ -1,0 +1,9 @@
+set logfile /var/log/monit.log
+
+check process nodejs with pidfile "/var/run/bags.pid"
+    start program = "/sbin/start bags"
+    stop program  = "/sbin/stop bags"
+    if failed port 8000 protocol HTTP
+        request /
+        with timeout 10 seconds
+        then restart
