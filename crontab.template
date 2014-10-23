@@ -7,4 +7,4 @@
 # m h  dom mon dow   command
 SHELL=/bin/bash
 PATH=/usr/bin:/bin:/sbin:/usr/local/bin
-*/1 * * * * flock -n /tmp/fetchbags.lockfile -c "bash /home/ubuntu/bags/fetch_bags.sh >> /var/log/cronlog.log"
+*/1 * * * * flock -n /tmp/fetchbags.lockfile -c "bash /home/ubuntu/bagsintrees/fetch_bags.sh >> /var/log/cronlog.log"
