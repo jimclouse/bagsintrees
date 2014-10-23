@@ -53,27 +53,29 @@ angular.module('bagCtrl', [])
         
         $scope.getAllBags = function() {
             bags.getAll(function(data) {
-                    $scope.bags = data;
-                    for (var i = 0; i < data.length; i++) {
-                        var marker = new google.maps.Marker({position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
-                                                        map: $scope.globalMap,
-                                                        thumb: data[i].thumbnail_url,
-                                                        user: data[i].user,
-                                                        caption: data[i].caption
-                    });
-                        google.maps.event.addListener(marker, 'mouseover', function() {
-                            clearTimeout(markerTimeout);
-                            infowindow.content = infowindowContent.replace('&imageurl&', this.thumb)
-                                                                  .replace('&user&', this.user)
-                                                                  .replace('&caption&', this.caption);
-                            infowindow.open($scope.globalMap, this);
-                        });
-                        google.maps.event.addListener(marker, 'mouseout', function() {
-                            markerTimeout = setTimeout(function () {infowindow.close();}, 200);
-                        })
 
-                    }
-                });
+                $scope.bags = data;
+                var markers = []
+                for (var i = 0; i < data.length; i++) {
+                    var marker = new google.maps.Marker({position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
+                                                    thumb: data[i].thumbnail_url,
+                                                    user: data[i].user,
+                                                    caption: data[i].caption
+                                                });
+                    google.maps.event.addListener(marker, 'mouseover', function() {
+                        clearTimeout(markerTimeout);
+                        infowindow.content = infowindowContent.replace('&imageurl&', this.thumb)
+                                                              .replace('&user&', this.user)
+                                                              .replace('&caption&', this.caption);
+                        infowindow.open($scope.globalMap, this);
+                    });
+                    google.maps.event.addListener(marker, 'mouseout', function() {
+                        markerTimeout = setTimeout(function () {infowindow.close();}, 200);
+                    })
+                    markers.push(marker);
+                }
+                var mc = new MarkerClusterer($scope.globalMap, markers);
+            });
         }
 
         $scope.loadFromInstagram = function() {
@@ -88,6 +90,7 @@ angular.module('bagCtrl', [])
                         {   center: new google.maps.LatLng($scope.userGeoLoc.lat, $scope.userGeoLoc.lon),
                             zoom: $scope.userGeoLoc.zoom
                         });
+
                     // set user location marker
                     new google.maps.Marker({position: new google.maps.LatLng($scope.userGeoLoc.lat, $scope.userGeoLoc.lon), 
                                             map: $scope.globalMap,
