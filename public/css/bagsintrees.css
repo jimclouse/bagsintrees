@@ -279,6 +279,7 @@ size layout css patterns
  ******************** */
 
 #map-canvas { height: 600px; width: 100%;}
+#map-detail { height: 600px; width: 0px;}
 
 #sticky-header-wrapper {
     width: 100%;

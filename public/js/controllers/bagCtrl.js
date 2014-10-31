@@ -18,7 +18,7 @@ angular.module('bagCtrl', [])
 
     })
     .controller('mapCtrl', function($scope, $http, $q, $cookies, $window, bags) {
-        var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&" width="150" height="150"><br/>&caption&<br/>&user&</div></div>';
+        var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&" width="150" height="150" ng-click="openDetail()"><br/>&caption&<br/>&user&</div></div>';
         var infowindow = new google.maps.InfoWindow({
             content: ''
         });
@@ -80,6 +80,12 @@ angular.module('bagCtrl', [])
 
         $scope.loadFromInstagram = function() {
             $http.post("/load/all");
+        }
+
+        $scope.openDetail = function() {
+            console.log("open detail!");
+            $('#map-canvas').css({width: '80%'});
+            $('#map-detail').css({width: '20%'});
         }
 
         $scope.showMap = function() {
