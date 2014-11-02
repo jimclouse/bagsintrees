@@ -123,6 +123,10 @@ angular.module('bagCtrl', [])
             $('.map-detail').hide();
         }
 
+        $scope.formatInstagramDate = function(dateInt) {
+            return moment(new Date(dateInt * 1000)).format("MMM Do, YYYY")
+        }
+
         $scope.showMap = function() {
             if(!$scope.globalMap) { // dont reload the map if we've already got it
                 establishLocation() // get user location
