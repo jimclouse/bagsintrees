@@ -82,7 +82,7 @@ angular.module('bagCtrl', [])
                     })
                     markers.push(marker);
                 }
-                var mc = new MarkerClusterer($scope.globalMap, markers);
+                var mc = new MarkerClusterer($scope.globalMap, markers, {minimumClusterSize: 4});
             });
         }
 
