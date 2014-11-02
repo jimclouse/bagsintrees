@@ -287,14 +287,14 @@ size layout css patterns
     width: 100%;
     position: absolute;
 }
-.map-detail { 
+.map-detail {
     position: absolute;
-    height: 600px;
     width: 20%;
-    right: 0px;
+    right: 20px;
     background-color:rgba(255, 255, 255, 0.6);
     display: none;
     z-index: 999999;
+    margin: 10px 10px 0px 0px;
 }
 .map-detail-inner {
     margin: 4px;

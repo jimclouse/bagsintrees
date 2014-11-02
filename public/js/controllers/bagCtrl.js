@@ -86,17 +86,15 @@ angular.module('bagCtrl', [])
             });
         }
 
-        $scope.toggleMapDetail = function() {
-            $('.map-detail').toggle();
-        }
-
         $scope.showMapDetail = function(id) {
             $('.map-detail').show();
-            console.log(id);
             bags.getOne(id, function(data) {
                 $scope.mapDetail = data[0];
             });
 
+        }
+        $scope.closeMapDetail = function() {
+            $('.map-detail').hide();
         }
 
         $scope.showMap = function() {
