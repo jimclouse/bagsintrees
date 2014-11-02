@@ -303,7 +303,8 @@ size layout css patterns
     height: 600px;
 }
 #map-canvas { 
-    height: 600px;
+    height: 90%;
+    height: calc(100% - 120px);
     width: 100%;
     position: absolute;
 }
@@ -599,6 +600,7 @@ size layout css patterns
 
 #page-container {
     width: 100%;
+    min-height: calc(100% - 120px);
 }
 
 .map-page {
