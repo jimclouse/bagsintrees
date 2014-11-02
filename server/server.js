@@ -57,6 +57,15 @@ app.get('/bags/all', function(req, res) {
     });
 });
 
+app.get('/bags/one/:id', function(req, res) {
+    var key = "p:" + req.params.id;
+    client.mget(key, function(err, obj) {
+        res.send(_.map(obj, function(val) {
+                    return JSON.parse(val);
+        }));
+    });
+});
+
 //The 404 Route (ALWAYS Keep this as the last route)
 app.get('*', function(req, res){
     res.redirect('/#/404');

@@ -18,7 +18,7 @@ angular.module('bagCtrl', [])
 
     })
     .controller('mapCtrl', function($scope, $http, $q, $cookies, $window, bags) {
-        var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&" width="150" height="150"><br/>&caption&<br/>&user&</div></div>';
+        var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&" width="150" height="150" ng-click="openDetail()"><br/>&caption&<br/>&user&</div></div>';
         var infowindow = new google.maps.InfoWindow({
             content: ''
         });
@@ -51,24 +51,32 @@ angular.module('bagCtrl', [])
             $scope.userGeoLoc = {lat: lat, lon: lon, zoom: zoom};
         }
         
+        buildMarker = function(data) {
+            var marker = new google.maps.Marker({position: new google.maps.LatLng(data.latitude, data.longitude),
+                                                    thumb: data.thumbnail_url,
+                                                    user: data.user,
+                                                    caption: data.caption,
+                                                    id: data.id
+            });
+            // google.maps.event.addListener(marker, 'mouseover', function() {
+            //     clearTimeout(markerTimeout);
+            //     infowindow.content = infowindowContent.replace('&imageurl&', this.thumb)
+            //                                           .replace('&user&', this.user)
+            //                                           .replace('&caption&', this.caption);
+            //     infowindow.open($scope.globalMap, this);
+            // });
+            google.maps.event.addListener(marker, 'click', function() {
+                $scope.showMapDetail(this.id)
+            });
+            return marker
+        }
+
         $scope.getAllBags = function() {
             bags.getAll(function(data) {
-
                 $scope.bags = data;
                 var markers = []
                 for (var i = 0; i < data.length; i++) {
-                    var marker = new google.maps.Marker({position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
-                                                    thumb: data[i].thumbnail_url,
-                                                    user: data[i].user,
-                                                    caption: data[i].caption
-                                                });
-                    google.maps.event.addListener(marker, 'mouseover', function() {
-                        clearTimeout(markerTimeout);
-                        infowindow.content = infowindowContent.replace('&imageurl&', this.thumb)
-                                                              .replace('&user&', this.user)
-                                                              .replace('&caption&', this.caption);
-                        infowindow.open($scope.globalMap, this);
-                    });
+                    var marker = buildMarker(data[i]);
                     google.maps.event.addListener(marker, 'mouseout', function() {
                         markerTimeout = setTimeout(function () {infowindow.close();}, 200);
                     })
@@ -78,8 +86,15 @@ angular.module('bagCtrl', [])
             });
         }
 
-        $scope.loadFromInstagram = function() {
-            $http.post("/load/all");
+        $scope.showMapDetail = function(id) {
+            $('.map-detail').show();
+            bags.getOne(id, function(data) {
+                $scope.mapDetail = data[0];
+            });
+
+        }
+        $scope.closeMapDetail = function() {
+            $('.map-detail').hide();
         }
 
         $scope.showMap = function() {
