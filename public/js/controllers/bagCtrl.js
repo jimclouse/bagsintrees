@@ -24,6 +24,32 @@ angular.module('bagCtrl', [])
         });
         var markerTimeout;
 
+        var styles = [{
+            height: 22,
+            url: "../../img/clusterIcon-01-blue.png",
+            width: 22
+            },
+            {
+            height: 30,
+            url: "../../img/clusterIcon-02-yellow.png",
+            width: 30
+            },
+            {
+            height: 36,
+            url: "../../img/clusterIcon-03-red.png",
+            width: 36
+            },
+            {
+            height: 78,
+            url: "http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/images/m4.png",
+            width: 78
+            },
+            {
+            height: 90,
+            url: "http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/images/m5.png",
+            width: 90
+        }];
+
         // obtain user's location or use default
         function establishLocation() {
             var deferred = $q.defer();
@@ -82,7 +108,7 @@ angular.module('bagCtrl', [])
                     })
                     markers.push(marker);
                 }
-                var mc = new MarkerClusterer($scope.globalMap, markers, {minimumClusterSize: 4});
+                var mc = new MarkerClusterer($scope.globalMap, markers, {minimumClusterSize: 4, styles: styles});
             });
         }
 
