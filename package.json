@@ -18,7 +18,8 @@
     "consolidate": "0.10.0",
     "underscore": "1.6.0",
     "colors": "*",
-    "q": "1.0.1"
+    "q": "1.0.1",
+    "moment": "2.8.3"
   },
   "author": "Jim Clouse <bagsintrees@mail.com>",
   "license": "MIT"
