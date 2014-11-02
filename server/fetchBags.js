@@ -2,6 +2,7 @@
 var redis = require("redis");
 var request = require('request');
 var colors = require('colors');
+var q = require('q')
 var CLIENT_ID = process.env['CLIENT_ID'];
 var tagUrl = "https://api.instagram.com/v1/tags/bagsintrees/media/recent?client_id=" + CLIENT_ID;
 var client;
@@ -22,7 +23,12 @@ function fetch() {
     if(reply) {
       url = url + '&min_tag_id=' + reply;
     }
-    processBags(url);
+    processBags(client, url)
+      .then(function() {
+          console.log("CLOSING CLIENT");
+          client.end(); // close the redis connection
+        }
+      );
   });
 }
 exports.fetch = fetch;
@@ -31,12 +37,13 @@ exports.fetch = fetch;
   actual worker method: downloads data from Instagram and saves to redis 
   if multiple pages, gets them all
 **/
-function processBags(url) {
+function processBags(client, url) {
+  var d = q.defer();
   console.log(("FETCHING: " + url).blue)
   request({url: url, json: true}, function (err, response, body) {
     if (err) {
-        console.log((getLogDate() + "get failed: " + err).red);
-        client.end();
+        console.log(getLogDate() + "get failed: " + err);
+        return d.reject(getLogDate() + "get failed: " + err);
     }
 
     if (!err && response.statusCode == 200) {
@@ -47,7 +54,9 @@ function processBags(url) {
         for (var i = 0; i < data.length; i++) {
             var photo = data[i];
             if(photo.location && photo.type == "image") {
-                client.SET("p:" + photo.id, JSON.stringify({
+                var photoJson;
+                try {
+                  photoJson = JSON.stringify({
                                               "id": photo.id,
                                               "created" : photo.created_time,
                                               "thumbnail_url": photo.images.thumbnail.url,
@@ -57,7 +66,13 @@ function processBags(url) {
                                               "locationName": photo.location.name,
                                               "user": photo.user.username,
                                               "caption": photo.caption.text
-                                           }));
+                                           });
+                  }
+                  catch(e) {
+                    console.error(e);
+                  }
+
+                client.SET("p:" + photo.id, photoJson);
                 client.ZADD('pics', photo.created_time, "p:" + photo.id);
             }
         }
@@ -66,15 +81,23 @@ function processBags(url) {
     else {
       console.log("ERROR: Instagram API Get failed!".red);
       console.log("ERROR: (" + body.meta.code + ") " + body.meta.error_type + "; " + body.meta.error_message);
+      return d.reject();
     }
 
     //recurse process bags if there is another
     if(body.pagination && body.pagination.next_url) {
-      processBags(body.pagination.next_url)
-    }          
+      processBags(client, body.pagination.next_url)
+      .then (function() {
+        d.resolve();
+      })
+    }
+    else {
+      d.resolve();      
+    }
 
-    client.end(); // close the redis connection
+
   });
+  return d.promise;
 }
 
 /**
