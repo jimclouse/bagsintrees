@@ -79,12 +79,20 @@ h4 {
     margin-bottom: 30px;
     margin-right: 30%;
     margin-left: 30%;
-    border-top: 12px solid #0978a7;
+    border-top: 8px solid #0978a7;
+}
+
+.footer-hr {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    border-top: 1px solid #000;
 }
 
 .col-inherit {
     position: inherit;
 }
+
 
 /* *****************
 size layout css patterns 
@@ -115,8 +123,7 @@ size layout css patterns
     height: 70px;
 }
 .size-full #panel {
-    background-image: url('../img/city-bag-lg.jpg');
-    background-size: 100%;
+
 }
 .size-full .bags-transparent-panel {
     font-size: 25px;
@@ -134,8 +141,11 @@ size layout css patterns
     font-weight: 700;
 }
 .size-full #page-main {
-    padding: 100px 0 0 0;
+    padding: 200px 0 0 0;
     height: 650px;
+    background-image: url('../img/city-bag-lg.jpg');
+    background-size: 100%;
+    margin-top: -100px;
 }
 .size-full .navigation {
     display: block;
@@ -315,13 +325,6 @@ size layout css patterns
     width: 100%;
 }
 
-.test {
-    position: absolute;
-    background-color: lightblue;
-    width: 100%;
-    height: 600px;
-}
-
 #sticky-header-wrapper {
     width: 100%;
 }
@@ -349,14 +352,11 @@ size layout css patterns
 
 #footer {
     width: 100%;
-    height: 150px;
-    padding-top: 30px;
-    background-image: url('../img/tree-bark-blue.jpg');
-    background-repeat: no;
-    background-size: 100%;
-    background-origin: content;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: center;
-    color: #fff;
+    color: #000;
+    font-size: 0.7em;
 }
 
 .pageTitle {
@@ -612,13 +612,10 @@ size layout css patterns
     background-origin: content;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 600px;
 }
 
 #page-about {
     color: #3c3c3c;
-    min-height: 600px;
-    height: 100%;
     padding: 5%;
     background-color: rgb(255,255,255);
     background-color: rgba(255, 255, 255, 0.9);
