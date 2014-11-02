@@ -278,8 +278,34 @@ size layout css patterns
  end size specific css 
  ******************** */
 
-#map-canvas { height: 600px; width: 100%;}
-#map-detail { height: 600px; width: 0px;}
+#map-container {
+    width: 100%;
+    height: 600px;
+}
+#map-canvas { 
+    height: 600px;
+    width: 100%;
+    position: absolute;
+}
+#map-detail { 
+    position: absolute;
+    height: 600px;
+    width: 20%;
+    right: 0px;
+    background-color:rgba(255, 255, 255, 0.6);
+    display: none;
+    z-index: 999999;
+}
+#map-detail-inner {
+    margin: 4px;
+}
+
+.test {
+    position: absolute;
+    background-color: lightblue;
+    width: 100%;
+    height: 600px;
+}
 
 #sticky-header-wrapper {
     width: 100%;
