@@ -287,7 +287,7 @@ size layout css patterns
     width: 100%;
     position: absolute;
 }
-#map-detail { 
+.map-detail { 
     position: absolute;
     height: 600px;
     width: 20%;
@@ -296,8 +296,11 @@ size layout css patterns
     display: none;
     z-index: 999999;
 }
-#map-detail-inner {
+.map-detail-inner {
     margin: 4px;
+}
+.map-detail-image {
+    width: 100%;
 }
 
 .test {
