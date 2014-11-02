@@ -2,10 +2,10 @@
     <div id="map-canvas"></div>
     <div class="map-detail pull-right">
         <div class="map-detail-inner">
-            <img src="{{mapDetail.low_res_url}}" class="map-detail-image"><br/>
-            {{mapDetail.caption}}<br/>
-            <em>bag tag by: {{mapDetail.user}}</em><br/>
-            <a href="" ng-click="closeMapDetail()" class="pull-right"><i class="fa fa-times fa-lg"></i></a>
+            <img src="{{mapDetail.low_res_url}}" class="map-detail-image">
+            <div class="font-medium">{{mapDetail.caption}}</div>
+            <div class="font-small muted"><em>bag tag by: {{mapDetail.user}}</em></div>
+            <a href="" ng-click="closeMapDetail()" class="pull-right"><i class="fa fa-times"></i></a>
             <br/>
         </div>
     </div>

@@ -35,7 +35,17 @@ h4 {
     text-align: center;
     font-size: 1.7em;
 }
-
+.font-small {
+    font-size: 0.6em;
+    line-height: normal;
+}
+.font-medium {
+    font-size: 0.75em;
+    line-height: normal;
+}
+.muted {
+    color: #656565;
+}
 .whiteLink {
     text-decoration: underline;
 }
@@ -291,10 +301,12 @@ size layout css patterns
     position: absolute;
     width: 20%;
     right: 20px;
-    background-color:rgba(255, 255, 255, 0.6);
+    background-color:rgba(255, 255, 255, 0.7);
     display: none;
     z-index: 999999;
     margin: 10px 10px 0px 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px #888888;
 }
 .map-detail-inner {
     margin: 4px;
