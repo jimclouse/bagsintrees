@@ -17,7 +17,8 @@
     "mustache": "0.8.1",
     "consolidate": "0.10.0",
     "underscore": "1.6.0",
-    "colors": "*"
+    "colors": "*",
+    "q": "1.0.1"
   },
   "author": "Jim Clouse <bagsintrees@mail.com>",
   "license": "MIT"

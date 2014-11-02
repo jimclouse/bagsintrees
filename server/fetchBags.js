@@ -54,6 +54,7 @@ function processBags(url) {
                                               "low_res_url": photo.images.low_resolution.url,
                                               "latitude": photo.location.latitude,
                                               "longitude": photo.location.longitude,
+                                              "locationName": photo.location.name,
                                               "user": photo.user.username,
                                               "caption": photo.caption.text
                                            }));
