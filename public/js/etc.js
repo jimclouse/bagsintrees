@@ -30,19 +30,6 @@ $(function() {
         $('#sticky-header').removeClass('header-large').addClass('header-small');
     }
 
-
-    function layoutHandler(){
-        if(window.innerWidth < 600) {
-            updateSizeClass('size-mobile');
-        }
-        else if(window.innerWidth < 900) {
-            updateSizeClass('size-medium');
-        } 
-        else {
-            updateSizeClass('size-full');
-        }
-    }
-
     function updateSizeClass(c) {
         if ($('body').hasClass(c)) {
             return; // do nothing
@@ -56,9 +43,7 @@ $(function() {
         $('body').addClass(c);
         return;
     }
-    
-    window.onresize = _.throttle(layoutHandler, 500);
-    layoutHandler();
+
 });
 
 function beginScrollNext() {

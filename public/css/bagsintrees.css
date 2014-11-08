@@ -24,6 +24,7 @@ a:hover {
 }
 
 h2 {
+    font-size: 50px;
     text-align: center;
 }
 
@@ -46,14 +47,6 @@ h4 {
 .muted {
     color: #656565;
 }
-.whiteLink {
-    text-decoration: underline;
-}
-.whiteLink:hover {
-    color: orange;
-    text-decoration: underline;
-}
-
 .arrowLink {
     color: #fff;
     text-decoration: underline;
@@ -62,18 +55,15 @@ h4 {
     color: orange;
     text-decoration: underline;
 }
-
 .right-align {
     text-align: right;
 }
-
 .neo-hr {
     margin-right: 30%;
     margin-left: 30%;
     margin-bottom: 20px;
     border-top: 1px solid #fff;
 }
-
 .thick-hr {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -81,58 +71,56 @@ h4 {
     margin-left: 30%;
     border-top: 8px solid #0978a7;
 }
-
 .footer-hr {
     margin-right: 5%;
     margin-left: 5%;
     margin-bottom: 5px;
     border-top: 1px solid #000;
 }
-
 .col-inherit {
     position: inherit;
 }
 
+/*******************
+* platform dependent styles
+*******************/
 
-/* *****************
-size layout css patterns 
-******************** */
-.size-full h2 {
-    font-size: 50px;
-}
-.size-full .whitelink {
+.whiteLink {
     color: #fff;
+    text-decoration: underline;
 }
-.size-full .pageTitle {
+.whiteLink:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.pageTitle {
     line-height: 1;
     font-weight: 700;
     font-size: 2.9em;
 }
-.size-full .header-large {
+.header-large {
     height: 70px;
 }
-.size-full .header-small {
+.header-small {
     height: 70px;
 }
-.size-full #sticky-header-wrapper {
+#sticky-header-wrapper {
     height: 70px;
 }
-.size-full #sticky-header {
+#sticky-header {
     padding-bottom: 8px;
     padding-left: 4px;
     height: 70px;
 }
-.size-full #panel {
-
-}
-.size-full .bags-transparent-panel {
+.bags-transparent-panel {
     font-size: 25px;
     font-weight: 500;
     -moz-border-radius: 12px;
     border-radius: 12px;
     width: 650px;
 }
-.size-full .numberCircle {
+.numberCircle {
     width: 45px;
     height: 45px;
     padding: 3px;
@@ -140,158 +128,162 @@ size layout css patterns
     font: 35px Arial, sans-serif;
     font-weight: 700;
 }
-.size-full #page-main {
+#page-main {
     padding: 200px 0 0 0;
     height: 650px;
     background-image: url('../img/city-bag-lg.jpg');
     background-size: 100%;
     margin-top: -100px;
 }
-.size-full .navigation {
+.navigation {
     display: block;
 }
-.size-full .navigation-mobile {
+.navigation-mobile {
     display: none;
 }
-.size-full #full-pin-img {
+#full-pin-img {
     display: block;
 }
-.size-full #mobile-pin-img {
-    display: none;
-}
-
-
-/* medium */
-.size-medium h2 {
-    font-size: 50px;
-}
-.size-medium .whitelink {
-    color: #fff;
-}
-.size-medium .pageTitle {
-    line-height: 1;
-    font-weight: 700;
-    font-size: 2.3em;
-}
-.size-medium .header-large {
-    height: 60px;
-}
-.size-medium .header-small {
-    height: 60px;
-}
-.size-medium #sticky-header-wrapper {
-    height: 60px;
-}
-.size-medium #sticky-header {
-    padding-bottom: 6px;
-    padding-left: 4px;
-    height: 60px;
-}
-.size-medium #panel {
-    background-image: url('../img/city-bag-900.jpg');
-    background-size: 100%;
-}
-.size-medium .bags-transparent-panel {
-    font-size: 22px;
-    font-weight: 450;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    width: 550px;
-}
-.size-medium .numberCircle {
-    width: 40px;
-    height: 40px;
-    padding: 3px;
-    margin: 15px;
-    font: 33px Arial, sans-serif;
-    font-weight: 700;
-}
-.size-medium #page-main {
-    padding: 40px 0 0 0;
-    height: 450px;
-}
-.size-medium .navigation {
-    display: block;
-}
-.size-medium .navigation-mobile {
-    display: none;
-}
-.size-medium #full-pin-img {
-    display: block;
-}
-.size-medium #mobile-pin-img {
+#mobile-pin-img {
     display: none;
 }
 
-/* mobile */
-.size-mobile h2 {
-    font-size: 30px;
-}
-.size-mobile .whitelink {
-    color: #3c3c3c;
-}
-.size-mobile {
-    font-size: 16px;
-}
-.size-mobile .pageTitle {
-    line-height: 1;
-    font-weight: 700;
-    font-size: 2.0em;
-}
-.size-mobile .header-large {
-    height: 35px;
-}
-.size-mobile .header-small {
-    height: 35px;
-}
-.size-mobile #sticky-header-wrapper {
-    height: 35px;
-}
-.size-mobile #sticky-header {
-    padding-bottom: 6px;
-    padding-left: 4px;
-    height: 35px;
-}
-.size-mobile #panel {
-    background-image: url('../img/city-bag-600.jpg');
-}
-.size-mobile .bags-transparent-panel {
-    font-size: 20px;
-    font-weight: 500;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    width: 90%;
-}
-.size-mobile .numberCircle {
-    width: 30px;
-    height: 30px;
-    padding: 3px;
-    margin: 8px;
-    font: 20px Arial, sans-serif;
-    font-weight: 500;
-}
-.size-mobile #page-main {
-    padding: 35px 0 0 0;
-    height: 420px;
-}
-.size-mobile .navigation {
-    display: none;
-}
-.size-mobile .navigation-mobile {
-    display: block;
-}
-.size-mobile #full-pin-img {
-    display: none;
-}
-.size-mobile #mobile-pin-img {
-    display: block;
+
+@media (max-width: 900px) {
+    /* medium */
+    h2 {
+        font-size: 50px;
+    }
+    .whitelink {
+        color: #fff;
+    }
+    .pageTitle {
+        line-height: 1;
+        font-weight: 700;
+        font-size: 2.3em;
+    }
+    .header-large {
+        height: 60px;
+    }
+    .header-small {
+        height: 60px;
+    }
+    #sticky-header-wrapper {
+        height: 60px;
+    }
+    #sticky-header {
+        padding-bottom: 6px;
+        padding-left: 4px;
+        height: 60px;
+    }
+    #panel {
+        background-image: url('../img/city-bag-900.jpg');
+        background-size: 100%;
+    }
+    .bags-transparent-panel {
+        font-size: 22px;
+        font-weight: 450;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        width: 550px;
+    }
+    .numberCircle {
+        width: 40px;
+        height: 40px;
+        padding: 3px;
+        margin: 15px;
+        font: 33px Arial, sans-serif;
+        font-weight: 700;
+    }
+    #page-main {
+        padding: 40px 0 0 0;
+        height: 450px;
+    }
+    .navigation {
+        display: block;
+    }
+    .navigation-mobile {
+        display: none;
+    }
+    #full-pin-img {
+        display: block;
+    }
+    #mobile-pin-img {
+        display: none;
+    }
 }
 
-.size-mobile .mobile-hr {
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 14px;
-    border-top: 1px solid #3c3c3c;
+@media (max-width: 600px) {
+    /* mobile */
+    h2 {
+        font-size: 30px;
+    }
+    .whitelink {
+        color: #3c3c3c;
+    }
+    {
+        font-size: 16px;
+    }
+    .pageTitle {
+        line-height: 1;
+        font-weight: 700;
+        font-size: 2.0em;
+    }
+    .header-large {
+        height: 35px;
+    }
+    .header-small {
+        height: 35px;
+    }
+    #sticky-header-wrapper {
+        height: 35px;
+    }
+    #sticky-header {
+        padding-bottom: 6px;
+        padding-left: 4px;
+        height: 35px;
+    }
+    #panel {
+        background-image: url('../img/city-bag-600.jpg');
+    }
+    .bags-transparent-panel {
+        font-size: 20px;
+        font-weight: 500;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        width: 90%;
+    }
+    .numberCircle {
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+        margin: 8px;
+        font: 20px Arial, sans-serif;
+        font-weight: 500;
+    }
+    #page-main {
+        padding: 35px 0 0 0;
+        height: 420px;
+    }
+    .navigation {
+        display: none;
+    }
+    .navigation-mobile {
+        display: block;
+    }
+    #full-pin-img {
+        display: none;
+    }
+    #mobile-pin-img {
+        display: block;
+    }
+
+    .mobile-hr {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-bottom: 14px;
+        border-top: 1px solid #3c3c3c;
+    }
 }
 
 /* ********************
@@ -343,7 +335,7 @@ size layout css patterns
 }
 
 .header-large {
-    background: rgb(164, 168, 117); /* Fall-back for browsers that don't support rgba */
+    background: rgb(255,255,255); /* Fall-back for browsers that don't support rgba */
     background: rgba(255, 255, 255, .5); /*(96, 170, 133, .7); 60/141/197*/
 }
 .header-small {
