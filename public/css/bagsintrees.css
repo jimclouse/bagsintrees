@@ -93,7 +93,6 @@ h4 {
     color: orange;
     text-decoration: underline;
 }
-
 .pageTitle {
     line-height: 1;
     font-weight: 700;
@@ -103,9 +102,6 @@ h4 {
     height: 70px;
 }
 .header-small {
-    height: 70px;
-}
-#sticky-header-wrapper {
     height: 70px;
 }
 #sticky-header {
@@ -166,9 +162,6 @@ h4 {
         height: 60px;
     }
     .header-small {
-        height: 60px;
-    }
-    #sticky-header-wrapper {
         height: 60px;
     }
     #sticky-header {
@@ -233,9 +226,6 @@ h4 {
         height: 35px;
     }
     .header-small {
-        height: 35px;
-    }
-    #sticky-header-wrapper {
         height: 35px;
     }
     #sticky-header {
@@ -315,10 +305,6 @@ h4 {
     margin: 4px;
 }
 .map-detail-image {
-    width: 100%;
-}
-
-#sticky-header-wrapper {
     width: 100%;
 }
 
