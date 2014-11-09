@@ -189,7 +189,7 @@ h4 {
         font-weight: 700;
     }
     #page-main {
-        padding: 40px 0 0 0;
+        padding: 90px 0 0 0;
         height: 450px;
     }
     .navigation {
@@ -220,7 +220,7 @@ h4 {
     .pageTitle {
         line-height: 1;
         font-weight: 700;
-        font-size: 2.0em;
+        font-size: 1.4em;
     }
     .header-large {
         height: 35px;
@@ -252,7 +252,8 @@ h4 {
         font-weight: 500;
     }
     #page-main {
-        padding: 35px 0 0 0;
+        margin-top: 35px;
+        padding: 45px 0 0 0;
         height: 420px;
     }
     .navigation {
@@ -367,7 +368,7 @@ h4 {
 }
 
 .navigation-mobile {
-    margin-top:5px;
+    margin-top:4px;
     padding-top: 5px;
     color: #4D4834;
 }
