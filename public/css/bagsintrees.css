@@ -83,11 +83,10 @@ h4 {
 
 #map-container {
     width: 100%;
-    height: 600px;
+    height: 100%;
 }
 #map-canvas { 
-    height: 90%;
-    height: calc(100% - 120px);
+    height: calc(100% - 40px);
     width: 100%;
     position: absolute;
 }
@@ -229,26 +228,9 @@ h4 {
     text-align: left;
     background-color: rgb(255,255,255);
     padding: 0 5% 0 5%;
-    /*background-image: url('../img/tree-ring.jpg');
-    background-size: 100%;
-    background-origin: content;
-    background-repeat: no;*/
 }
 
-.size-full #page-next-2 {
-    height: 360px;
-    background-color: #fff;
-    background-image: url('../img/citySilhouette.jpg');
-    background-repeat: no-repeat;
-    background-origin: content;
-}
-.size-full #page-next-2-inner {
-    height: 100%;
-    padding-top: 1em;
-    text-align: center;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255, 255, 255, 0.9);
-}
+
 .size-medium #page-next-2 {
     height: 360px;
     background-color: #fff;
@@ -281,24 +263,8 @@ h4 {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.size-full #page-next-3 {
-    padding: 40px 10% 40px 10%;
-    text-align: center;
-    background-image: url('../img/bag-tree-4-lg.jpg');
-    background-size: 100%;
-    background-origin: content;
-    background-repeat: no-repeat;
-}
 
-.size-full #page-next-3-inner {
-    text-align: center;
-    padding: 40px;
-    color: #fff;
-    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(100, 100, 100, .60);
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-}
+
 .size-medium #page-next-3 {
     padding: 40px 10% 40px 10%;
     text-align: center;
@@ -334,23 +300,6 @@ h4 {
     border-radius: 12px; */
 }
 
-.size-full #page-next-4 {
-    height: 360px;   
-    background-image: url('../img/bag-tree-3-lg.jpg');
-    background-repeat: no-repeat;
-    background-origin: content;
-    text-align: center;
-    padding: 40px 10% 40px 10%;
-}
-.size-full  #page-next-4-inner {
-    text-align: center;
-    padding: 40px;
-    color: #fff;
-    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(100, 100, 100, .60);
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-}
 .size-medium #page-next-4 {
     height: 360px;   
     background-image: url('../img/bag-tree-3-lg.jpg');
@@ -379,7 +328,7 @@ h4 {
 
 #page-container {
     width: 100%;
-    min-height: calc(100% - 120px);
+    height: calc(100% - 40px);
 }
 
 .map-page {
@@ -502,15 +451,18 @@ h4 {
     font: 35px Arial, sans-serif;
     font-weight: 700;
 }
+#page-container {
+    margin-top: 70px;
+}
 #page-main {
-    padding: 200px 0 0 0;
+    padding: 160px 0 0 0;
     height: 650px;
     background-image: url('../img/city-bag-lg.jpg');
     background-size: 100%;
-    margin-top: -100px;
+    margin-top: -70px;
 }
 .bags-page {
-    padding: 100px 10px 10px 10px;
+    padding: 80px 10px 10px 10px;
 }
 .navigation {
     display: block;
@@ -524,7 +476,54 @@ h4 {
 #mobile-pin-img {
     display: none;
 }
-
+#page-next-2 {
+    height: 360px;
+    background-color: #fff;
+    background-image: url('../img/citySilhouette.jpg');
+    background-repeat: no-repeat;
+    background-origin: content;
+}
+#page-next-2-inner {
+    height: 100%;
+    padding-top: 1em;
+    text-align: center;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#page-next-3 {
+    padding: 40px 10% 40px 10%;
+    text-align: center;
+    background-image: url('../img/bag-tree-4-lg.jpg');
+    background-size: 100%;
+    background-origin: content;
+    background-repeat: no-repeat;
+}
+#page-next-3-inner {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(100, 100, 100, .60);
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+#page-next-4 {
+    height: 360px;   
+    background-image: url('../img/bag-tree-3-lg.jpg');
+    background-repeat: no-repeat;
+    background-origin: content;
+    text-align: center;
+    padding: 40px 10% 40px 10%;
+}
+#page-next-4-inner {
+    text-align: center;
+    padding: 40px;
+    color: #fff;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(100, 100, 100, .60);
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
 
 @media (max-width: 900px) {
     /* medium */
@@ -550,10 +549,6 @@ h4 {
         padding-left: 4px;
         height: 60px;
     }
-    #panel {
-        background-image: url('../img/city-bag-900.jpg');
-        background-size: 100%;
-    }
     .bags-transparent-panel {
         font-size: 22px;
         font-weight: 450;
@@ -569,12 +564,17 @@ h4 {
         font: 33px Arial, sans-serif;
         font-weight: 700;
     }
+    #page-container {
+        margin-top: 60px;
+    }
     #page-main {
         padding: 90px 0 0 0;
         height: 450px;
+        margin-top: -60px;
+        background-image: url('../img/city-bag-900.jpg');
     }
     .bags-page {
-        padding: 85px 10px 10px 10px;
+        padding: 40px 10px 10px 10px;
     }
     .navigation {
         display: block;
@@ -617,9 +617,6 @@ h4 {
         padding-left: 4px;
         height: 35px;
     }
-    #panel {
-        background-image: url('../img/city-bag-600.jpg');
-    }
     .bags-transparent-panel {
         font-size: 20px;
         font-weight: 500;
@@ -635,13 +632,17 @@ h4 {
         font: 20px Arial, sans-serif;
         font-weight: 500;
     }
-    #page-main {
+    #page-container {
         margin-top: 35px;
+    }
+    #page-main {
         padding: 45px 0 0 0;
         height: 420px;
+        margin-top: 35px;
+        background-image: url('../img/city-bag-600.jpg');
     }
     .bags-page {
-        padding: 50px 5px 5px 5px;
+        padding: 20px 5px 5px 5px;
     }
     .navigation {
         display: none;
