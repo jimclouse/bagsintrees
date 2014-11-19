@@ -6,6 +6,7 @@ var engines = require('consolidate');
 var _ = require('underscore');
 var express = require('express');
 var colors = require('colors');
+var qs = require('querystring');
 
 /* get the port situated based on environment */
 if (process.env['ENVIRONMENT'] == "production") {
@@ -64,6 +65,11 @@ app.get('/bags/one/:id', function(req, res) {
                     return JSON.parse(val);
         }));
     });
+});
+
+// test linked in route
+app.get('/liRedirect', function(req, res) {
+    res.redirect('/#/liRedirect?' + qs.stringify(req.query))
 });
 
 //The 404 Route (ALWAYS Keep this as the last route)
