@@ -8,3 +8,11 @@ State: {{state}}<br/>
 Error: {{error}}<br/>
 Error Description: {{error_description}}<br/>
 
+<hr>
+<div ng-if="code">
+    Ok, you're authenticated against LinkedIn. Let's get started searching.<br/>
+    <input type="text" placeholder="enter search term" ng-model="s.searchTerm"/>
+    <input type="submit" value="Search!" ng-click="liSearch()"/>
+    {{s.searchTerm}}
+</div>
+
