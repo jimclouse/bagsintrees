@@ -17,25 +17,6 @@ angular.module('bagCtrl', [])
         }
 
     })
-    .controller('liCtrl', function($scope, $location) {
-
-        $scope.liAuth = function() {
-            url = "https://www.linkedin.com/uas/oauth2/authorization?response_type=code&client_id=77fzr2ee6e1qaw&state=DCEEFWF45453sdffef424&redirect_uri=http://www.bagsintrees.org/liRedirect.html"
-            window.location.href = url;
-        }
-
-        $scope.captureQueryString = function() {
-            var qs = $location.search()
-            
-            $scope.error = qs.error
-            $scope.error_description = qs.error_description
-            $scope.code = qs.code
-            $scope.state = qs.state
-
-
-            
-        }
-    })
     .controller('mapCtrl', function($scope, $http, $q, $cookies, $window, bags) {
         var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&" width="150" height="150" ng-click="openDetail()"><br/>&caption&<br/>&user&</div></div>';
         var infowindow = new google.maps.InfoWindow({
