@@ -1,4 +1,4 @@
-angular.module('bagsInTrees', ['ngRoute', 'ngAnimate', 'ngCookies', 'bagCtrl', 'bagService', 'liCtrl'])
+angular.module('bagsInTrees', ['ngRoute', 'ngAnimate', 'ngCookies', 'bagCtrl', 'bagService'])
     .config(function($routeProvider) {
         $routeProvider
             .when('/', {
@@ -19,11 +19,11 @@ angular.module('bagsInTrees', ['ngRoute', 'ngAnimate', 'ngCookies', 'bagCtrl', '
             })
             .when('/li', {
                 templateUrl: 'views/linkedIn.html',
-                controller: 'liCtrl'
+                controller : 'liCtrl'
             })
             .when('/liRedirect', {
                 templateUrl: 'views/liSuccess.html',
-                controller: 'liCtrl'
+                controller : 'liCtrl'
             })
             .when('/404', {
                 templateUrl : 'views/404.html'
