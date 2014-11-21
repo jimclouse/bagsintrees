@@ -4,6 +4,12 @@ Linked In Authorization.
 <button ng-click="liAuth()">Click here to Allow us to access your linkedIn profile</button>
 
 
-<br/>
-<br/>
-or be <a ng-click="impersonateJim()">Jim</a>
+
+<hr>
+
+    Or just start searching with saved creds...<br/>
+    <input type="text" placeholder="enter search term" ng-model="s.searchTerm"/>
+    <input type="submit" value="Search!" ng-click="liSearch()"/>
+
+<hr>
+{{searchResults}}
