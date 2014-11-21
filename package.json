@@ -5,21 +5,22 @@
   "main": "main.js",
   "repository": "https://github.com/jimclouse/bagsintrees",
   "scripts": {
-    "start": "./server_start"   
+    "start": "./server_start"
   },
   "keywords": [
     "bagsintrees"
   ],
   "dependencies": {
-    "express": "3.x",
-    "request": "2.33.0",
-    "redis": "0.10.1",
-    "mustache": "0.8.1",
-    "consolidate": "0.10.0",
-    "underscore": "1.6.0",
     "colors": "*",
+    "consolidate": "0.10.0",
+    "express": "3.x",
+    "moment": "2.8.3",
+    "mustache": "0.8.1",
     "q": "1.0.1",
-    "moment": "2.8.3"
+    "redis": "0.10.1",
+    "request": "2.33.0",
+    "underscore": "1.6.0",
+    "xml2json": "^0.5.1"
   },
   "author": "Jim Clouse <bagsintrees@mail.com>",
   "license": "MIT"
