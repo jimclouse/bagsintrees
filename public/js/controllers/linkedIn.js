@@ -1,5 +1,4 @@
-angular.module('liCtrl', [])
-    .controller('liCtrl', function($scope, $location, $http) {
+bagsInTreesControllers.controller('linkedInController', function($scope, $location, $http) {
         $('#sticky-header').hide();
         $http.defaults.useXDomain = true
 

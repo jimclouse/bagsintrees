@@ -1,23 +1,4 @@
-angular.module('bagCtrl', [])
-    
-    .controller('mainCtrl', function($scope, $rootScope, $window, $location, $log, $document) {
-
-        $rootScope.$on("$locationChangeStart", function(event, next, current) { 
-            if ( next.substring(next.indexOf('#/')+2, next.length) === "") {
-                $('#sticky-header').removeClass('header-small').addClass('header-large');
-            }
-            else {
-                $('#sticky-header').removeClass('header-large').addClass('header-small');
-            }
-            $(window).scrollTop(0); // need this to force position to top of page rather than where user had scrolled on previous page
-        });
-
-        $scope.mailLink = function() {
-            $window.location = "mailto:bagsintrees@mail.com?subject=Bags In Trees Are Everywhere!";
-        }
-
-    })
-    .controller('mapCtrl', function($scope, $http, $q, $cookies, $window, bagService) {
+bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $cookies, $window, bagService) {
         var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&" width="150" height="150" ng-click="openDetail()"><br/>&caption&<br/>&user&</div></div>';
         var infowindow = new google.maps.InfoWindow({
             content: ''
