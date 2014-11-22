@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('bagService', [])
+angular.module('bag-service', [])
 // super simple service
     // each function returns a promise object 
     .factory('bags', function($http) {
