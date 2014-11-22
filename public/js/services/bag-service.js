@@ -1,10 +1,7 @@
-'use strict'
+angular.module('bagsintrees.services', [])
 
-angular.module('bag-service', [])
-// super simple service
-    // each function returns a promise object 
-    .factory('bags', function($http) {
-        return {
+    .service('bagService', ['$http', function($http) {
+        var service = {
             getAll: function(cb) {
                 return $http.get("/bags/all")
                     .success(function(response) {
@@ -14,6 +11,7 @@ angular.module('bag-service', [])
                         console.error("something went wrong");
                     });
             },
+
             getOne: function(id, cb) {
                 return $http.get("/bags/one/" + id)
                     .success(function(response) {
@@ -24,4 +22,5 @@ angular.module('bag-service', [])
                     });
             }
         }
-    });
+        return service;
+    }]);

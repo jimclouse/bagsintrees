@@ -17,7 +17,7 @@ angular.module('bagCtrl', [])
         }
 
     })
-    .controller('mapCtrl', function($scope, $http, $q, $cookies, $window, bags) {
+    .controller('mapCtrl', function($scope, $http, $q, $cookies, $window, bagService) {
         var infowindowContent = '<div id="content"><div id="bodyContent"><img src="&imageurl&" width="150" height="150" ng-click="openDetail()"><br/>&caption&<br/>&user&</div></div>';
         var infowindow = new google.maps.InfoWindow({
             content: ''
@@ -98,7 +98,7 @@ angular.module('bagCtrl', [])
         }
 
         $scope.getAllBags = function() {
-            bags.getAll(function(data) {
+            bagService.getAll(function(data) {
                 $scope.bags = data;
                 var markers = []
                 for (var i = 0; i < data.length; i++) {
@@ -114,7 +114,7 @@ angular.module('bagCtrl', [])
 
         $scope.showMapDetail = function(id) {
             $('.map-detail').show();
-            bags.getOne(id, function(data) {
+            bagService.getOne(id, function(data) {
                 $scope.mapDetail = data[0];
             });
 

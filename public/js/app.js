@@ -1,4 +1,5 @@
-angular.module('bagsInTrees', ['ngRoute', 'ngAnimate', 'ngCookies', 'bagCtrl', 'liCtrl', 'bag-service'])
+angular.module('bagsInTrees', 
+    ['ngRoute', 'ngAnimate', 'ngCookies', 'bagCtrl', 'liCtrl', 'bagsintrees.services'])
     .config(function($routeProvider) {
         $routeProvider
             .when('/', {
