@@ -18,6 +18,9 @@ angular.module('bagsInTrees',
                 templateUrl : 'views/map.html',
                 controller  : 'mapController'
             })
+            .when('/recent', {
+                templateUrl : 'views/recent.html'
+            })
             .when('/li', {
                 templateUrl: 'views/linkedIn.html',
                 controller : 'linkedInController'

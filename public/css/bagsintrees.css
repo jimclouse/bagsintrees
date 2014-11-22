@@ -3,6 +3,7 @@ orange: #ff-5d22;
 teal: #43-c0f4;
 dark teal: 266b6d;
 blue: 0978a7;
+title grey: #3c3c3c;
 */
 
 html { height: 100% }
@@ -229,6 +230,11 @@ h4 {
     background-color: rgb(255,255,255);
     padding: 0 5% 0 5%;
 }
+
+.recents img {
+    border: 1px solid #3c3c3c;
+}
+
 
 
 .size-medium #page-next-2 {
@@ -667,5 +673,4 @@ h4 {
 
 /* ********************
  end size specific css 
- ******************** */
  ******************** */
