@@ -11,9 +11,6 @@ angular.module('bagsInTrees',
             .when('/faq', {
                 templateUrl : 'views/faq.html'
             })
-            .when('/next', {
-                templateUrl : 'views/next.html'
-            })
             .when('/map', {
                 templateUrl : 'views/map.html',
                 controller  : 'mapController'

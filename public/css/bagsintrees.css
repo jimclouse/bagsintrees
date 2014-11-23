@@ -234,104 +234,6 @@ h4 {
 .recents img {
     border: 1px solid #3c3c3c;
 }
-
-
-
-.size-medium #page-next-2 {
-    height: 360px;
-    background-color: #fff;
-    background-image: url('../img/citySilhouette.jpg');
-    background-repeat: no-repeat;
-    background-origin: content;
-}
-.size-medium #page-next-2-inner {
-    height: 100%;
-    padding-top: 1em;
-    text-align: center;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255, 255, 255, 0.9);
-}
-.size-mobile #page-next-2 {
-    height: 360px;
-    background-color: #fff;
-    background-image: url('../img/citySilhouette.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-origin: content;
-    margin-bottom: 15px;
-}
-.size-mobile #page-next-2-inner {
-    height: 100%;
-    padding-top: 1em;
-    text-align: center;
-    padding: 2%;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-
-
-.size-medium #page-next-3 {
-    padding: 40px 10% 40px 10%;
-    text-align: center;
-    background-image: url('../img/bag-tree-4-lg.jpg');
-    background-size: 100%;
-    background-origin: content;
-    background-repeat: no-repeat;
-}
-.size-medium #page-next-3-inner {
-    text-align: center;
-    padding: 40px;
-    color: #fff;
-    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(100, 100, 100, .60);
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-}
-.size-mobile #page-next-3 {
-    /*padding: 40px 10% 40px 10%;
-    text-align: center;
-    background-image: url('../img/bag-tree-4-lg.jpg');
-    background-size: 100%;
-    background-origin: content;
-    background-repeat: no-repeat; */
-}
-.size-mobile #page-next-3-inner {
-    text-align: center;
-    padding: 2%;
-    /*color: #fff;
-    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    /* background: rgba(100, 100, 100, .60);
-    -moz-border-radius: 12px;
-    border-radius: 12px; */
-}
-
-.size-medium #page-next-4 {
-    height: 360px;   
-    background-image: url('../img/bag-tree-3-lg.jpg');
-    background-repeat: no-repeat;
-    background-origin: content;
-    text-align: center;
-    padding: 40px 10% 40px 10%;
-}
-.size-medium  #page-next-4-inner {
-    text-align: center;
-    padding: 40px;
-    color: #fff;
-    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(100, 100, 100, .60);
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-}
-.size-mobile #page-next-4 {
-    height: 100px;   
-}
-.size-mobile  #page-next-4-inner {
-    text-align: center;
-    height: 100%;
-    padding: 2%;
-}
-
 #page-container {
     width: 100%;
     height: calc(100% - 40px);
@@ -373,46 +275,6 @@ h4 {
     -moz-border-radius: 12px;
     border-radius: 12px;
 }
-
-/* page transition animations */
-.slide.ng-leave {
-    -webkit-animation: moveToBottom .6s ease both;
-    -moz-animation: moveToBottom .6s ease both;
-    animation: moveToBottom .6s ease both;
-}
-
-.slide.ng-enter {
-    -webkit-animation: moveFromTop .6s ease both;
-    -moz-animation: moveFromTop .6s ease both;
-    animation: moveFromTop .6s ease both;
-}
-
-.slide.ng-enter.ng-enter-active, .slide.ng-leave {
-    position: absolute;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
-
-@-webkit-keyframes moveFromTop {
-    from { -webkit-transform: translateX(-100%); }
-}
-@-moz-keyframes moveFromTop {
-    from { -moz-transform: translateX(-100%); }
-}
-@keyframes moveFromTop {
-    from { transform: translateX(-100%); }
-}
-
-@-webkit-keyframes moveToBottom {
-    to { -webkit-transform: translateX(100%); }
-}
-@-moz-keyframes moveToBottom {
-    to { -moz-transform: translateX(100%); }
-}
-@keyframes moveToBottom {
-    to { transform: translateX(100%); }
-}
-
 
 /*******************
 * platform dependent styles
@@ -485,7 +347,6 @@ h4 {
 #page-next-2 {
     height: 360px;
     background-color: #fff;
-    background-image: url('../img/citySilhouette.jpg');
     background-repeat: no-repeat;
     background-origin: content;
 }
@@ -668,6 +529,24 @@ h4 {
         margin-left: 5%;
         margin-bottom: 14px;
         border-top: 1px solid #3c3c3c;
+    }
+    .size-mobile #page-next-2 {
+        background-size: cover;
+        margin-bottom: 15px;
+    }
+    .size-mobile #page-next-2-inner {
+        padding: 2%;
+    }
+    .size-mobile #page-next-3-inner {
+        padding: 2%;
+    }
+    .size-mobile #page-next-4 {
+        height: 100px;   
+    }
+    .size-mobile  #page-next-4-inner {
+        text-align: center;
+        height: 100%;
+        padding: 2%;
     }
 }
 
