@@ -4,3 +4,4 @@ redis-*
 dump.rdb
 unusedImages
 npm-debug.log
+.vagrant
