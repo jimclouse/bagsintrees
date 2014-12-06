@@ -20,7 +20,8 @@
     "redis": "0.10.1",
     "request": "2.33.0",
     "underscore": "1.6.0",
-    "xml2json": "0.5.1"
+    "xml2json": "0.5.1",
+    "mysql": "2.5.3"
   },
   "author": "Jim Clouse <bagsintrees@mail.com>",
   "license": "MIT"

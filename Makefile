@@ -22,6 +22,9 @@ node:
 	su -c "source ~/.nvm/nvm.sh; nvm install 0.10.3" -s /bin/bash ubuntu
 	echo "after nvm install"
 
+mysql: 
+	sudo apt-get install mysql-server;
+
 redis:
 	curl -O http://download.redis.io/releases/redis-2.8.8.tar.gz
 	tar xzf redis-2.8.8.tar.gz
