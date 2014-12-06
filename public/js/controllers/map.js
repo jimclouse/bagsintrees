@@ -60,18 +60,8 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
         
         buildMarker = function(data) {
             var marker = new google.maps.Marker({position: new google.maps.LatLng(data.latitude, data.longitude),
-                                                    thumb: data.thumbnail_url,
-                                                    user: data.user,
-                                                    caption: data.caption,
                                                     id: data.id
             });
-            // google.maps.event.addListener(marker, 'mouseover', function() {
-            //     clearTimeout(markerTimeout);
-            //     infowindow.content = infowindowContent.replace('&imageurl&', this.thumb)
-            //                                           .replace('&user&', this.user)
-            //                                           .replace('&caption&', this.caption);
-            //     infowindow.open($scope.globalMap, this);
-            // });
             google.maps.event.addListener(marker, 'click', function() {
                 $scope.showMapDetail(this.id)
             });
@@ -96,7 +86,7 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
         $scope.showMapDetail = function(id) {
             $('.map-detail').show();
             bagService.getOne(id, function(data) {
-                $scope.mapDetail = data[0];
+                $scope.mapDetail = data;
             });
 
         }
