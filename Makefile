@@ -2,9 +2,9 @@
 # vim: set ft=shell
 SHELL = /bin/bash
 
-default: server node redis
+default: server node
 
-development: node redis
+development: node
 
 
 server:
@@ -24,12 +24,6 @@ node:
 
 mysql: 
 	sudo apt-get install mysql-server;
-
-redis:
-	curl -O http://download.redis.io/releases/redis-2.8.8.tar.gz
-	tar xzf redis-2.8.8.tar.gz
-	cd redis-2.8.8; $(MAKE)
-
 
 application: 
 	npm install

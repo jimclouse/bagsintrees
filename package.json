@@ -17,7 +17,6 @@
     "moment": "2.8.3",
     "mustache": "0.8.1",
     "q": "1.0.1",
-    "redis": "0.10.1",
     "request": "2.33.0",
     "underscore": "1.6.0",
     "xml2json": "0.5.1",
