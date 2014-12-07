@@ -18,14 +18,6 @@ angular.module('bagsInTrees',
             .when('/recent', {
                 templateUrl : 'views/recent.html'
             })
-            .when('/li', {
-                templateUrl: 'views/linkedIn.html',
-                controller : 'linkedInController'
-            })
-            .when('/liRedirect', {
-                templateUrl: 'views/liSuccess.html',
-                controller : 'linkedInController'
-            })
             .when('/404', {
                 templateUrl : 'views/404.html'
             })
