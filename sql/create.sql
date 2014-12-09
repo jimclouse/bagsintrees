@@ -11,6 +11,7 @@ create table photos (id varchar(64)
 					,longitude varchar(32)
 					,locationName varchar(32)
 					,userId varchar(32)
+					,userName varchar(64)
 					,caption varchar(1000)
 					);
 
