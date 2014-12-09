@@ -4,5 +4,7 @@
 source ~/.nvm/nvm.sh
 nvm use 0.10.3
 
+mysql.server start
+
 source ./etc/environment
 node ./lib/server.js
