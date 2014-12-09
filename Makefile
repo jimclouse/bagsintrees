@@ -17,7 +17,8 @@ server:
 
 node:
 	# install nvm
-	su -c "curl https://raw.githubusercontent.com/creationix/nvm/v0.18.0/install.sh | bash" -s /bin/bash ubuntu
+	curl https://raw.githubusercontent.com/creationix/nvm/v0.18.0/install.sh | bash # first install nvm as root
+	su -c "curl https://raw.githubusercontent.com/creationix/nvm/v0.18.0/install.sh | bash" -s /bin/bash ubuntu # then as ubuntu user
 	su -c "source ~/.nvm/nvm.sh" -s /bin/bash ubuntu
 	su -c "source ~/.nvm/nvm.sh; nvm install 0.10.3" -s /bin/bash ubuntu
 	echo "after nvm install"
