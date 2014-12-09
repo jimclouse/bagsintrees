@@ -6,10 +6,9 @@
             <div class="font-medium">{{mapDetail.caption}}</div>
             <div class="font-small muted"><em>bag tagged by: {{mapDetail.userName}}</em><br/>
                 {{formatInstagramDate(mapDetail.created)}}
-                <span ng-if="mapDetail.locationName"><br/>{{mapDetail.locationName}}</span></div>
-
-            <a href="" ng-click="closeMapDetail()" class="pull-right"><i class="fa fa-times"></i></a>
-            <br/>
+                <span ng-if="mapDetail.locationName"><br/>{{mapDetail.locationName}}</span>
+                <a href="" ng-click="closeMapDetail()" class="pull-right size-boost"><i class="fa fa-times"></i></a>
+            </div>
         </div>
     </div>
 </div>
