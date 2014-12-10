@@ -480,9 +480,6 @@ h4 {
     .whitelink {
         color: #fff;
     }
-    {
-        font-size: 16px;
-    }
     .pageTitle {
         line-height: 1;
         font-weight: 700;
@@ -569,6 +566,13 @@ h4 {
         border-radius: 3px;
         box-shadow: 3px 3px 2px #888888;
     }
+    #about-img {
+        width: 150px;
+    }
+    .inline-img-right {
+        margin: 10px;
+    }
+
 }
 
 /* ********************
