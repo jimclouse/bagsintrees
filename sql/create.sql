@@ -20,3 +20,11 @@ grant ALL on bagsintrees.* to bags;
 
 create table settings (settingKey varchar(32), settingValue varchar(32));
 insert into settings (settingKey) values ('min_tag_id');
+
+
+create table users (id varchar(32) not null primary key
+					,name varchar(64) not null
+					,profilePicture varchar(128)
+					,tagCount int default 0
+					,removedCount int default 0);
+--create table users (id varchar(32) not null primary key, name varchar(64) not null, profilePicture varchar(128), tagCount int default 0, removedCount int default 0);
