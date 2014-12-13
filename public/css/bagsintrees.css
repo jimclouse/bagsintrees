@@ -339,9 +339,9 @@ h4 {
 }
 #page-main {
     padding: 160px 0 0 0;
-    height: 650px;
+    height: calc(100% + 70px);
     background-image: url('../img/city-bag-lg.jpg');
-    background-size: 100%;
+    background-size: cover;
     margin-top: -70px;
 }
 .bags-page {
