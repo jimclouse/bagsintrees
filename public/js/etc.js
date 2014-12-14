@@ -48,6 +48,6 @@ $(function() {
 
 function beginScrollNext() {
     $('html,body').animate({
-        scrollTop: $('#page-next').offset().top - 75 // TODO - CHANGE 70 to responsive header height
+        scrollTop: $('#page-next').offset().top - 70 // TODO - CHANGE 70 to responsive header height
     }, 800);
 }
