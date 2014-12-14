@@ -1,8 +1,8 @@
-var bagsInTreesControllers = angular.module('bagsintrees.controllers', [])
-var bagsInTreesServices = angular.module('bagsintrees.services',[])
+var bagsInTreesControllers = angular.module('bagsintrees.controllers', []);
+var bagsInTreesServices = angular.module('bagsintrees.services',[]);
 
 bagsInTreesControllers.controller('mainController', function($scope, $rootScope, $window, $location, $log, $document) {
-    $rootScope.$on("$locationChangeStart", function(event, next, current) { 
+    $rootScope.$on("$locationChangeStart", function(event, next, current) {
         if ( next.substring(next.indexOf('#/')+2, next.length) === "") {
             $('#sticky-header').removeClass('header-small').addClass('header-large');
         }
@@ -14,6 +14,5 @@ bagsInTreesControllers.controller('mainController', function($scope, $rootScope,
 
     $scope.mailLink = function() {
         $window.location = "mailto:bagsintrees@mail.com?subject=Bags In Trees Are Everywhere!";
-    }
-
-})
+    };
+});

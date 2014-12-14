@@ -19,6 +19,6 @@ bagsInTreesServices.service('bagService', ['$http', function($http) {
                     console.error("Unable to fetch bag id " + id);
                 });
         }
-    }
+    };
     return service;
 }]);

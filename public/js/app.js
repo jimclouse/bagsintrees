@@ -1,4 +1,4 @@
-angular.module('bagsInTrees', 
+angular.module('bagsInTrees',
     ['ngRoute', 'ngAnimate', 'ngCookies', 'bagsintrees.controllers', 'bagsintrees.services'])
     .config(function($routeProvider) {
         $routeProvider

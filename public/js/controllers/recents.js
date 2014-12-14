@@ -3,7 +3,7 @@ bagsInTreesControllers.controller('recentsController', function($scope, bagServi
         bagService.getAll(function(data) {
             $scope.recentBags = data;
         });
-    }
+    };
 
     getAllBags();
-})
+});

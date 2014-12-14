@@ -9,11 +9,11 @@ $(function() {
          
         // if we've scrolled more than the navigation, change its position to fixed to stick to top,
         // otherwise change it back to relative
-        if (scroll_top > sticky_header_offset_top) { 
+        if (scroll_top > sticky_header_offset_top) {
             $('#sticky-header').removeClass('header-large').addClass('header-small');
         } else {
             $('#sticky-header').removeClass('header-small').addClass('header-large');
-        }   
+        }
     };
 
     // run our function on load

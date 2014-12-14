@@ -63,25 +63,25 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
                                                     id: data.id
             });
             google.maps.event.addListener(marker, 'click', function() {
-                $scope.showMapDetail(this.id)
+                $scope.showMapDetail(this.id);
             });
-            return marker
-        }
+            return marker;
+        };
 
         $scope.getAllBags = function() {
             bagService.getAll(function(data) {
                 $scope.bags = data;
-                var markers = []
+                var markers = [];
                 for (var i = 0; i < data.length; i++) {
                     var marker = buildMarker(data[i]);
                     google.maps.event.addListener(marker, 'mouseout', function() {
                         markerTimeout = setTimeout(function () {infowindow.close();}, 200);
-                    })
+                    });
                     markers.push(marker);
                 }
                 var mc = new MarkerClusterer($scope.globalMap, markers, {minimumClusterSize: 4, styles: styles});
             });
-        }
+        };
 
         $scope.showMapDetail = function(id) {
             $('.map-detail').show();
@@ -89,14 +89,14 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
                 $scope.mapDetail = data;
             });
 
-        }
+        };
         $scope.closeMapDetail = function() {
             $('.map-detail').hide();
-        }
+        };
 
         $scope.formatInstagramDate = function(dateInt) {
-            return moment(new Date(dateInt * 1000)).format("MMM Do, YYYY")
-        }
+            return moment(new Date(dateInt * 1000)).format("MMM Do, YYYY");
+        };
 
         $scope.showMap = function() {
             if(!$scope.globalMap) { // dont reload the map if we've already got it
@@ -108,7 +108,7 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
                         });
 
                     // set user location marker
-                    new google.maps.Marker({position: new google.maps.LatLng($scope.userGeoLoc.lat, $scope.userGeoLoc.lon), 
+                    new google.maps.Marker({position: new google.maps.LatLng($scope.userGeoLoc.lat, $scope.userGeoLoc.lon),
                                             map: $scope.globalMap,
                                             icon: "http://maps.google.com/mapfiles/arrow.png",
                                             animation: google.maps.Animation.DROP
@@ -117,7 +117,7 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
                     $scope.getAllBags();
                 });
             }
-        }
+        };
 
         $scope.showMap();
     });
