@@ -24,6 +24,13 @@ a:hover {
     color: #0978a7;
 }
 
+h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
 h2 {
     font-size: 50px;
     text-align: center;
@@ -52,7 +59,7 @@ h4 {
     color: #656565;
 }
 .arrowLink {
-    color: #fff;
+    color: #3c3c3c;
     text-decoration: underline;
 }
 .arrowLink:hover {
@@ -66,7 +73,7 @@ h4 {
     margin-right: 30%;
     margin-left: 30%;
     margin-bottom: 20px;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #3c3c3c;
 }
 .thick-hr {
     margin-top: 10px;
@@ -199,7 +206,7 @@ h4 {
     margin: 0px;
     width: 100%;
     height: 100%;
-    background-origin: content;
+    background-origin: content-box;
     background-repeat: no-repeat;
 }
 
@@ -210,9 +217,10 @@ h4 {
 
 .bags-transparent-panel {
     margin: 0 auto;
-    color: #fff;
+    color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(100, 100, 100, .35);
+    /*  background: rgba(100, 100, 100, .75); */
+    background: rgba(255,255,255, .65);
 }
 
 .numberCircle {
@@ -303,6 +311,14 @@ h4 {
     color: orange;
     text-decoration: underline;
 }
+.blackLink {
+    color: #3c3c3c;
+    text-decoration: underline;
+}
+.blackLink:hover {
+    color: orange;
+    text-decoration: underline;
+}
 .pageTitle {
     line-height: 1;
     font-weight: 700;
@@ -373,7 +389,7 @@ h4 {
     background-color: rgba(255, 255, 255, 0.9);
 }
 #page-next-3 {
-    padding: 40px 10% 40px 10%;
+    padding: 120px 10% 120px 10%;
     text-align: center;
     background-image: url('../img/bag-tree-4-lg.jpg');
     background-size: 100%;
@@ -383,9 +399,14 @@ h4 {
 #page-next-3-inner {
     text-align: center;
     padding: 40px;
-    color: #fff;
+    /*color: #fff;
+    background: rgb(255, 255, 255);  Fall-back for browsers that don't support rgba 
+    background: rgba(100, 100, 100, .60);*/
+    color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(100, 100, 100, .60);
+    /*  background: rgba(100, 100, 100, .75); */
+    background: rgba(255,255,255, .55);
+
     -moz-border-radius: 12px;
     border-radius: 12px;
 }
