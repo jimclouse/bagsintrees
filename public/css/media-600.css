@@ -10,6 +10,12 @@
     .whitelink {
         color: #fff;
     }
+    .neo-hr {
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
     .pageTitle {
         line-height: 1;
         font-weight: 700;
@@ -27,6 +33,14 @@
     .arrow-link {
         padding-top: 4px;
     }
+    .number-panel {
+        padding: 0px;
+        margin-left: 0px;
+        font-size: 18px;
+    }
+    .number-item {
+        padding-bottom: 12px;
+    }
     #sticky-header {
         padding-bottom: 6px;
         padding-left: 4px;
@@ -38,8 +52,9 @@
         -moz-border-radius: 4px;
         border-radius: 4px;
         width: 90%;
+        padding: 1px 15px 8px 15px;
     }
-    .numberCircle {
+    .number-circle {
         width: 30px;
         height: 30px;
         padding: 3px;
@@ -47,11 +62,16 @@
         font: 20px Arial, sans-serif;
         font-weight: 500;
     }
+    .number-text {
+        height: 30px;
+        padding-top: 3px;
+        margin-top: 3px;
+    }
     #page-container {
         margin-top: 35px;
     }
     #page-main {
-        padding: 45px 0 0 0;
+        padding: 40px 0 0 0;
         height: calc(100% + 35px);
         margin-top: 35px;
         background-image: url('../img/city-bag-600.jpg');
@@ -81,7 +101,7 @@
     #page-next {
         height: auto;
         min-height: calc(100% - 20px);
-        padding: 10px 5% 10px 5%;
+        padding: 10px 30px 10px 30px;
     }
     #page-next .col-sm-7 {
         padding: 0px;
@@ -99,7 +119,7 @@
         height: auto;
         min-height: calc(100% - 20px);
         background-size: cover;
-        padding: 10px 5% 10px 5%;
+        padding: auto;
     }
     #page-next-3-inner {
         padding: 2%;

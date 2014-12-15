@@ -30,13 +30,18 @@
         border-radius: 10px;
         width: 550px;
     }
-    .numberCircle {
+    .number-circle {
         width: 40px;
         height: 40px;
         padding: 3px;
         margin: 15px;
         font: 33px Arial, sans-serif;
         font-weight: 700;
+    }
+    .number-text {
+        height: 40px;
+        padding-top: 3px;
+        margin-top: 15px;
     }
     #page-container {
         margin-top: 60px;
