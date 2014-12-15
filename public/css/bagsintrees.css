@@ -44,6 +44,9 @@ h4 {
     text-align: center;
     font-size: 1.7em;
 }
+/**
+    General purpose
+**/
 .font-small {
     font-size: 0.6em;
     line-height: normal;
@@ -58,6 +61,17 @@ h4 {
 .muted {
     color: #656565;
 }
+.centered {
+    text-align: center;
+}
+.leftText {
+    text-align: left;
+}
+.rightText {
+    text-align: right;
+}
+
+
 .arrowLink {
     color: #3c3c3c;
     text-decoration: underline;
@@ -222,7 +236,10 @@ h4 {
     /*  background: rgba(100, 100, 100, .75); */
     background: rgba(255,255,255, .65);
 }
-
+.number-panel {
+    width: 650px;
+    padding: 0px 3% 0px 3%;
+}
 .numberCircle {
     border-radius: 50%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
