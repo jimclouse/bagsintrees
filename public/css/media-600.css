@@ -19,7 +19,7 @@
     .pageTitle {
         line-height: 1;
         font-weight: 700;
-        font-size: 1.4em;
+        font-size: 1.8em;
     }
     .section-title {
         padding-bottom: 0px;
@@ -44,6 +44,7 @@
     #sticky-header {
         padding-bottom: 6px;
         padding-left: 4px;
+        padding-right: 0px;
         height: 35px;
     }
     .bags-transparent-panel {
@@ -91,7 +92,6 @@
     #mobile-pin-img {
         display: block;
     }
-
     .mobile-hr {
         margin-right: 5%;
         margin-left: 5%;
