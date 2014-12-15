@@ -238,12 +238,6 @@ h4 {
     margin-bottom: 10px;
 }
 
-#page-next {
-    text-align: left;
-    background-color: rgb(255,255,255);
-    padding: 40px 5% 80px 5%;
-}
-
 .recents img {
     border: 1px solid #3c3c3c;
 }
@@ -376,14 +370,20 @@ h4 {
 #mobile-pin-img {
     display: none;
 }
-#page-next-2 {
-    padding: 60px 5% 60px 5%;
-    text-align: center;
-    background-image: url('../img/bag-tree-4-lg.jpg');
-    background-size: 100%;
-    background-origin: content;
-    background-repeat: no-repeat;
+#page-next {
     height: calc(100% - 25px);
+    text-align: left;
+    background-color: rgb(255,255,255);
+    padding: 40px 5% 80px 5%;
+}
+#page-next-2 {
+    height: calc(100% - 25px);
+    text-align: center;
+    padding: 60px 5% 60px 5%;
+    background-image: url('../img/bag-tree-4-lg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 #page-next-2-inner {
     text-align: center;
@@ -395,33 +395,34 @@ h4 {
     border-radius: 12px;
 }
 #page-next-3 {
-    height: 360px;
+    height: calc(100% - 25px);
     background-color: #fff;
+    background-image: url('../img/citySilhouette.jpg');
     background-repeat: no-repeat;
-    background-origin: content;
+    background-repeat-x: initial;
+    background-position: bottom;
 }
 #page-next-3-inner {
     height: 100%;
-    padding-top: 1em;
+    padding: 15px 3% 15px 3%;
     text-align: center;
     background-color: rgb(255,255,255);
     background-color: rgba(255, 255, 255, 0.9);
 }
 #page-next-4 {
-    height: 360px;   
+    height: calc(100% - 25px);
     background-image: url('../img/bag-tree-3-lg.jpg');
     background-repeat: no-repeat;
-    background-origin: content;
+    background-size: cover;
     text-align: center;
-    padding: 40px 10% 40px 10%;
+    padding: 8% 10% 0px 10%;
 }
 #page-next-4-inner {
     text-align: center;
-    padding: 60px 40px 40px 40px;
+    padding: 3%;
     color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(255,255,255, .55);
-
+    background: rgba(255,255,255, .65);
     -moz-border-radius: 12px;
     border-radius: 12px;
 }
