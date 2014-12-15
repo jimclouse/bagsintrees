@@ -241,7 +241,7 @@ h4 {
 #page-next {
     text-align: left;
     background-color: rgb(255,255,255);
-    padding: 0 5% 0 5%;
+    padding: 40px 5% 80px 5%;
 }
 
 .recents img {
@@ -331,16 +331,17 @@ h4 {
     height: 70px;
 }
 #sticky-header {
+    height: 70px;
     padding-bottom: 8px;
     padding-left: 4px;
-    height: 70px;
 }
 .bags-transparent-panel {
     font-size: 25px;
     font-weight: 500;
     -moz-border-radius: 12px;
     border-radius: 12px;
-    width: 650px;
+    width: 800px;
+    padding: 15px;
 }
 .numberCircle {
     width: 45px;
@@ -376,39 +377,35 @@ h4 {
     display: none;
 }
 #page-next-2 {
-    height: 360px;
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-origin: content;
-}
-#page-next-2-inner {
-    height: 100%;
-    padding-top: 1em;
-    text-align: center;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255, 255, 255, 0.9);
-}
-#page-next-3 {
-    padding: 120px 10% 120px 10%;
+    padding: 60px 5% 60px 5%;
     text-align: center;
     background-image: url('../img/bag-tree-4-lg.jpg');
     background-size: 100%;
     background-origin: content;
     background-repeat: no-repeat;
+    height: calc(100% - 25px);
 }
-#page-next-3-inner {
+#page-next-2-inner {
     text-align: center;
-    padding: 40px;
-    /*color: #fff;
-    background: rgb(255, 255, 255);  Fall-back for browsers that don't support rgba 
-    background: rgba(100, 100, 100, .60);*/
+    padding: 10px;
     color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    /*  background: rgba(100, 100, 100, .75); */
     background: rgba(255,255,255, .55);
-
     -moz-border-radius: 12px;
     border-radius: 12px;
+}
+#page-next-3 {
+    height: 360px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-origin: content;
+}
+#page-next-3-inner {
+    height: 100%;
+    padding-top: 1em;
+    text-align: center;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 #page-next-4 {
     height: 360px;   
@@ -420,10 +417,11 @@ h4 {
 }
 #page-next-4-inner {
     text-align: center;
-    padding: 40px;
-    color: #fff;
+    padding: 60px 40px 40px 40px;
+    color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(100, 100, 100, .60);
+    background: rgba(255,255,255, .55);
+
     -moz-border-radius: 12px;
     border-radius: 12px;
 }
@@ -563,14 +561,14 @@ h4 {
         margin-bottom: 14px;
         border-top: 1px solid #3c3c3c;
     }
-    .size-mobile #page-next-2 {
+    .size-mobile #page-next-3 {
         background-size: cover;
         margin-bottom: 15px;
     }
-    .size-mobile #page-next-2-inner {
+    .size-mobile #page-next-3-inner {
         padding: 2%;
     }
-    .size-mobile #page-next-3-inner {
+    .size-mobile #page-next-2-inner {
         padding: 2%;
     }
     .size-mobile #page-next-4 {
