@@ -2,7 +2,7 @@
 @media (max-width: 900px) {
     /* medium */
     h2 {
-        font-size: 50px;
+        font-size: 40px;
     }
     .whitelink {
         color: #fff;
@@ -25,7 +25,7 @@
     }
     .bags-transparent-panel {
         font-size: 22px;
-        font-weight: 450;
+        font-weight: 400;
         -moz-border-radius: 10px;
         border-radius: 10px;
         width: 550px;
@@ -42,10 +42,21 @@
         margin-top: 60px;
     }
     #page-main {
-        padding: 90px 0 0 0;
-        height: 450px;
+        padding: 5%px 0 0 0;
         margin-top: -60px;
         background-image: url('../img/city-bag-900.jpg');
+    }
+    #page-next {
+        height: calc(100% - 20px);
+    }
+    #page-next-2 {
+        height: calc(100% - 20px);
+    }
+    #page-next-3 {
+        height: calc(100% - 20px);
+    }
+    #page-next-4 {
+        height: calc(100% - 20px);
     }
     .bags-page {
         padding: 40px 10px 10px 10px;
