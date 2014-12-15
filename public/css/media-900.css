@@ -1,0 +1,65 @@
+
+@media (max-width: 900px) {
+    /* medium */
+    h2 {
+        font-size: 50px;
+    }
+    .whitelink {
+        color: #fff;
+    }
+    .pageTitle {
+        line-height: 1;
+        font-weight: 700;
+        font-size: 2.3em;
+    }
+    .header-large {
+        height: 60px;
+    }
+    .header-small {
+        height: 60px;
+    }
+    #sticky-header {
+        padding-bottom: 6px;
+        padding-left: 4px;
+        height: 60px;
+    }
+    .bags-transparent-panel {
+        font-size: 22px;
+        font-weight: 450;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        width: 550px;
+    }
+    .numberCircle {
+        width: 40px;
+        height: 40px;
+        padding: 3px;
+        margin: 15px;
+        font: 33px Arial, sans-serif;
+        font-weight: 700;
+    }
+    #page-container {
+        margin-top: 60px;
+    }
+    #page-main {
+        padding: 90px 0 0 0;
+        height: 450px;
+        margin-top: -60px;
+        background-image: url('../img/city-bag-900.jpg');
+    }
+    .bags-page {
+        padding: 40px 10px 10px 10px;
+    }
+    .navigation {
+        display: block;
+    }
+    .navigation-mobile {
+        display: none;
+    }
+    #full-pin-img {
+        display: block;
+    }
+    #mobile-pin-img {
+        display: none;
+    }
+}
