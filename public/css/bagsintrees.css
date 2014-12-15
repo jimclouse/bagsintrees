@@ -18,10 +18,10 @@ body {
 }
 
 a {
-    color: #0978a7;
+    color: #chocolate;
 }
 a:hover {
-    color: #0978a7;
+    color: #chocolate;
 }
 
 h1 {
@@ -63,7 +63,7 @@ h4 {
     text-decoration: underline;
 }
 .arrowLink:hover {
-    color: orange;
+    color: chocolate;
     text-decoration: underline;
 }
 .right-align {
@@ -164,7 +164,7 @@ h4 {
 
 .pageTitle a:hover {
     text-decoration: none;
-    color: #0978a7;
+    color: chocolate;
 }
 
 .navigation {
@@ -176,7 +176,7 @@ h4 {
 }
 .navigation a:hover {
     text-decoration: underline;
-    color: #0978a7;
+    color: chocolate;
 }
 
 .navigation-mobile {
@@ -226,7 +226,7 @@ h4 {
 .numberCircle {
     border-radius: 50%;
     behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-    background: #0978a7; 
+    background: chocolate; 
     color: #ffffff;
     text-align: center;
     display: inline-block;
@@ -310,7 +310,7 @@ h4 {
     text-decoration: underline;
 }
 .blackLink:hover {
-    color: orange;
+    color: chocolate;
     text-decoration: underline;
 }
 .pageTitle {
