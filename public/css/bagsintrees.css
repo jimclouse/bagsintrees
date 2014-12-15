@@ -95,7 +95,7 @@ h4 {
     margin-bottom: 30px;
     margin-right: 30%;
     margin-left: 30%;
-    border-top: 8px solid #0978a7;
+    border-top: 8px solid chocolate;
 }
 .footer-hr {
     margin-right: 5%;
@@ -386,7 +386,7 @@ h4 {
     margin-top: -70px;
 }
 .bags-page {
-    padding: 80px 10px 10px 10px;
+    padding: 3%;
 }
 .navigation {
     display: block;

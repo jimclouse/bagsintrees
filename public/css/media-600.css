@@ -16,6 +16,14 @@
         margin-top: 10px;
         margin-bottom: 20px;
     }
+    .thick-hr {
+        margin-top: 10px;
+        
+        margin-bottom: 15px;
+        margin-right: 5%;
+        margin-left: 5%;
+        border-top: 2px solid chocolate;
+    }
     .pageTitle {
         line-height: 1;
         font-weight: 700;
