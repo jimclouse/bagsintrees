@@ -72,9 +72,10 @@ h4 {
 }
 
 
-.arrowLink {
+.arrow-link {
     color: #3c3c3c;
     text-decoration: underline;
+    padding-top: 10px;
 }
 .arrowLink:hover {
     color: chocolate;
@@ -335,6 +336,9 @@ h4 {
     font-weight: 700;
     font-size: 2.9em;
 }
+.section-title {
+    padding-bottom: 10px;
+}
 .header-large {
     height: 70px;
 }
@@ -404,7 +408,7 @@ h4 {
 }
 #page-next-2-inner {
     text-align: center;
-    padding: 10px;
+    padding: 10px 5% 10px 5%;
     color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
     background: rgba(255,255,255, .55);
@@ -421,7 +425,7 @@ h4 {
 }
 #page-next-3-inner {
     height: 100%;
-    padding: 15px 3% 15px 3%;
+    padding: 15px 5% 15px 5%;
     text-align: center;
     background-color: rgb(255,255,255);
     background-color: rgba(255, 255, 255, 0.9);

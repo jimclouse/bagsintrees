@@ -1,8 +1,11 @@
 
 @media (max-width: 600px) {
     /* mobile */
+    body {
+        font-size: 16px;
+    }
     h2 {
-        font-size: 30px;
+        font-size: 25px;
     }
     .whitelink {
         color: #fff;
@@ -12,11 +15,17 @@
         font-weight: 700;
         font-size: 1.4em;
     }
+    .section-title {
+        padding-bottom: 0px;
+    }
     .header-large {
         height: 35px;
     }
     .header-small {
         height: 35px;
+    }
+    .arrow-link {
+        padding-top: 4px;
     }
     #sticky-header {
         padding-bottom: 6px;
@@ -43,7 +52,7 @@
     }
     #page-main {
         padding: 45px 0 0 0;
-        height: 420px;
+        height: calc(100% + 35px);
         margin-top: 35px;
         background-image: url('../img/city-bag-600.jpg');
     }
@@ -69,22 +78,40 @@
         margin-bottom: 14px;
         border-top: 1px solid #3c3c3c;
     }
-    .size-mobile #page-next-3 {
+    #page-next {
+        height: auto;
+        min-height: calc(100% - 20px);
+        padding: 10px 5% 10px 5%;
+    }
+    #page-next .col-sm-7 {
+        padding: 0px;
+    }
+
+    #page-next-2 {
+        height: auto;
+        min-height: calc(100% - 20px);
+        padding: 10px 5% 10px 5%;
+    }
+    #page-next-2-inner {
+        padding: 2%;
+    }
+    #page-next-3 {
+        height: auto;
+        min-height: calc(100% - 20px);
         background-size: cover;
-        margin-bottom: 15px;
+        padding: 10px 5% 10px 5%;
     }
-    .size-mobile #page-next-3-inner {
+    #page-next-3-inner {
         padding: 2%;
     }
-    .size-mobile #page-next-2-inner {
-        padding: 2%;
+    #page-next-4 {
+        height: auto;
+        min-height: calc(100% - 20px);
+        padding: 10px 5% 10px 5%;
     }
-    .size-mobile #page-next-4 {
-        height: 100px;   
-    }
-    .size-mobile  #page-next-4-inner {
+    #page-next-4-inner {
         text-align: center;
-        height: 100%;
+        
         padding: 2%;
     }
     .map-detail {
