@@ -47,7 +47,8 @@ $(function() {
 });
 
 function scrollNext(loc) {
+    var headerHeight = $('#sticky-header').css('height').replace('px', '');
     $('html,body').animate({
-        scrollTop: $('#' + loc).offset().top - 70 // TODO - CHANGE 70 to responsive header height
+        scrollTop: $('#' + loc).offset().top - (headerHeight || 70)
     }, 800);
 }
