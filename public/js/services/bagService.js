@@ -18,6 +18,16 @@ bagsInTreesServices.service('bagService', ['$http', function($http) {
                 .error(function() {
                     console.error("Unable to fetch bag id " + id);
                 });
+        },
+
+        getUser: function(id, cb) {
+            return $http.get("/user/" + id)
+                .success(function(response) {
+                    cb(response);
+                })
+                .error(function() {
+                    console.error("Unable to location user " + id); 
+                });
         }
     };
     return service;

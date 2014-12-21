@@ -18,6 +18,13 @@ angular.module('bagsInTrees',
             .when('/recent', {
                 templateUrl : 'views/recent.html'
             })
+            .when('/tips', {
+                templateUrl : 'views/tips.html'
+            })
+            .when('/user/:userid', {
+                templateUrl : 'views/user.html',
+                controller  : 'userController'
+            })
             .when('/404', {
                 templateUrl : 'views/404.html'
             })
