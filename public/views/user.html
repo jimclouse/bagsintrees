@@ -3,9 +3,8 @@
         <div class="flex-container">
             <div class="user-profile">
                 <img src="{{user.profilePicture}}" class="user-profile-image"><br/>
-                <span class="h7">{{user.name}}</span>
-                <br/>
-                # of Bags Tagged: {{user.tagCount}}
+                <div class="h7">{{user.name}}</div>
+                <div class="font-medium-large"># of Bags Tagged: {{user.tagCount}}</div>
             </div>
             <div class="user-images">
                  <img ng-repeat="bag in userBags" src="{{bag.thumbnailUrl}}" class="thumb">

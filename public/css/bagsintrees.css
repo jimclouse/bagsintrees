@@ -61,6 +61,10 @@ h4 {
     font-size: 0.75em;
     line-height: normal;
 }
+.font-medium-large {
+    font-size: 0.90em;
+    line-height: normal;
+}
 .size-boost {
     font-size: 150%;
 }
