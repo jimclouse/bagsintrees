@@ -4,7 +4,7 @@
         <div class="map-detail-inner">
             <img src="{{mapDetail.lowResUrl}}" class="map-detail-image">
             <div class="font-medium">{{mapDetail.caption}}</div>
-            <div class="font-small muted"><em>bag tagged by: {{mapDetail.userName}}</em><br/>
+            <div class="font-small muted"><em>bag tagged by: <a href="/#/user/{{mapDetail.userId}}">{{mapDetail.userName}}</a></em><br/>
                 {{formatInstagramDate(mapDetail.created)}}
                 <span ng-if="mapDetail.locationName"><br/>{{mapDetail.locationName}}</span>
                 <a href="" ng-click="closeMapDetail()" class="pull-right size-boost"><i class="fa fa-times"></i></a>
