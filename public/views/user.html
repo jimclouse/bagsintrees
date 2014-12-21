@@ -1,13 +1,14 @@
 <div id="page-user" class="bags-page">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="{{user.profilePicture}}"><br/>
-                    <span class="h7">{{user.name}}</span>
-                    <br/>
-                    # of Bags Tagged: {{user.tagCount}}
-                </div>
+        <div class="flex-container">
+            <div class="user-profile">
+                <img src="{{user.profilePicture}}" class="user-profile-image"><br/>
+                <span class="h7">{{user.name}}</span>
+                <br/>
+                # of Bags Tagged: {{user.tagCount}}
+            </div>
+            <div class="user-images">
+                 <img ng-repeat="bag in userBags" src="{{bag.thumbnailUrl}}" class="thumb">
             </div>
         </div>
 </div>

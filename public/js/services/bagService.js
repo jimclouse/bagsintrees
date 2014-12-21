@@ -9,7 +9,6 @@ bagsInTreesServices.service('bagService', ['$http', function($http) {
                     console.error("something went wrong");
                 });
         },
-
         getOne: function(id, cb) {
             return $http.get("/bags/one/" + id)
                 .success(function(response) {
@@ -19,16 +18,25 @@ bagsInTreesServices.service('bagService', ['$http', function($http) {
                     console.error("Unable to fetch bag id " + id);
                 });
         },
-
         getUser: function(id, cb) {
             return $http.get("/user/" + id)
                 .success(function(response) {
                     cb(response);
                 })
                 .error(function() {
-                    console.error("Unable to location user " + id); 
+                    console.error("Unable to get details for user " + id);
+                });
+        },
+        getUserBags: function(id, cb) {
+            return $http.get("/user/bags/" + id)
+                .success(function(response) {
+                    cb(response);
+                })
+                .error(function() {
+                    console.error("Unable to get details for user " + id);
                 });
         }
+
     };
     return service;
 }]);

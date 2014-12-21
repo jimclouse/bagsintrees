@@ -6,5 +6,12 @@ bagsInTreesControllers.controller('userController', function($scope, $routeParam
         });
     };
 
+    $scope.getUserBags = function(id) {
+        bagService.getUserBags(id, function(data) {
+            $scope.userBags = data;
+        });
+    };
+
     $scope.getUserDetails($routeParams.userid);
+    $scope.getUserBags($routeParams.userid);
 });

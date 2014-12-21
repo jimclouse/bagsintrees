@@ -11,6 +11,9 @@
     h2 {
         font-size: 25px;
     }
+    .h7 {
+        font-size: 1.0em;
+    }
     .whitelink {
         color: #fff;
     }
@@ -157,6 +160,18 @@
     }
     .inline-img-right {
         margin: 10px;
+    }
+    .user-profile-image {
+        width: 80px;
+    }
+    .user-profile {
+        width: 100px;
+    }
+    .user-images {
+        width: calc(100% - 100px);
+    }
+    .thumb {
+        width: 68px;
     }
 
 }
