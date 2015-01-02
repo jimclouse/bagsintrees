@@ -1,0 +1,92 @@
+
+@media (min-width: 1500px) {
+    /* medium */
+    h1 {
+        font-size: 24px;
+        line-height: 1.6em;
+    }
+    h2 {
+        font-size: 44px;
+    }
+    .whitelink {
+        color: #fff;
+    }
+    .pageTitle {
+        line-height: 1;
+        font-weight: 700;
+        font-size: 2.3em;
+    }
+    .header-large {
+        height: 60px;
+    }
+    .header-small {
+        height: 60px;
+    }
+    #sticky-header {
+        padding-bottom: 6px;
+        padding-left: 4px;
+        height: 60px;
+    }
+    .bags-transparent-panel {
+        font-size: 24px;
+        font-weight: 500;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        width: 800px;
+        padding: 20px 50px 20px 50px;
+        margin-top: 150px;
+    }
+    .number-circle {
+        width: 40px;
+        height: 40px;
+        padding: 3px;
+        margin: 15px;
+        font: 33px Arial, sans-serif;
+        font-weight: 700;
+    }
+    .number-text {
+        height: 40px;
+        padding-top: 3px;
+        margin-top: 15px;
+    }
+    #page-container {
+        margin-top: 60px;
+    }
+    #page-main {
+        padding: 5%px 0 0 0;
+        margin-top: calc( 40% -60px);
+    }
+    #page-next {
+        height: calc(50% - 20px);
+        margin-top: 100px;
+
+    }
+    #page-next-2 {
+        height: calc(50% - 20px);
+        margin-top: 100px;
+    }
+    #page-next-3 {
+        height: calc(50% - 20px);
+        margin-top: 50px;
+    }
+    #page-next-4 {
+        height: calc(50% - 20px);
+        padding: 100px 10% 0px 10%
+    }
+    .bags-page {
+        padding: 40px 10px 10px 10px;
+    }
+    .navigation {
+        display: block;
+    }
+    .navigation-mobile {
+        display: none;
+    }
+    #full-pin-img {
+        display: block;
+    }
+    #mobile-pin-img {
+        display: none;
+    }
+
+}
