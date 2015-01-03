@@ -1,0 +1,40 @@
+/* handheld catch all */
+@media handheld {
+	#page-main {
+		background-image: url('../img/city-bag-iphone5.jpg');
+	}
+}
+/* iPhone < 5: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	#page-main {
+		background-image: url('../img/city-bag-iphone4.jpg');
+	}
+}
+
+/* iPhone 5: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+	#page-main {
+		background-image: url('../img/city-bag-iphone5.jpg');
+	}
+}
+
+/* iPhone 6: */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+	#page-main {
+		background-image: url('../img/city-bag-iphone6.jpg');
+	}
+}
+
+/* iPhone 6 Plus: */
+@media only screen and (min-device-width : 540px) and (max-device-width : 960px) {
+	#page-main {
+		background-image: url('../img/city-bag-iphone6.jpg');
+	}
+}
+
+/* iPad: */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	#page-main {
+		background-image: url('../img/city-bag-lg.jpg');
+	}
+}
