@@ -31,6 +31,20 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
             width: 90
         }];
 
+        // fire off popover instructions if user hasnt seen it before
+        if (!localStorage.getItem('bagsintrees_map_notice_1')) {
+            $('#alert-box').popover({
+                placement : 'top',
+                content : '<div class="font-medium" style="text-align: center;">Click on any map pin<br/>to see the photo</div><div style="text-align: center; padding-top: 20px;"><button class="btn btn-primary" onClick="$(\'#alert-box\').popover(\'toggle\');localStorage.setItem(\'bagsintrees_map_notice_1\', \'true\');">Okay. Got it!</button></div>',
+                html: true
+            })
+            .click(function(ev) {
+                //this is workaround needed in order to make ng-click work inside of popover
+                $compile($('.popover.in').contents())($scope);
+            })
+            .popover('toggle');
+        }
+
         // obtain user's location or use default
         function establishLocation() {
             var deferred = $q.defer();
