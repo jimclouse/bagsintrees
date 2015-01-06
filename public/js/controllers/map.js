@@ -98,6 +98,7 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
         };
 
         $scope.showMapDetail = function(id) {
+            $scope.mapDetail = null;
             $('.map-detail').show();
             bagService.getOne(id, function(data) {
                 $scope.mapDetail = data;
