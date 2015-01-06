@@ -186,6 +186,15 @@ h4 {
     text-decoration: none;
     color: #3c3c3c;
 }
+.pageTitle a span{
+    text-decoration: none;
+    color: #4f4f4f;
+}
+
+.pageTitle a:hover span{
+    text-decoration: none;
+    color: chocolate;
+}
 
 .pageTitle a:hover {
     text-decoration: none;
