@@ -5,6 +5,17 @@
   filter: 'Rise',
   created_time: '1396192592',
   link: 'http://instagram.com/p/mK-RY-Jxkd/',
+  "comments": {
+            "data": [{
+                "created_time": "1279332030",
+                "text": "Love the sign here",
+                "from": {
+                    "username": "mikeyk",
+                    "full_name": "Mikey Krieger",
+                    "id": "4",
+                    "profile_picture": "http://distillery.s3.amazonaws.com/profiles/profile_1242695_75sq_1293915800.jpg"
+                },
+                "id": "8" },
   likes: { count: 0, data: [] },
   images: 
    { low_resolution: 
