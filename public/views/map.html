@@ -2,13 +2,16 @@
     <div id="map-canvas"></div>
     <div class="map-detail pull-right">
         <div class="map-detail-inner">
-            <img src="{{mapDetail.lowResUrl}}" class="map-detail-image" ng-show="mapDetail">
+            <img src="{{mapDetail.photo.lowResUrl}}" class="map-detail-image" ng-show="mapDetail">
             <img src="img/loading.gif" class="map-detail-image" ng-hide="mapDetail">
             <span ng-show="mapDetail">
-                <div class="font-medium">{{mapDetail.caption}}</div>
-                <div class="font-small muted"><em>bag tagged by: <a href="/#/user/{{mapDetail.userId}}">{{mapDetail.userName}}</a></em><br/>
-                    {{formatInstagramDate(mapDetail.created)}}
-                    <span ng-if="mapDetail.locationName"><br/>{{mapDetail.locationName}}</span>
+                <div class="font-medium">{{mapDetail.photo.caption}}</div>
+                <div class="font-small muted"><em>bag tagged by: <a href="/#/user/{{mapDetail.photo.userId}}">{{mapDetail.photo.userName}}</a></em><br/>
+                    {{formatInstagramDate(mapDetail.photo.created)}}
+                    <span ng-if="mapDetail.photo.locationName"><br/>{{mapDetail.photo.locationName}}</span>
+                    <div ng-repeat="comment in mapDetail.comments">
+                        <em><a href="/#/user/{{comment.userId}}">{{comment.name}}</a></em>&nbsp;{{comment.comment}}
+                    </div>
                     <a href="" ng-click="closeMapDetail()" class="pull-right size-boost" style="margin-right: 3px; margin-bottom: 3px;"><i class="fa fa-times"></i></a>
                 </div>
             </span>
