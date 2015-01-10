@@ -3,3 +3,4 @@ etc/*
 unusedImages
 npm-debug.log
 .vagrant
+postGetAll.sh
