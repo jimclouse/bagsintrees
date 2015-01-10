@@ -61,7 +61,8 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
                     });
                 }
                 else { //geolocation IS NOT available
-                    setGeoLoc(42.3581, -71.0636, 14);
+                    //setGeoLoc(42.3581, -71.0636, 4); // Boston
+                    setGeoLoc(39.8333, -97.4167, 4); //Lebanon, KS
                     deferred.resolve();
                 }
             }
