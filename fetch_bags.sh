@@ -5,4 +5,4 @@ source ~/.nvm/nvm.sh
 nvm use 0.10.3
 
 source ./etc/environment
-node ./lib/mysqlFetchBags.js
+node ./lib/localFetch.js
