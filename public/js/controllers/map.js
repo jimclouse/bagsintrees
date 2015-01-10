@@ -73,9 +73,16 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
         }
         
         buildMarker = function(data) {
-            var marker = new google.maps.Marker({position: new google.maps.LatLng(data.latitude, data.longitude),
-                                                    id: data.id
-            });
+            var opts = {
+                position:   new google.maps.LatLng(data.latitude, data.longitude),
+                id:         data.id
+            }
+            if(data.isRemoved) {
+                opts.fillColor = '#C0C0C0';
+                opts.icon = './img/green-dot.png';
+            }
+            var marker = new google.maps.Marker(opts);
+
             google.maps.event.addListener(marker, 'click', function() {
                 $scope.showMapDetail(this.id);
             });
