@@ -17,15 +17,18 @@
         font-size: 2.6em;
     }
     .header-large {
-        height: 60px;
+        height: 70px;
     }
     .header-small {
-        height: 60px;
+        height: 70px;
     }
     #sticky-header {
         padding-bottom: 6px;
         padding-left: 4px;
-        height: 60px;
+        height: 70px;
+    }
+    .site-logo {
+        height: 70px;
     }
     .bags-transparent-panel {
         font-size: 24px;
@@ -37,11 +40,11 @@
         margin-top: 150px;
     }
     .number-circle {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         padding: 3px;
         margin: 15px;
-        font: 33px Arial, sans-serif;
+        font: 40px Arial, sans-serif;
         font-weight: 700;
     }
     .number-text {

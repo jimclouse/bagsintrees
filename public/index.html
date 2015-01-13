@@ -38,35 +38,34 @@
     <body ng-controller="mainController">
        <div id="panel">
             <div id="sticky-header" class="container-fluid header-large">
-                <div class="row">
-                    <div id="pageTitle" class="col-xs-4 pageTitle" onClick="location.href='/';">
-                        <a href="/">Bags<span>in</span>trees<span style="font-size: 0.6em">.org</span></a>
-                    </div>
-                    <div class="col-xs-8">
-                        <div class="container-fluid navigation">
-                            <div class="row">
-                                <div class="pull-right">
-                                    <span class="navItem"><a href="#/map"><span class="fa fa-chevron-down fa-lg">&nbsp;Bag Map</span></a></span>
-                                    <span class="navItem"><a href="#/about"><span class="fa fa-chevron-down fa-lg">&nbsp;About</span></a></span>
-                                    <span class="navItem"><a href="#/faq"><span class="fa fa-chevron-down fa-lg">&nbsp;FAQ</span></a></span>
-                                </div>
+                <div id="pageTitle" class="pull-left pageTitle" onClick="location.href='/';">
+                    <span><img src="/img/bagsintrees-logo-70-green.png" class="site-logo"></span>
+                    <span><a href="/">Bags<span>in</span>trees<span style="font-size: 0.6em">.org</span></a></span>
+                </div>
+                <div class="pull-right">
+                    <div class="container-fluid navigation">
+                        <div class="row">
+                            <div class="pull-right">
+                                <span class="navItem"><a href="#/map"><span class="fa fa-chevron-right fa-lg">&nbsp;Bag Map</span></a></span>
+                                <span class="navItem"><a href="#/about"><span class="fa fa-chevron-right fa-lg">&nbsp;About</span></a></span>
+                                <span class="navItem"><a href="#/faq"><span class="fa fa-chevron-right fa-lg">&nbsp;FAQ</span></a></span>
                             </div>
                         </div>
-                        <div class="container-fluid navigation-mobile">
-                            <div class="row">
-                                <div class="pull-right">
-                                    <div class="dropdown">
-                                        <div id="dropdownMenu1" data-toggle="dropdown">
-                                            <span class="navItem"><a href=""><span class="fa fa-chevron-down fa-lg">&nbsp;Menu</span></a></span>
-                                        </div>
-                                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/map">Bag Map</a></li>
-                                            <li role="presentation" class="divider"></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/about">About</a></li>
-                                            <li role="presentation" class="divider"></li>
-                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#/faq">FAQ</a></li>
-                                        </ul>
+                    </div>
+                    <div class="container-fluid navigation-mobile">
+                        <div class="row">
+                            <div class="pull-right">
+                                <div class="dropdown">
+                                    <div id="dropdownMenu1" data-toggle="dropdown">
+                                        <span class="navItem"><a href=""><span class="fa fa-chevron-down fa-lg">&nbsp;Menu</span></a></span>
                                     </div>
+                                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/map">Bag Map</a></li>
+                                        <li role="presentation" class="divider"></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/about">About</a></li>
+                                        <li role="presentation" class="divider"></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#/faq">FAQ</a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>

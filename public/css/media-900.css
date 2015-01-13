@@ -22,6 +22,9 @@
     .header-small {
         height: 60px;
     }
+    .site-logo {
+        height: 60px;
+    }
     #sticky-header {
         padding-bottom: 6px;
         padding-left: 4px;
