@@ -1,8 +1,7 @@
 ## Bags In Trees
 
-Mapping Plastic Bag Pollution Around the World
+**Mapping Plastic Bag Pollution Around the World**
 
-## About
 Every Instagram photo of a plastic bag in a tree, tagged with #bagsintrees, is displayed on our bag map. Using this map, we'll be able to see the extent of plastic pollution in trees throughout the world.
 
 Only a small percentage of the plastic bags that litter our cities become caught in trees. These bags in trees serve as an indicator of the level of plastic bag pollution in a given area.
