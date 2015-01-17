@@ -18,6 +18,9 @@ angular.module('bagsInTrees',
             .when('/recent', {
                 templateUrl : 'views/recent.html'
             })
+            .when('/top', {
+                templateUrl : 'views/topTaggers.html'
+            })
             .when('/tips', {
                 templateUrl : 'views/tips.html'
             })
