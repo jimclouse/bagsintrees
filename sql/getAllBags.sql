@@ -1,0 +1,1 @@
+select * from photos order by created desc;
