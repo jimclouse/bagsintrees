@@ -8,3 +8,4 @@
 SHELL=/bin/bash
 PATH=/usr/bin:/bin:/sbin:/usr/local/bin
 */1 * * * * flock -n /tmp/fetchbags.lockfile -c "bash /home/ubuntu/bagsintrees/fetch_bags.sh >> /var/log/cronlog.log"
+0 3 * * * flock -n /tmp/deduplocation.lockfile -c "node /home/ubuntu/bagsintrees/lib/deDupLocation.js >> /var/log/cronlog.log"
