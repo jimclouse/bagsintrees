@@ -10,7 +10,8 @@ grant ALL on bagsintrees.* to bags;
 
 # settings
 create table settings (settingKey varchar(32), settingValue varchar(32));
-insert into settings (settingKey) values ('min_tag_id');
+insert into settings (settingKey) values ('min_tag_id_bagsintrees');
+insert into settings (settingKey) values ('min_tag_id_bagremoved');
 
 # photos
 create table photos (id varchar(64)
