@@ -1,10 +1,13 @@
 #! /usr/bin/env bash
 # vim: set ft=shell
 
-source ~/.nvm/nvm.sh
-nvm use 0.10.3
+source ~/.nvm/nvm.sh;
+nvm use 0.10.3;
 
-mysql.server start
+X=$(ps -A | grep [m]ysql)
+if [ -z "$X" ]; then 
+	mysql.server start;
+fi;
 
-source ./etc/environment
-node ./lib/server.js
+source ./etc/environment;
+node ./lib/server.js;
