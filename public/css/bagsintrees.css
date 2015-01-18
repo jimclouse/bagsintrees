@@ -22,7 +22,7 @@ a {
     color: #006e00;
 }
 a:hover {
-    color: #006e00;
+    color: #008800;
 }
 
 h1 {
@@ -82,14 +82,10 @@ h4 {
     text-align: right;
 }
 .arrow-link {
-    color: #3c3c3c;
     text-decoration: underline;
     padding-top: 10px;
 }
-.arrow-link:hover {
-    color: #006e00;
-    text-decoration: underline;
-}
+
 .right-align {
     text-align: right;
 }
@@ -370,11 +366,6 @@ h4 {
     text-decoration: underline;
 }
 .blackLink {
-    color: #3c3c3c;
-    text-decoration: underline;
-}
-.blackLink:hover {
-    color: #006e00;
     text-decoration: underline;
 }
 .pageTitle {
