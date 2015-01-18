@@ -1,1 +1,3 @@
-select * from photos order by created desc;
+select 		* 
+from 		bagsintrees.photos 
+order by 	created desc;
