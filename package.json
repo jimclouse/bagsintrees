@@ -16,11 +16,12 @@
     "express": "3.x",
     "moment": "2.8.3",
     "mustache": "0.8.1",
+    "mysql": "2.5.3",
+    "node-uuid": "^1.4.2",
     "q": "1.0.1",
     "request": "2.33.0",
     "underscore": "1.6.0",
-    "xml2json": "0.5.1",
-    "mysql": "2.5.3"
+    "xml2json": "0.5.1"
   },
   "author": "Jim Clouse <bagsintrees@mail.com>",
   "license": "MIT"
