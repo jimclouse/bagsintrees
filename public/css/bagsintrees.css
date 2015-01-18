@@ -351,6 +351,9 @@ h4 {
 .user-images {
     width: calc(100% - 200px);
 }
+.removed-check {
+    color: white;
+}
 
 /*******************
 * platform dependent styles

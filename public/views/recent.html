@@ -1,11 +1,17 @@
 <div id="page-recent" ng-controller="recentsController">
-		<br/>
+        <br/>
         <h4>Recent Bag Tags</h4>
         <div class="thick-hr"></div>
         <div style="text-align:center" width="100%">
-        	<div width="100%" class="recents">
-		        <img ng-repeat="bag in recentBags" src="{{bag.thumbnailUrl}}" width="150" class="thumb" onError="this.src='../img/not-found.png'">
-		        
-		    </div>
+            <div width="100%" class="recents">
+                <span ng-repeat="bag in recentBags">
+                    <span style="width:150px;">
+                        <nobr>
+                            <span ng-show="{{bag.isRemoved}}" style="z-index: 99; position: absolute;"><i class="fa fa-check fa-2x removed-check"></i></span>
+                            <img  src="{{bag.thumbnailUrl}}" width="150" class="thumb" style="vertical-align: inherit;" onError="this.src='../img/not-found.png'">
+                        </nobr>
+                    </span>
+                </span>         
+            </div>
 </div>
 <div ng-include="'views/footer.html'"></div>
