@@ -2,7 +2,7 @@
     <div id="map-canvas"></div>
     <div class="map-detail pull-right">
         <div class="map-detail-inner">
-            <img src="{{mapDetail.photo.lowResUrl}}" class="map-detail-image" ng-show="mapDetail">
+            <img src="{{mapDetail.photo.lowResUrl}}" class="map-detail-image" ng-show="mapDetail" onError="this.src='../img/not-found-large.png'">
             <img src="img/loading.gif" class="map-detail-image" ng-hide="mapDetail">
             <span ng-show="mapDetail">
                 <div class="font-medium">{{mapDetail.photo.caption}}</div>

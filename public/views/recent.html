@@ -4,7 +4,7 @@
         <div class="thick-hr"></div>
         <div style="text-align:center" width="100%">
         	<div width="100%" class="recents">
-		        <img ng-repeat="bag in recentBags" src="{{bag.thumbnailUrl}}" class="thumb">
+		        <img ng-repeat="bag in recentBags" src="{{bag.thumbnailUrl}}" width="150" class="thumb" onError="this.src='../img/not-found.png'">
 		        
 		    </div>
 </div>

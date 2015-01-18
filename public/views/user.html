@@ -6,7 +6,7 @@
                 <div class="font-medium-large"># of Bags Tagged: {{user.tagCount}}</div>
             </div>
             <div class="user-images">
-                 <img ng-repeat="bag in userBags" src="{{bag.thumbnailUrl}}" class="thumb">
+                 <img ng-repeat="bag in userBags" src="{{bag.thumbnailUrl}}" class="thumb" onError="this.src='../img/not-found.png'">
             </div>
         </div>
 </div>
