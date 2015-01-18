@@ -92,7 +92,7 @@
     }
     #page-main {
         padding: 40px 0 0 0;
-        height: calc(100% + 35px);
+        height: calc(100% + 5px);
         margin-top: 35px;
         background-image: url('../img/city-bag-600.jpg');
     }
@@ -120,7 +120,7 @@
     #page-next {
         font-size: 1.0em;
         height: auto;
-        min-height: calc(100% - 20px);
+        min-height: calc(100% + 5px);
         padding: 10px 30px 10px 30px;
     }
     #page-next .col-sm-7 {
@@ -129,7 +129,7 @@
 
     #page-next-2 {
         height: auto;
-        min-height: calc(100% - 20px);
+        min-height: calc(100% + 5px);
         padding: 10px 5% 10px 5%;
     }
     #page-next-2-inner {
@@ -140,7 +140,7 @@
     }
     #page-next-3 {
         height: auto;
-        min-height: calc(100% - 20px);
+        min-height: calc(100% + 5px);
         background-size: cover;
         padding: auto;
     }
@@ -150,7 +150,7 @@
     }
     #page-next-4 {
         height: auto;
-        min-height: calc(100% - 20px);
+        min-height: calc(100% + 5px);
         padding: 10px 5% 10px 5%;
     }
     #page-next-4-inner {
