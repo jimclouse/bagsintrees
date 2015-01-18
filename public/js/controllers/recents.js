@@ -1,6 +1,6 @@
 bagsInTreesControllers.controller('recentsController', function($scope, bagService) {
     getAllBags = function() {
-        bagService.getAll(function(data) {
+        bagService.fetchData('/bags/all', function(data) {
             $scope.recentBags = data;
         });
     };

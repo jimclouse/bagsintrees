@@ -1,13 +1,13 @@
 bagsInTreesControllers.controller('userController', function($scope, $routeParams, bagService) {
 
     $scope.getUserDetails = function(id) {
-        bagService.getUser(id, function(data) {
+        bagService.fetchData('/user/' + id, function(data) {
             $scope.user = data[0];
         });
     };
 
     $scope.getUserBags = function(id) {
-        bagService.getUserBags(id, function(data) {
+        bagService.fetchData('/user/bags/' + id, function(data) {
             $scope.userBags = data;
         });
     };
