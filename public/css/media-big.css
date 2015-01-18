@@ -55,20 +55,20 @@
         margin-top: calc( 40% -60px);
     }
     #page-next {
-        height: calc(50% - 20px);
+        height: calc(60% - 20px);
         margin-top: 100px;
 
     }
     #page-next-2 {
-        height: calc(50% - 20px);
+        height: calc(60% - 20px);
         margin-top: 100px;
     }
     #page-next-3 {
-        height: calc(50% - 20px);
+        height: calc(60% - 20px);
         margin-top: 50px;
     }
     #page-next-4 {
-        height: calc(50% - 20px);
+        height: calc(60% - 20px);
         padding: 100px 10% 0px 10%
     }
     .bags-page {

@@ -432,6 +432,7 @@ h4 {
     display: none;
 }
 #page-next {
+    font-size: 1.3em;
     height: calc(100% - 25px);
     text-align: left;
     background-color: rgb(255,255,255);
@@ -447,26 +448,29 @@ h4 {
     
 }
 #page-next-2-inner {
+    font-size: 1.3em;
     text-align: center;
     padding: 10px 5% 10px 5%;
     color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(255,255,255, .55);
-    -moz-border-radius: 12px;
-    border-radius: 12px;
+    background: rgba(255,255,255, .8);
+    -moz-border-radius: 50px;
+    border-radius: 50px;
 }
 #page-next-3 {
     height: calc(100% - 25px);
     background-color: #fff;
     background-image: url('../img/citySilhouette.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-repeat-x: initial;
     background-position: bottom;
 }
 #page-next-3-inner {
+    font-size: 1.3em;
+    text-align: center;
     height: 100%;
     padding: 15px 5% 15px 5%;
-    text-align: center;
     background-color: rgb(255,255,255);
     background-color: rgba(255, 255, 255, 0.9);
 }
@@ -479,13 +483,14 @@ h4 {
     padding: 8% 10% 0px 10%;
 }
 #page-next-4-inner {
+    font-size: 1.3em;
     text-align: center;
     padding: 3%;
     color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(255,255,255, .65);
-    -moz-border-radius: 12px;
-    border-radius: 12px;
+    background: rgba(255,255,255, .8);
+    -moz-border-radius: 50px;
+    border-radius: 50px;
 }
 
 
