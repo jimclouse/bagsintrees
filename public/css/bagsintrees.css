@@ -159,7 +159,7 @@ h4 {
 
 .header-large {
     background: rgb(255,255,255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(255, 255, 255, .5); /*(96, 170, 133, .7); 60/141/197*/
+    background: rgba(255, 255, 255, .8); /*(96, 170, 133, .7); 60/141/197*/
 }
 .header-small {
     background-color: #fff; /* #e7e7e7 */
@@ -254,11 +254,12 @@ h4 {
     color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
     /*  background: rgba(100, 100, 100, .75); */
-    background: rgba(255,255,255, .65);
+    background: rgba(255,255,255, .80);
 }
 .number-panel {
     width: 100%;
     padding: 0px 3% 0px 3%;
+    margin-left: 50px;
 }
 .number-item {
     vertical-align: middle;
@@ -276,6 +277,7 @@ h4 {
     padding-top: 3px;
     margin-top: 15px;
     text-align: left;
+    font-size: 1.1em;
 }
 
 #mobile-pin-img {
