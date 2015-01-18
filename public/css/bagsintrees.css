@@ -199,17 +199,15 @@ h4 {
 }
 
 .navigation {
-    margin-top:17px;
+    margin-top:38px;
     color: #4D4834;
 }
 .navigation a {
     color: #3c3c3c;
 }
 .navigation a:hover {
-    text-decoration: underline;
-    color: #006e00;
+    text-decoration: none
 }
-
 .navigation-mobile {
     margin-top:4px;
     padding-top: 5px;
@@ -223,9 +221,19 @@ h4 {
     color: #0978a7;
 }
 
-.navItem {
-    margin-right: 10px;
-    margin-left: 10px;
+.navLinkName {
+    padding: 2px 12px 2px 12px;
+    border-radius: 10px;
+}
+.navlinkName:hover {
+    background-color: green;
+    color: #ffffff;
+}
+
+.navItemInner {
+    padding: 6px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 }
 
 .twitter-link {
