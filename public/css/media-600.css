@@ -99,6 +99,12 @@
     .bags-page {
         padding: 20px 5px 5px 5px;
     }
+    
+    .burst-background {
+        background-image: url('../img/starburst-background-m.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     .navigation {
         display: none;
     }

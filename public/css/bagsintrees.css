@@ -317,28 +317,22 @@ h4 {
     background-repeat: no-repeat;
 }
 
-#page-about {
-    color: #3c3c3c;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255, 255, 255, 0.9);
+.burst-background {
+    background-image: url('../img/starburst-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 #page-faq {
     color: #3c3c3c;
     min-height: 600px;
     background-color: rgb(255,255,255);
-    background-color: rgba(255, 255, 255, 0.9);
 }
 
 #page-404 {
     text-align: center;
-    padding: 40px;
-    min-height: 400px;
-    color: #fff;
-    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(100, 100, 100, .60);
-    -moz-border-radius: 12px;
-    border-radius: 12px;
+    background: rgb(255, 255, 255);
 }
 
 .inline-img-right {
