@@ -291,8 +291,12 @@ h4 {
     width: 100%;
     margin-bottom: 10px;
 }
-
-.recents img {
+.removed-check {
+    z-index: 99;
+    position: absolute;
+    margin: 2px 0px 0px 2px;
+}
+.recents.thumb {
     border: 1px solid #3c3c3c;
 }
 #page-container {
@@ -358,9 +362,6 @@ h4 {
 }
 .user-images {
     width: calc(100% - 200px);
-}
-.removed-check {
-    color: white;
 }
 
 /*******************

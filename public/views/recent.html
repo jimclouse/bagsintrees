@@ -7,8 +7,8 @@
                 <span ng-repeat="bag in recentBags">
                     <span style="width:150px;">
                         <nobr>
-                            <span ng-show="{{bag.isRemoved}}" style="z-index: 99; position: absolute;"><i class="fa fa-check fa-2x removed-check"></i></span>
-                            <img  src="{{bag.thumbnailUrl}}" width="150" class="thumb" style="vertical-align: inherit;" onError="this.src='../img/not-found.png'">
+                            <img src="../img/removed-check-30.png" ng-if="bag.isRemoved" class="removed-check">
+                            <img src="{{bag.thumbnailUrl}}" width="150" class="thumb" style="vertical-align: inherit;" onError="this.src='../img/not-found.png'">
                         </nobr>
                     </span>
                 </span>         
