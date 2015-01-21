@@ -4,5 +4,5 @@
 source ~/.nvm/nvm.sh
 nvm use 0.10.3
 
-source ./etc/environment
+source ~/environment
 node ./lib/server.js
