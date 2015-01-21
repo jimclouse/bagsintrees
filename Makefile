@@ -29,3 +29,13 @@ mysql:
 application: 
 	npm install
 	bower install
+
+approuter:
+	cd ~ && 
+	git clone https://github.com/igroff/approuter.git &&
+	cd ~/approuter/ && 
+	make
+
+approuter_start:
+	cd ~/approuter/ && source ./environment &&
+	start_approuter https://github.com/jimclouse/bagsintrees.git 8080 4
