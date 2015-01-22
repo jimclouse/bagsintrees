@@ -62,11 +62,11 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
                 }
                 else { //geolocation IS NOT available
                     //setGeoLoc(42.3581, -71.0636, 4); // Boston
-                    var zoomLevel = 4;
+                    var zoomLevel = 3;
                     if(isMobileClient()) {
                         zoomLevel = 2;
                     }
-                    setGeoLoc(39.8333, -97.4167, zoomLevel); //Lebanon, KS
+                    setGeoLoc(20.3034, -34.6289, zoomLevel); //Lebanon, KS
                     deferred.resolve();
                 }
             }
@@ -142,11 +142,12 @@ bagsInTreesControllers.controller('mapController', function($scope, $http, $q, $
                         });
 
                     // set user location marker
-                    new google.maps.Marker({position: new google.maps.LatLng($scope.userGeoLoc.lat, $scope.userGeoLoc.lon),
-                                            map: $scope.globalMap,
-                                            icon: "http://maps.google.com/mapfiles/arrow.png",
-                                            animation: google.maps.Animation.DROP
-                                            });
+                    // skipping user location marker until we enable 'use your location'
+                    // new google.maps.Marker({position: new google.maps.LatLng($scope.userGeoLoc.lat, $scope.userGeoLoc.lon),
+                    //                         map: $scope.globalMap,
+                    //                         icon: "http://maps.google.com/mapfiles/arrow.png",
+                    //                         animation: google.maps.Animation.DROP
+                    //                         });
                     
                     $scope.getAllBags();
                 });
