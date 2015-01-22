@@ -424,6 +424,10 @@ h4 {
 .bags-page {
     padding: 3%;
 }
+.page-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 .navigation {
     display: block;
 }
