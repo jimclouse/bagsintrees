@@ -85,5 +85,14 @@
     #mobile-pin-img {
         display: none;
     }
+    .full-size-img {
+        width: 600px;
+    }
+    .full-size-img-flex {
+        flex: 0 0 600px;
+    }
+    .full-size-content-flex {
+        flex: 0 0 400px;
+    }
 
 }

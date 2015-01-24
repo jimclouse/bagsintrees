@@ -190,5 +190,18 @@
     .thumb {
         width: 68px;
     }
+    #page-full {
+        min-height: inherit;
+        padding: 5px;
+    }
+    .full-size-img {
+        width: 100%;
+    }
+    .full-size-img-flex {
+        flex: 0 0 100%;
+    }
+    .full-size-content-flex {
+        flex: auto;
+    }
 
 }
