@@ -37,4 +37,24 @@
 	#page-main {
 		background-image: url('../img/city-bag-lg.jpg');
 	}
+  .navigation {
+      display: none;
+  }
+  .navigation-mobile {
+      display: block;
+  }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  and (orientation: landscape) {
+	#page-main {
+		background-image: url('../img/city-bag-lg.jpg');
+	}
+	.navigation {
+      display: block;
+  }
+  .navigation-mobile {
+      display: none;
+  }
+	
 }
