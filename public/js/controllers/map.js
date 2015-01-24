@@ -124,6 +124,7 @@ bagsInTreesControllers.controller('mapController', function ($scope, $http, $q, 
     bagService.fetchData('/bags/one/' + id, function (data) {
       $scope.mapDetail = data;
     });
+    $window.ga('send', 'event', 'map', 'click', id);
   };
 
   $scope.closeMapDetail = function () {
