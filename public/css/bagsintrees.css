@@ -296,7 +296,8 @@ h4 {
     position: absolute;
     margin: 2px 0px 0px 2px;
 }
-.recents.thumb {
+
+.bordered-img {
     border: 1px solid #3c3c3c;
 }
 #page-container {
@@ -323,16 +324,17 @@ h4 {
     background-size: cover;
 }
 
-
 #page-faq {
-    color: #3c3c3c;
     min-height: 600px;
-    background-color: rgb(255,255,255);
+}
+
+#page-full {
+    min-height: 600px;
+    padding: 20px;
 }
 
 #page-404 {
     text-align: center;
-    background: rgb(255, 255, 255);
 }
 
 .inline-img-right {
@@ -346,6 +348,7 @@ h4 {
 .flex-container {
     display: -webkit-flex;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .user-profile-image {
@@ -440,6 +443,18 @@ h4 {
 #mobile-pin-img {
     display: none;
 }
+
+.full-size-img {
+    width: 640px;
+}
+.full-size-img-flex {
+    flex: 0 0 650px;
+}
+.full-size-content-flex {
+    flex: 0 0 500px;
+}
+
+
 #page-next {
     font-size: 1.3em;
     height: calc(100% - 25px);

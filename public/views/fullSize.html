@@ -1,0 +1,32 @@
+<div id="page-full" ng-controller="fullSizeController">
+    <div class="page-container">
+        <div class="flex-container">
+            <div class="full-size-img-flex">
+                <nobr>
+                    <img src="../img/removed-check-30.png" ng-if="bag.photo.isRemoved" class="removed-check">
+                    <img src="{{bag.photo.hiReslUrl}}" style="vertical-align: inherit;" class="full-size-img bordered-img">
+                </nobr>
+            </div>
+            <div class="full-size-content-flex">
+                <div class="font-large">{{bag.photo.caption}}</div>
+                <div>
+                    <img src="{{bag.photo.profilePicture}}" width="100px">
+                </div>
+
+                <div class="font-medium muted">
+                    <em>bag tagged by: <a href="/#/user/{{bag.photo.userId}}">{{bag.photo.userName}}</a></em><br/>
+                    {{formatInstagramDate(bag.photo.created)}}
+                    <span ng-if="bag.photo.locationName"><br/>{{bag.photo.locationName}}</span>
+                    <div ng-repeat="comment in bag.comments">
+                        <em><a href="/#/user/{{comment.userId}}">{{comment.name}}</a>: </em>{{comment.comment}}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <a href="javascript: window.history.back();"><i class="fa fa-arrow-left"></i> Back</a>
+        </div>
+    </div>
+</div>
+<div ng-include="'views/footer.html'"></div>

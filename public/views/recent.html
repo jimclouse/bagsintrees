@@ -8,7 +8,7 @@
                     <span style="width:150px;">
                         <nobr>
                             <img src="../img/removed-check-30.png" ng-if="bag.isRemoved" class="removed-check">
-                            <img src="{{bag.thumbnailUrl}}" width="150" class="thumb" style="vertical-align: inherit;" onError="this.src='../img/not-found.png'">
+                            <a href="/#/full/{{bag.id}}"><img src="{{bag.thumbnailUrl}}" width="150" class="bordered-img" style="vertical-align: inherit;" onError="this.src='../img/not-found.png'"></a>
                         </nobr>
                     </span>
                 </span>         
