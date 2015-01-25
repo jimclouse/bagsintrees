@@ -1,5 +1,5 @@
 
-@media  (max-width: 600px), (min-device-width : 768) and (max-device-height : 1024px) {
+@media  (max-width: 600px)  {
     /* mobile */
     body {
         font-size: 16px;

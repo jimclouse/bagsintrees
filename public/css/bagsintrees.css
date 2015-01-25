@@ -292,7 +292,7 @@ h4 {
     margin-bottom: 10px;
 }
 .removed-check {
-    z-index: 99;
+    z-index: 19;
     position: absolute;
     margin: 2px 0px 0px 2px;
 }
