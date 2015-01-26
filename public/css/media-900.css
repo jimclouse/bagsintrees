@@ -86,10 +86,10 @@
         display: none;
     }
     .full-size-img {
-        width: 600px;
+        width: 500px;
     }
     .full-size-img-flex {
-        flex: 0 0 600px;
+        flex: 0 0 500px;
     }
     .full-size-content-flex {
         flex: 0 0 400px;

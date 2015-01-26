@@ -445,7 +445,8 @@ h4 {
 }
 
 .full-size-img {
-    width: 640px;
+    max-width: 640px;
+    width: 100%;
 }
 .full-size-img-flex {
     flex: 0 0 650px;

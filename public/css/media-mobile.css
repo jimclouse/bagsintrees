@@ -57,3 +57,33 @@
       display: block;
   }
 }
+
+
+/* full size page mobile layouts */
+
+@media  (max-width: 1024px)  {
+  .full-size-img {
+    width: 500;
+  }
+  .full-size-img-flex {
+    flex: 0 0 510px;
+  }
+  .full-size-content-flex {
+    flex: 0 0 300px;
+  }
+}
+
+
+@media  (max-width: 650px)  {
+  .full-size-img {
+    width: 100%;
+  }
+  .full-size-img-flex {
+    flex: 0 0 100%;
+  }
+  .full-size-content-flex {
+    flex: 0 0 100%;
+  }
+}
+
+

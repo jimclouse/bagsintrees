@@ -201,7 +201,7 @@
         flex: 0 0 100%;
     }
     .full-size-content-flex {
-        flex: auto;
+        flex: 0 0 300px;
     }
 
 }
