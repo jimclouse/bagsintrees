@@ -443,7 +443,13 @@ h4 {
 #mobile-pin-img {
     display: none;
 }
-
+.recent-img {
+    width: 47%;
+    max-width: 150px;
+}
+.user-photo-img {
+    max-width: 150px;
+}
 .full-size-img {
     max-width: 640px;
     width: 100%;
