@@ -41,11 +41,22 @@ angular.module('bagsInTrees',
   .run(['$rootScope', '$location', '$window', function ($rootScope, $location, $window) {
     $rootScope
       .$on('$routeChangeSuccess',
-        function (event) {
+        function (event, next, last) {
+          var key;
+          var path = $location.path(); // set initial path in case next fails
+          debugger;
           if (!$window.ga) {
             return;
           }
-          $window.ga('send', 'pageview', {page: $location.path()});
+          if (next && next.$$route && next.$$route.originalPath) {
+            path = next.$$route.originalPath;
+          }
+          if (next.params) {
+            for (key in next.params) { 
+              path = path.replace(':' + key, next.params[key]);
+            }
+          }
+          $window.ga('send', 'pageview', {page: path});
         });
   }]);
 
