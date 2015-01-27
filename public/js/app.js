@@ -44,7 +44,6 @@ angular.module('bagsInTrees',
         function (event, next, last) {
           var key;
           var path = $location.path(); // set initial path in case next fails
-          debugger;
           if (!$window.ga) {
             return;
           }

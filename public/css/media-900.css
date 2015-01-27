@@ -1,5 +1,5 @@
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
     /* medium */
     h1 {
         font-size: 22px;
@@ -27,7 +27,6 @@
     }
     #sticky-header {
         padding-bottom: 6px;
-        padding-left: 4px;
         height: 60px;
     }
     .bags-transparent-panel {
@@ -74,10 +73,11 @@
         padding: 40px 10px 10px 10px;
     }
     .navigation {
-        display: block;
+        display: none;
     }
     .navigation-mobile {
-        display: none;
+        margin-top: 30px;
+        display: block;
     }
     #full-pin-img {
         display: block;

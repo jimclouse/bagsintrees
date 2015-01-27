@@ -42,11 +42,12 @@
   }
   .navigation-mobile {
       display: block;
+      margin-top: 30px;
   }
 }
 
 /* Nexus 7: */
-@media only screen and (min-device-width : 604px) and (max-device-width : 966px)  and (orientation: portrait) {
+@media only screen and (min-device-width : 604px) and (max-device-width : 966px)  {
   #page-main {
     background-image: url('../img/city-bag-lg.jpg');
   }
@@ -55,6 +56,18 @@
   }
   .navigation-mobile {
       display: block;
+      margin-top: 30px;
+  }
+}
+
+/* Nexus 5: */
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  and (orientation: landscape) {
+  .navigation {
+      display: none;
+  }
+  .navigation-mobile {
+      display: block;
+      margin-top: 30px;
   }
 }
 
