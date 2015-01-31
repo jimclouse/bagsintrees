@@ -5,5 +5,9 @@ bagsInTreesControllers.controller('recentsController', function ($scope, bagServ
     });
   };
 
+  $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent) {
+    $('[data-toggle="tooltip"]').tooltip({delay: { "show": 500, "hide": 100 }});
+  });
+  
   getAllBags();
 });
