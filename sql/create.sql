@@ -30,6 +30,7 @@ create table photos (id varchar(64)
 -- create table photos (id varchar(64), created varchar(32), thumbnailUrl varchar(128), lowResUrl varchar(128), hiReslUrl varchar(128), latitude varchar(32), longitude varchar(32), locationName varchar(32), userId varchar(32), userName varchar(64), caption varchar(1000));
 alter table photos add constraint primary key pk_photos(id);
 alter table photos add index ix_photos_userId(userId);
+alter table photos add index ix_photos_latitude(latitude);
 
 # users
 create table users (id varchar(32) not null primary key
