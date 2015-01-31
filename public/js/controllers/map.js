@@ -104,7 +104,7 @@ bagsInTreesControllers.controller('mapController', function ($scope, $http, $q, 
   };
 
   $scope.getAllBags = function () {
-    bagService.fetchData('/bags/all', function (data) {
+    bagService.fetchData('/bags/map', function (data) {
       $scope.bags = data;
       var markers = [];
       for (var i = 0; i < data.length; i++) {
