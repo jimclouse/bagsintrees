@@ -65,6 +65,7 @@
     }
     #page-next-3 {
         height: calc(100% - 20px);
+        background-image: url('../img/city-silhouette-960.png');
     }
     #page-next-4 {
         height: calc(100% - 20px);

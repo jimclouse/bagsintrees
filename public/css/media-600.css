@@ -147,8 +147,8 @@
     #page-next-3 {
         height: auto;
         min-height: calc(100% + 5px);
-        background-size: cover;
         padding: auto;
+        background-image: url('../img/city-silhouette-604.png');
     }
     #page-next-3-inner {
         font-size: 1.0em;

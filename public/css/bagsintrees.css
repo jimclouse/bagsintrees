@@ -489,9 +489,7 @@ h4 {
 }
 #page-next-3 {
     height: calc(100% - 25px);
-    background-color: #fff;
-    background-image: url('../img/citySilhouette.jpg');
-    background-size: cover;
+    background-image: url('../img/city-silhouette-1400.png');
     background-repeat: no-repeat;
     background-repeat-x: initial;
     background-position: bottom;
@@ -501,8 +499,6 @@ h4 {
     text-align: center;
     height: 100%;
     padding: 15px 5% 15px 5%;
-    background-color: rgb(255,255,255);
-    background-color: rgba(255, 255, 255, 0.9);
 }
 #page-next-4 {
     height: calc(100% - 25px);
