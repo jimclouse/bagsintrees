@@ -1,5 +1,5 @@
 
-@media  (max-width: 600px) {
+@media  (max-width: 600px)  {
     /* mobile */
     body {
         font-size: 16px;
@@ -61,7 +61,6 @@
     }
     #sticky-header {
         padding-bottom: 6px;
-        padding-left: 4px;
         padding-right: 0px;
         height: 35px;
     }
@@ -87,12 +86,12 @@
         margin-top: 3px;
         font-size: 1.0em;
     }
-    #page-container {
-        margin-top: 35px;
+    #index-container {
+        margin-top: 0px;
     }
     #page-main {
+        height: calc(100% - 35px);
         padding: 40px 0 0 0;
-        height: calc(100% + 5px);
         margin-top: 35px;
         background-image: url('../img/city-bag-600.jpg');
     }
@@ -110,6 +109,7 @@
     }
     .navigation-mobile {
         display: block;
+        margin-top: 8px;
     }
     #full-pin-img {
         display: none;
@@ -126,7 +126,7 @@
     #page-next {
         font-size: 1.0em;
         height: auto;
-        min-height: calc(100% + 5px);
+        min-height: calc(100% - 35px);
         padding: 10px 30px 10px 30px;
     }
     #page-next .col-sm-7 {
@@ -135,7 +135,7 @@
 
     #page-next-2 {
         height: auto;
-        min-height: calc(100% + 5px);
+        min-height: calc(100% - 35px);
         padding: 10px 5% 10px 5%;
     }
     #page-next-2-inner {
@@ -146,17 +146,18 @@
     }
     #page-next-3 {
         height: auto;
-        min-height: calc(100% + 5px);
-        background-size: cover;
+        min-height: calc(100% - 35px);
         padding: auto;
+        background-image: url('../img/city-silhouette-604.png');
     }
     #page-next-3-inner {
         font-size: 1.0em;
         padding: 2%;
+        height: auto;
     }
     #page-next-4 {
         height: auto;
-        min-height: calc(100% + 5px);
+        min-height: calc(100% - 35px);
         padding: 10px 5% 10px 5%;
     }
     #page-next-4-inner {
@@ -201,7 +202,7 @@
         flex: 0 0 100%;
     }
     .full-size-content-flex {
-        flex: auto;
+        flex: 0 0 300px;
     }
 
 }

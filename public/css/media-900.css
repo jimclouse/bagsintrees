@@ -27,7 +27,6 @@
     }
     #sticky-header {
         padding-bottom: 6px;
-        padding-left: 4px;
         height: 60px;
     }
     .bags-transparent-panel {
@@ -50,34 +49,36 @@
         padding-top: 3px;
         margin-top: 15px;
     }
-    #page-container {
+    #index-container {
         margin-top: 60px;
     }
     #page-main {
-        padding: 5%px 0 0 0;
         margin-top: -60px;
+        
         background-image: url('../img/city-bag-900.jpg');
     }
     #page-next {
-        height: calc(100% - 20px);
+        height: calc(100% - 60px);
     }
     #page-next-2 {
-        height: calc(100% - 20px);
+        height: calc(100% - 60px);
     }
     #page-next-3 {
-        height: calc(100% - 20px);
+        height: calc(100% - 60px);
+        background-image: url('../img/city-silhouette-960.png');
     }
     #page-next-4 {
-        height: calc(100% - 20px);
+        height: calc(100% - 60px);
     }
     .bags-page {
         padding: 40px 10px 10px 10px;
     }
     .navigation {
-        display: block;
+        display: none;
     }
     .navigation-mobile {
-        display: none;
+        margin-top: 30px;
+        display: block;
     }
     #full-pin-img {
         display: block;
@@ -86,10 +87,10 @@
         display: none;
     }
     .full-size-img {
-        width: 600px;
+        width: 500px;
     }
     .full-size-img-flex {
-        flex: 0 0 600px;
+        flex: 0 0 500px;
     }
     .full-size-content-flex {
         flex: 0 0 400px;

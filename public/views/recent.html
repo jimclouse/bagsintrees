@@ -4,11 +4,12 @@
         <div class="thick-hr"></div>
         <div style="text-align:center" width="100%">
             <div width="100%" class="recents">
-                <span ng-repeat="bag in recentBags">
-                    <span style="width:150px;">
+                <span ng-repeat="bag in recentBags" on-finish-render="ngRepeatFinished">
+                    <span style="width:150px; height:150px;">
                         <nobr>
-                            <img src="../img/removed-check-30.png" ng-if="bag.isRemoved" class="removed-check">
-                            <a href="/#/full/{{bag.id}}"><img src="{{bag.thumbnailUrl}}" width="150" class="bordered-img" style="vertical-align: inherit;" onError="this.src='../img/not-found.png'"></a>
+                            <img src="../img/removed-check-30.png" ng-if="bag.isRemoved" class="removed-check" data-toggle="tooltip" title="This bag has been removed!">
+                            <img src="../img/no-geo-tag-icon-30.png" ng-if="!bag.latitude" class="removed-check" data-toggle="tooltip" title="This image was not geo-tagged">
+                            <a href="/#/full/{{bag.id}}"><img src="{{bag.thumbnailUrl}}" class="bordered-img recent-img" style="vertical-align: inherit;" onError="this.src='../img/not-found.png'"></a>
                         </nobr>
                     </span>
                 </span>         

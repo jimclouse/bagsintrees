@@ -1,7 +1,7 @@
 <html ng-app="bagsInTrees" lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Bags In Trees</title>
+        <title>Bags In Trees: Mapping Plastic Bag Pollution Around the World</title>
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <meta http-equiv="X-UA-Compatible" content="IE=9">
 
@@ -39,18 +39,20 @@
     </head>
     <body ng-controller="mainController">
        <div id="panel">
-            <div id="sticky-header" class="container-fluid header-large">
+            <div id="sticky-header" class="header-large">
                 <div id="pageTitle" class="pull-left pageTitle" onClick="location.href='/';">
-                    <span><img src="/img/bagsintrees-logo-70-green.png" class="site-logo"></span>
+                    <span><img src="/img/bagsintrees-logo-150-green.png" class="site-logo"></span>
                     <span><a href="/">Bags<span>in</span>trees<span style="font-size: 0.6em">.org</span></a></span>
                 </div>
-                <div class="pull-right">
+                <div class="pull-right" style="margin-right: 5px;">
                     <span class="navigation">
                             <a href="#/map"><span class="navlinkName">Bag Map</span></a>
                             <a href="#/about"><span class="navlinkName">About</span></a>
                             <a href="#/top"><span class="navlinkName">Top</span></a>
                             <a href="#/recent"><span class="navlinkName">Recent</span></a>
                             <a href="#/tips"><span class="navlinkName">Tips</span></a>
+                            <a href="http://instagram.com/bagsintrees/" target="_blank"><img src="../img/instagram-icon-30.png" width="23"></a>
+                            <a href="http://www.twitter.com/bagsintrees" target="_blank"><img src="../img/twitter-icon-30.png" width="23"></a>
                     </span>
                     <div class="navigation-mobile">
                         <div class="dropdown">
@@ -68,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div ng-view id="page-container"></div>
+            <div ng-view id="index-container"></div>
         </div>
     </body>
     <script type="text/javascript" src="/js/etc.js"></script>
@@ -79,7 +81,7 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-707055-12', 'bagsintrees.org');
-      ga('send', 'pageview');
+      //ga('send', 'pageview');
 
     </script>
 </html>

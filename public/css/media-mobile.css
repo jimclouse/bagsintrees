@@ -1,40 +1,182 @@
-/* handheld catch all */
+/********** handheld catch all **********/
 @media handheld {
 	#page-main {
 		background-image: url('../img/city-bag-iphone5.jpg');
 	}
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-960.png');
+  }
 }
-/* iPhone < 5: */
+
+/*********************************
+********** iPhone < 5: **********/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	#page-main {
 		background-image: url('../img/city-bag-iphone4.jpg');
 	}
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: portrait) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-320.png');
+  }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation: landscape) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-480.png');
+  }
+}
 
-/* iPhone 5: */
+/*******************************
+********** iPhone 5: **********/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 	#page-main {
 		background-image: url('../img/city-bag-iphone5.jpg');
 	}
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation: portrait) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-320.png');
+  }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation: landscape) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-568.png');
+  }
+}
 
-/* iPhone 6: */
+/********************************
+/********** iPhone 6: **********/
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-	#page-main {
+	#page-next-3 {
 		background-image: url('../img/city-bag-iphone6.jpg');
 	}
 }
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation: portrait) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-375.png');
+  }
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation: landscape) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-667.png');
+  }
+}
 
-/* iPhone 6 Plus: */
+/*************************************
+********** iPhone 6 Plus: ***********/
 @media only screen and (min-device-width : 540px) and (max-device-width : 960px) {
 	#page-main {
 		background-image: url('../img/city-bag-iphone6.jpg');
 	}
 }
+@media only screen and (min-device-width : 540px) and (max-device-width : 960px) and (orientation: portrait) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-540.png');
+  }
+}
+@media only screen and (min-device-width : 540px) and (max-device-width : 960px) and (orientation: landscape) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-960.png');
+  }
+}
 
-/* iPad: */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/***************************
+********** iPad: **********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
 	#page-main {
 		background-image: url('../img/city-bag-lg.jpg');
 	}
+  .navigation {
+      display: none;
+  }
+  .navigation-mobile {
+      display: block;
+      margin-top: 30px;
+  }
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-768.png');
+  }
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-1024.png');
+  }
+}
+
+/******************************
+********** Nexus 7: **********/
+@media only screen and (min-device-width : 604px) and (max-device-width : 966px)  {
+  #page-main {
+    background-image: url('../img/city-bag-lg.jpg');
+  }
+  .navigation {
+      display: none;
+  }
+  .navigation-mobile {
+      display: block;
+      margin-top: 30px;
+  }
+}
+@media only screen and (min-device-width : 604px) and (max-device-width : 966px)  and (orientation: portrait) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-604.png');
+  }
+}
+@media only screen and (min-device-width : 604px) and (max-device-width : 966px)  and (orientation: landscape) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-966.png');
+  }
+}
+
+/******************************
+********** Nexus 5: **********/
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  and (orientation: portrait) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-375.png');
+  }
+}
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px)  and (orientation: landscape) {
+  .navigation {
+      display: none;
+  }
+  .navigation-mobile {
+      display: block;
+      margin-top: 30px;
+  }
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-640.png');
+  }
+}
+
+
+/********** full size page mobile layouts *********
+This should probably be incorporated in the above mobile patterns
+*/
+
+@media  (max-width: 1024px)  {
+  .full-size-img {
+    width: 500;
+  }
+  .full-size-img-flex {
+    flex: 0 0 510px;
+  }
+  .full-size-content-flex {
+    flex: 0 0 300px;
+  }
+}
+
+
+@media  (max-width: 650px)  {
+  .full-size-img {
+    width: 100%;
+  }
+  .full-size-img-flex {
+    flex: 0 0 100%;
+  }
+  .full-size-content-flex {
+    flex: 0 0 100%;
+  }
+}
+
+
