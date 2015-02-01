@@ -87,7 +87,7 @@
         font-size: 1.0em;
     }
     #index-container {
-        margin-top: 0px;
+        margin-top: 35px;
     }
     #page-main {
         height: calc(100% - 35px);
