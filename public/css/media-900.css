@@ -105,5 +105,10 @@
         -ms-flex: 0 0 300px;              /* IE 10 */
         flex: 0 0 300px;          /* NEW, Spec - Opera */
     }
+    .top-taggers-list {
+        max-width: inherit;
+        width: 100%;
+
+    }
 
 }

@@ -214,5 +214,8 @@
         -ms-flex: 0 0 100%;              /* IE 10 */
         flex: 0 0 100%;          /* NEW, Spec - Opera */
     }
-
+    .user-photo {
+        width: 68px;
+        height: 68px;
+    }
 }

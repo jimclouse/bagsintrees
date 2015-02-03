@@ -25,6 +25,11 @@ a:hover {
     color: #008800;
 }
 
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 h1 {
     font-size: 28px;
     text-align: center;
@@ -362,6 +367,23 @@ h4 {
 .user-images {
     width: calc(100% - 200px);
 }
+.top-taggers-list {
+    max-width: 900px;
+    margin: auto;
+}
+.alternating-color-row {
+    padding: 5px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.alternating-color-row:nth-of-type(odd) {
+    background: #ececec;
+}
+.user-photo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #767676;
+}
+
 
 /*******************
 * platform dependent styles
