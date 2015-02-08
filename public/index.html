@@ -57,12 +57,17 @@
             </div>
 
             <div class="heading-mobile">
-                <div id="sticky-header" class="header-small">
-                    <div id="pageTitle" class="pull-left pageTitle" onClick="location.href='/';">
+                <div id="sticky-header" class="header-small" style="text-align: center;">
+                    <span class="pull-left" onClick="location.href='/';">
                         <span><img src="/img/bagsintrees-logo-150-green.png" class="site-logo"></span>
-                        <span><a href="/">Bags<span>in</span>trees<span style="font-size: 0.6em">.org</span></a></span>
-                    </div>
-                    <div class="pull-right navigation-mobile" style="margin-right: 5px;">
+                    </span>
+
+                    
+                    <span id="pageTitle" class="pageTitle" onClick="location.href='/';" style="display: inline-block; margin-top: 6px;">
+                        <a href="/">Bags<span>in</span>trees<span style="font-size: 0.8em">.org</span></a>
+                    </span>
+
+                    <span class="pull-right navigation-mobile" >
                         <div class="dropdown">
                             <div id="dropdownMenu1" data-toggle="dropdown">
                                 <span class="navItem"><a href=""><span class="fa fa-bars fa-custom-size"></span></a></span>
@@ -75,7 +80,7 @@
                                 <li role="presentation"><a role="menuitem" href="#/tips">Tips</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </span>
                 </div>
             </div>
             <div ng-view id="index-container"></div>
