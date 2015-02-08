@@ -104,11 +104,13 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .navigation {
+    .heading-normal {
         display: none;
     }
-    .navigation-mobile {
+    .heading-mobile {
         display: block;
+    }
+    .navigation-mobile {
         margin-top: 2px;
     }
     #full-pin-img {

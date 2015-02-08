@@ -38,23 +38,31 @@
         <script type="text/javascript" src="/js/lib/markerclusterer.js"></script>
     </head>
     <body ng-controller="mainController">
-       <div id="panel">
-            <div id="sticky-header" class="header-large">
-                <div id="pageTitle" class="pull-left pageTitle" onClick="location.href='/';">
-                    <span><img src="/img/bagsintrees-logo-150-green.png" class="site-logo"></span>
-                    <span><a href="/">Bags<span>in</span>trees<span style="font-size: 0.6em">.org</span></a></span>
+            <div class="heading-normal">
+                <div id="sticky-header" class="header-large">
+                    <div id="pageTitle" class="pull-left pageTitle" onClick="location.href='/';">
+                        <span><img src="/img/bagsintrees-logo-150-green.png" class="site-logo"></span>
+                        <span><a href="/">Bags<span>in</span>trees<span style="font-size: 0.6em">.org</span></a></span>
+                    </div>
+                    <div class="pull-right navigation" style="margin-right: 5px;">
+                        <a href="#/map"><span class="navlinkName">Bag Map</span></a>
+                        <a href="#/about"><span class="navlinkName">About</span></a>
+                        <a href="#/top"><span class="navlinkName">Top</span></a>
+                        <a href="#/recent"><span class="navlinkName">Recent</span></a>
+                        <a href="#/tips"><span class="navlinkName">Tips</span></a>
+                        <a href="http://instagram.com/bagsintrees/" target="_blank"><img src="../img/instagram-icon-30.png" width="23"></a>
+                        <a href="http://www.twitter.com/bagsintrees" target="_blank"><img src="../img/twitter-icon-30.png" width="23"></a>
+                    </div>
                 </div>
-                <div class="pull-right" style="margin-right: 5px;">
-                    <span class="navigation">
-                            <a href="#/map"><span class="navlinkName">Bag Map</span></a>
-                            <a href="#/about"><span class="navlinkName">About</span></a>
-                            <a href="#/top"><span class="navlinkName">Top</span></a>
-                            <a href="#/recent"><span class="navlinkName">Recent</span></a>
-                            <a href="#/tips"><span class="navlinkName">Tips</span></a>
-                            <a href="http://instagram.com/bagsintrees/" target="_blank"><img src="../img/instagram-icon-30.png" width="23"></a>
-                            <a href="http://www.twitter.com/bagsintrees" target="_blank"><img src="../img/twitter-icon-30.png" width="23"></a>
-                    </span>
-                    <div class="navigation-mobile">
+            </div>
+
+            <div class="heading-mobile">
+                <div id="sticky-header" class="header-small">
+                    <div id="pageTitle" class="pull-left pageTitle" onClick="location.href='/';">
+                        <span><img src="/img/bagsintrees-logo-150-green.png" class="site-logo"></span>
+                        <span><a href="/">Bags<span>in</span>trees<span style="font-size: 0.6em">.org</span></a></span>
+                    </div>
+                    <div class="pull-right navigation-mobile" style="margin-right: 5px;">
                         <div class="dropdown">
                             <div id="dropdownMenu1" data-toggle="dropdown">
                                 <span class="navItem"><a href=""><span class="fa fa-bars fa-custom-size"></span></a></span>
@@ -71,7 +79,6 @@
                 </div>
             </div>
             <div ng-view id="index-container"></div>
-        </div>
     </body>
     <script type="text/javascript" src="/js/etc.js"></script>
     <script>

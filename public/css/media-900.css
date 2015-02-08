@@ -73,12 +73,14 @@
     .bags-page {
         padding: 40px 10px 10px 10px;
     }
-    .navigation {
+    .heading-normal {
         display: none;
     }
-    .navigation-mobile {
-        margin-top: 30px;
+    .heading-mobile {
         display: block;
+    }
+    .navigation-mobile {
+        margin-top: 15px;
     }
     .full-size-img {
         width: 500px;
