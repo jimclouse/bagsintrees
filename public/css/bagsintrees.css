@@ -292,12 +292,6 @@ h4 {
     text-align: left;
     font-size: 1.1em;
 }
-
-#mobile-pin-img {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10px;
-}
 .removed-check {
     z-index: 19;
     position: absolute;
@@ -468,12 +462,6 @@ h4 {
     display: block;
 }
 .navigation-mobile {
-    display: none;
-}
-#full-pin-img {
-    display: block;
-}
-#mobile-pin-img {
     display: none;
 }
 .recent-img {

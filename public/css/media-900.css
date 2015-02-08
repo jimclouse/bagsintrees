@@ -80,12 +80,6 @@
         margin-top: 30px;
         display: block;
     }
-    #full-pin-img {
-        display: block;
-    }
-    #mobile-pin-img {
-        display: none;
-    }
     .full-size-img {
         width: 500px;
     }
