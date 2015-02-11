@@ -51,11 +51,6 @@
     .arrow-link {
         padding-top: 4px;
     }
-    .number-panel {
-        padding: 0px;
-        margin-left: 0px;
-        font-size: 18px;
-    }
     .number-item {
         padding-bottom: 12px;
     }
@@ -80,21 +75,11 @@
         font: 20px Arial, sans-serif;
         font-weight: 500;
     }
-    .number-text {
-        height: 30px;
-        padding-top: 3px;
-        margin-top: 3px;
-        font-size: 1.0em;
-    }
+
     #index-container {
         margin-top: 35px;
     }
-    #page-main {
-        height: calc(100% - 35px);
-        padding: 40px 0 0 0;
-        margin-top: 35px;
-        background-image: url('../img/city-bag-600.jpg');
-    }
+    
     .bags-page {
         padding: 20px 5px 5px 5px;
     }
@@ -226,5 +211,11 @@
     .user-photo {
         width: 68px;
         height: 68px;
+    }
+    .main-mobile {
+        display: block;
+    }
+    .page-main {
+        display: none;
     }
 }

@@ -50,7 +50,7 @@
     #index-container {
         margin-top: 60px;
     }
-    #page-main {
+    .page-main {
         padding: 5%px 0 0 0;
         margin-top: calc( 40% -60px);
     }

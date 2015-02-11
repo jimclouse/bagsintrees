@@ -80,6 +80,9 @@ h4 {
 .centered {
     text-align: center;
 }
+.centered-block {
+    margin: auto;
+}
 .leftText {
     text-align: left;
 }
@@ -255,24 +258,24 @@ h4 {
     background-repeat: no-repeat;
 }
 
-#page-main {
+.page-main {
     margin: 0px;
     width: 100%;
 }
 
-.bags-transparent-panel {
+.page-main .bags-transparent-panel {
     margin: 0 auto;
     color: #3c3c3c;
     background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
     /*  background: rgba(100, 100, 100, .75); */
     background: rgba(255,255,255, .80);
 }
-.number-panel {
+.page-main .number-panel {
     width: 100%;
     padding: 0px 3% 0px 3%;
     margin-left: 50px;
 }
-.number-item {
+.page-main .number-item {
     vertical-align: middle;
     margin-left: -15px;
     margin-right: -15px;
@@ -286,10 +289,12 @@ h4 {
     display: inline-block;
 }
 .number-text {
+    text-align: left;
+}
+.page-main .number-text {
     height: 60px;
     padding-top: 3px;
-    margin-top: 15px;
-    text-align: left;
+    margin-top: 15px;   
     font-size: 1.1em;
 }
 .removed-check {
@@ -444,7 +449,7 @@ h4 {
 #index-container {
     margin-top: 70px;
 }
-#page-main {
+.page-main {
     padding: 160px 0 0 0;
     height: 100%;
     background-image: url('../img/city-bag-lg.jpg');
@@ -566,6 +571,48 @@ h4 {
     border-radius: 50px;
 }
 
+/*************************
+ new mobile stuff 
+ ***********************/
+.main-mobile {
+    display: none;
+ }
+.main-mobile .img-1 {
+    height: 160px;
+    background-image: url('../img/city-bag-md.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-mobile .number-panel {
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.main-mobile .number-item {
+    padding-bottom: 12px;
+}
+.main-mobile .number-circle {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    margin: 0px 10px 1em 2px;
+    font: 20px Arial, sans-serif;
+    font-weight: 500;
+}
+.main-mobile .number-item {
+    padding-bottom: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.main-mobile .number-text {
+    line-height: 1.3em;
+    vertical-align: top;
+    padding-top: 0.4em;
+}
+table {
+    font-size: 1.0em;
+}
 
 /* ********************
  end size specific css 

@@ -29,14 +29,14 @@
         padding-bottom: 6px;
         height: 60px;
     }
-    .bags-transparent-panel {
+    .page-main .bags-transparent-panel {
         font-size: 22px;
         font-weight: 400;
         -moz-border-radius: 10px;
         border-radius: 40px;
         width: 550px;
     }
-    .number-circle {
+    .page-main .number-circle {
         width: 40px;
         height: 40px;
         padding: 3px;
@@ -44,7 +44,7 @@
         font: 33px Arial, sans-serif;
         font-weight: 700;
     }
-    .number-text {
+    .page-main .number-text {
         height: 40px;
         padding-top: 3px;
         margin-top: 15px;
@@ -52,7 +52,7 @@
     #index-container {
         margin-top: 60px;
     }
-    #page-main {
+    .page-main {
         margin-top: -60px;
         
         background-image: url('../img/city-bag-900.jpg');

@@ -1,6 +1,6 @@
 /********** handheld catch all **********/
 @media handheld {
-	#page-main {
+	.page-main {
 		background-image: url('../img/city-bag-iphone5.jpg');
 	}
   #page-next-3 {
@@ -31,6 +31,12 @@
       display: block;
       margin-top: 2px;
   }
+  .main-mobile {
+      display: block;
+  }
+  .page-main {
+      display: none;
+  }
   #page-next-3 {
     background-image: url('../img/city-silhouette-640.png');
   }
@@ -40,7 +46,7 @@
 /*********************************
 ********** iPhone < 5: **********/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	#page-main {
+	.page-main {
 		background-image: url('../img/city-bag-iphone4.jpg');
 	}
   .fa-custom-size {
@@ -62,7 +68,7 @@
 /*******************************
 ********** iPhone 5: **********/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-	#page-main {
+	.page-main {
 		background-image: url('../img/city-bag-iphone5.jpg');
 	}
   .fa-custom-size {
@@ -107,7 +113,7 @@
 /*************************************
 ********** iPhone 6 Plus: ***********/
 @media only screen and (min-device-width : 540px) and (max-device-width : 960px) {
-	#page-main {
+	.page-main {
 		background-image: url('../img/city-bag-iphone6.jpg');
 	}
   .fa-custom-size {
@@ -125,39 +131,11 @@
   }
 }
 
-/***************************
-********** iPad: **********/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  .fa-custom-size {
-    font-size: 1.8em;
-  }
-}
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
-	#page-main {
-		background-image: url('../img/city-bag-lg.jpg');
-	}
-  .heading-normal {
-      display: none;
-  }
-  .heading-mobile {
-      display: block;
-      margin-top: 30px;
-  }
-  #page-next-3 {
-    background-image: url('../img/city-silhouette-768.png');
-  }
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape) {
-  #page-next-3 {
-    background-image: url('../img/city-silhouette-1024.png');
-  }
-}
 
 /******************************
 ********** Nexus 7: **********/
 @media only screen and (min-device-width : 604px) and (max-device-width : 966px)  {
-  #page-main {
+  .page-main {
     background-image: url('../img/city-bag-lg.jpg');
   }
   .heading-normal {
@@ -182,6 +160,33 @@
     background-image: url('../img/city-silhouette-966.png');
   }
 }
+
+/***************************
+********** iPad: **********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .fa-custom-size {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait) {
+  .heading-normal {
+      display: none;
+  }
+  .heading-mobile {
+      display: block;
+      margin-top: 30px;
+  }
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-768.png');
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: landscape) {
+  #page-next-3 {
+    background-image: url('../img/city-silhouette-1024.png');
+  }
+}
+
 
 /********** full size page mobile layouts *********
 This should probably be incorporated in the above mobile patterns
