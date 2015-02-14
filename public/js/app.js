@@ -21,8 +21,8 @@ angular.module('bagsInTrees',
       .when('/top', {
         templateUrl : 'views/topTaggers.html'
       })
-      .when('/tips', {
-        templateUrl : 'views/tips.html'
+      .when('/help', {
+        templateUrl : 'views/help.html'
       })
       .when('/full/:id', {
         templateUrl : 'views/fullSize.html'
