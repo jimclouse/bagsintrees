@@ -1,0 +1,626 @@
+@import "variables";
+
+html { height: 100% }
+body {  
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: @bit-grey;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 21px;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: @bit-green;
+}
+a:hover {
+    color: @bit-green-highlight;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.7em;
+}
+table {
+    font-size: 1.0em;
+}
+
+.h7 {
+    text-align: left;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+/**
+    General purpose
+**/
+.font-small {
+    font-size: 0.6em;
+    line-height: normal;
+}
+.font-medium {
+    font-size: 0.75em;
+    line-height: normal;
+}
+.font-medium-large {
+    font-size: 0.90em;
+    line-height: normal;
+}
+.size-boost {
+    font-size: 225%;
+}
+.muted {
+    color: @muted-grey;
+}
+.centered {
+    text-align: center;
+}
+.centered-block {
+    margin: auto;
+}
+.leftText {
+    text-align: left;
+}
+.rightText {
+    text-align: right;
+}
+.arrow-link {
+    text-decoration: underline;
+    padding-top: 10px;
+}
+.white {
+    color: @bit-white;
+}
+
+.right-align {
+    text-align: right;
+}
+.neo-hr {
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 20px;
+    border-top: 1px solid @bit-grey;
+}
+.thick-hr {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 30%;
+    margin-left: 30%;
+    border-top: 8px solid @bit-green;
+}
+.footer-hr {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    border-top: 1px solid @bit-black;
+}
+.col-inherit {
+    position: inherit;
+}
+
+#map-container {
+    width: 100%;
+    height: 100%;
+}
+#map-canvas { 
+    height: ~"calc(100% - 70px)";
+    width: 100%;
+    position: absolute;
+}
+.map-detail {
+    position: absolute;
+    width: 20%;
+    min-width: 200px;
+    max-width: 306px;
+    right: 20px;
+    background-color:rgba(255, 255, 255, 0.7);
+    display: none;
+    z-index: 999999;
+    margin: 10px 1px 0px 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px #888888;
+}
+.map-detail-inner {
+    margin: 4px;
+}
+.map-detail-image {
+    width: 100%;
+}
+
+#sticky-header {
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    top:0;
+    left:0;
+    webkit-transition:all 0.8s ease-out;
+    -moz-transition:all 0.8s ease-out;
+    -o-transition:all 0.8s ease-out;
+    transition: all 0.8s ease-out;
+}
+
+.header-large {
+    background: rgb(255,255,255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255, 255, 255, .8); /*(96, 170, 133, .7); 60/141/197*/
+}
+.header-small {
+    background-color: @bit-white; /* #e7e7e7 */
+    border-bottom: 1px solid #bdbdbd;
+}
+
+#footer {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: @bit-black;
+    font-size: 0.7em;
+    border-top: 1px solid #bdbdbd;
+}
+
+.pageTitle {
+    line-height: 1;
+    font-weight: 750;
+    cursor: pointer;
+    font-size: 3.0em;
+}
+
+.pageTitle a {
+    text-decoration: none;
+    color: @bit-grey;
+}
+.pageTitle a span{
+    text-decoration: none;
+    color: @bit-grey-highlight;
+}
+
+.pageTitle a:hover span{
+    text-decoration: none;
+    color: @bit-green;
+}
+
+.pageTitle a:hover {
+    text-decoration: none;
+    color: @bit-green;
+}
+
+.navigation {
+    margin-top:38px;
+    color: @bit-grey;
+}
+.navigation a {
+    color: @bit-grey;
+}
+.navigation a:hover {
+    text-decoration: none
+}
+.navigation-mobile {
+    margin-top:25px;
+    margin-right:6px;
+    padding-top: 5px;
+    color: @bit-grey;
+}
+
+// .navigation-mobile a {
+//     color: @bit-grey;
+// }
+// .navigation-mobile a:hover {
+//     text-decoration: underline;
+//     color: #0978a7;
+// }
+
+.navLinkName {
+    padding: 2px 10px 2px 10px;
+    border-radius: 10px;
+}
+.navlinkName:hover {
+    background-color: @bit-green;
+    color: @bit-white;
+}
+
+.navItemInner {
+    padding: 6px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.twitter-link {
+    color: @twitter-teal;
+}
+
+#panel {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+}
+
+.version-desktop {
+    margin: 0px;
+    width: 100%;
+}
+.page-main .bags-transparent-panel {
+    margin: 0 auto;
+    color: @bit-grey;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    /*  background: rgba(100, 100, 100, .75); */
+    background: rgba(255,255,255, .80);
+}
+.page-main .number-panel {
+    width: 100%;
+    padding: 0px 3% 0px 3%;
+    margin-left: 50px;
+}
+.page-main .number-item {
+    vertical-align: middle;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.number-circle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    background: @bit-green; 
+    color: @bit-white;
+    text-align: center;
+    display: inline-block;
+}
+.number-text {
+    text-align: left;
+}
+.page-main .number-text {
+    height: 60px;
+    padding-top: 3px;
+    margin-top: 15px;   
+    font-size: 1.1em;
+}
+.removed-check {
+    z-index: 19;
+    position: absolute;
+    margin: 2px 0px 0px 2px;
+}
+
+.bordered-img {
+    border: 1px solid @bit-grey;
+}
+
+.map-page {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid @bit-grey;
+}
+
+#page-about-wrapper {
+    background-image: url('../img/city-bag-3.jpg');
+    background-origin: content;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.burst-background {
+    background-image: url('../img/starburst-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page-faq {
+    min-height: 600px;
+}
+
+#page-full {
+    min-height: 600px;
+    padding: 20px;
+}
+
+#page-404 {
+    text-align: center;
+}
+
+.inline-img-right {
+    border: 1px solid @bit-grey;
+    margin: 40px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+
+.flex-container {
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+
+.user-profile-image {
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.user-profile {
+    -webkit-box-flex: 0 0 200px ;     /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0 0 200px;         /* OLD - Firefox 19- */
+    /* width: 50%; */               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 0 0 200px;          /* Chrome */
+    -ms-flex: 0 0 200px;              /* IE 10 */
+    flex: 0 0 200px;          /* NEW, Spec - Opera */
+    padding-bottom: 5px;
+}
+.user-images {
+    width: ~"calc(100% - 200px)";
+}
+.top-taggers-list {
+    max-width: 900px;
+    margin: auto;
+}
+.alternating-color-row {
+    padding: 5px;
+    border-bottom: 1px solid @bit-light-grey;
+}
+.alternating-color-row:nth-of-type(odd) {
+    background: @bit-very-light-grey;
+}
+.user-photo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid @muted-grey;
+}
+
+
+/*******************
+* platform dependent styles
+*******************/
+
+.whiteLink {
+    color: @bit-white;
+    text-decoration: underline;
+}
+.whiteLink:hover {
+    color: orange;
+    text-decoration: underline;
+}
+.blackLink {
+    text-decoration: underline;
+}
+.pageTitle {
+    line-height: 1;
+    font-weight: 700;
+    font-size: 2.9em;
+}
+.section-title {
+    padding-bottom: 10px;
+}
+.header-large {
+    height: 70px;
+}
+.header-small {
+    height: 70px;
+}
+#sticky-header {
+    height: 70px;
+    padding-bottom: 8px;
+}
+.site-logo {
+    height: 70px;
+}
+.bags-transparent-panel {
+    font-size: 25px;
+    font-weight: 500;
+    -moz-border-radius: 12px;
+    border-radius: 50px;
+    width: 800px;
+    padding: 15px;
+}
+.number-circle {
+    width: 45px;
+    height: 45px;
+    padding: 3px;
+    margin: 15px;
+    font: 35px Arial, sans-serif;
+    font-weight: 700;
+}
+#index-container {
+    margin-top: 70px;
+}
+.page-main {
+    padding: 160px 0 0 0;
+    height: 100%;
+    background-image: url('../img/city-bag-lg.jpg');
+    background-size: cover;
+    margin-top: -70px;
+}
+.bags-page {
+    padding: 3%;
+}
+.page-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.heading-normal {
+    display: block;
+}
+.heading-mobile {
+    display: none;
+}
+.recent-img {
+    width: 47%;
+    max-width: 150px;
+}
+.user-photo-img {
+    max-width: 150px;
+}
+.full-size-img {
+    max-width: 640px;
+}
+.full-size-img-flex {
+    -webkit-box-flex: 0 0 650px;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0 0 650px;         /* OLD - Firefox 19- */
+    /* width: 50%;      */         /* For old syntax, otherwise collapses. */
+    -webkit-flex: 0 0 650px;          /* Chrome */
+    -ms-flex: 0 0 650px;              /* IE 10 */
+    flex: 0 0 650px;          /* NEW, Spec - Opera */
+}
+.full-size-content-flex {
+    -webkit-box-flex: 0 0 500px;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0 0 500px;         /* OLD - Firefox 19- */
+    /* width: 50%; */               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 0 0 500px;          /* Chrome */
+    -ms-flex: 0 0 500px;              /* IE 10 */
+    flex: 0 0 500px;          /* NEW, Spec - Opera */
+}
+.page-next-flex-text {
+    -webkit-box-flex: 0 0 60%;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0 0 60%;         /* OLD - Firefox 19- */
+    /* width: 50%; */               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 0 0 60%;          /* Chrome */
+    -ms-flex: 0 0 60%;              /* IE 10 */
+    flex: 0 0 60%;          /* NEW, Spec - Opera */
+}
+
+.page-next-flex-img {
+    -webkit-box-flex: 0 0 392px;      /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 0 0 392px;         /* OLD - Firefox 19- */
+    /* width: 50%; */               /* For old syntax, otherwise collapses. */
+    -webkit-flex: 0 0 392px;          /* Chrome */
+    -ms-flex: 0 0 392px;              /* IE 10 */
+    flex: 0 0 392px;          /* NEW, Spec - Opera */
+}
+
+.page-next {
+    font-size: 1.3em;
+    height: ~"calc(100% - 70px)";
+    text-align: left;
+    background-color: rgb(255,255,255);
+    padding: 40px 5% 80px 5%;
+}
+#page-next-2 {
+    height: ~"calc(100% - 70px)";
+    text-align: center;
+    padding: 60px 5% 60px 5%;
+    background-image: url('../img/bag-tree-4-lg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+#page-next-2-inner {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px 5% 10px 5%;
+    color: @bit-grey;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255,255,255, .8);
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+#page-next-3 {
+    height: ~"calc(100% - 70px)";
+    background-image: url('../img/city-silhouette-1400.png');
+    background-repeat: no-repeat;
+    background-repeat-x: initial;
+    background-position: bottom;
+}
+#page-next-3-inner {
+    font-size: 1.3em;
+    text-align: center;
+    height: 100%;
+    padding: 15px 5% 15px 5%;
+}
+#page-next-4 {
+    height: ~"calc(100% - 70px)";
+    background-image: url('../img/bag-tree-3-lg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 8% 10% 0px 10%;
+}
+#page-next-4-inner {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 3%;
+    color: @bit-grey;
+    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+    background: rgba(255,255,255, .8);
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+/*************************
+ new mobile stuff 
+ ***********************/
+.version-mobile {
+    display: none;
+
+    .img-1 {
+        height: 160px;
+        background-image: url('../img/city-bag-md.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .number-panel {
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .number-item {
+        padding-bottom: 12px;
+    }
+    .number-circle {
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+        margin: 0px 10px 1em 2px;
+        font: 20px Arial, sans-serif;
+        font-weight: 500;
+    }
+    .number-item {
+        padding-bottom: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .number-text {
+        line-height: 1.3em;
+        vertical-align: top;
+        padding-top: 0.4em;
+    }
+    .full-height {
+        min-height: calc(~"100%" - @mobile-header-height);
+    }
+    .segment-two {
+        color: @bit-white;
+        background-color: @bit-green;
+        text-align: left;
+        padding: 10px 5% 10px 5%;
+    }
+}
+
+
+/* ********************
+ end size specific css 
+ ******************** */

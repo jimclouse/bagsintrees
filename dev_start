@@ -10,4 +10,4 @@ if [ -z "$X" ]; then
 fi;
 
 source ./etc/environment;
-node ./lib/server.js;
+gulp && node ./lib/server.js;
