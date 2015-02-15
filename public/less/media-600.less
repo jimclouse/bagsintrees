@@ -40,13 +40,13 @@
         padding-bottom: 0px;
     }
     .header-large {
-        height: 35px;
+        height: @mobile-header-height;
     }
     .header-small {
-        height: 35px;
+        height: @mobile-header-height;
     }
     .site-logo {
-        height: 35px;
+        height: @mobile-header-height;
         margin-right: -7px;
     }
     .arrow-link {
@@ -58,7 +58,7 @@
     #sticky-header {
         padding-bottom: 6px;
         padding-right: 0px;
-        height: 35px;
+        height: @mobile-header-height;
     }
     .bags-transparent-panel {
         font-size: 20px;
@@ -78,7 +78,7 @@
     }
 
     #index-container {
-        margin-top: 35px;
+        margin-top: @mobile-header-height;
     }
     
     .bags-page {
@@ -108,19 +108,10 @@
         margin-bottom: 14px;
         border-top: 1px solid @bit-grey;
     }
-/*    #page-next {
-        font-size: 1.0em;
-        height: auto;
-        min-height: calc(100% - 35px);
-        padding: 10px 30px 10px 30px;
-    }*/
-/*    #page-next .col-sm-7 {
-        padding: 0px;
-    }*/
 
     #page-next-2 {
         height: auto;
-        min-height: ~"calc(100% - 35px)";
+        min-height: calc(~"100%" - @mobile-header-height);
         padding: 10px 5% 10px 5%;
     }
     #page-next-2-inner {
@@ -131,7 +122,7 @@
     }
     #page-next-3 {
         height: auto;
-        min-height: ~"calc(100% - 35px)";
+        min-height: calc(~"100%" - @mobile-header-height);
         padding: auto;
         background-image: url('../img/city-silhouette-604.png');
     }
@@ -142,7 +133,7 @@
     }
     #page-next-4 {
         height: auto;
-        min-height: ~"calc(100% - 35px)";
+        min-height: calc(~"100%" - @mobile-header-height);
         padding: 10px 5% 10px 5%;
     }
     #page-next-4-inner {

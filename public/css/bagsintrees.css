@@ -606,13 +606,13 @@ table {
   padding-top: 0.4em;
 }
 .version-mobile .full-height {
-  min-height: calc(100% - 35px);
+  min-height: calc(100% - 40px);
 }
 .version-mobile .segment-two {
   color: #ffffff;
   background-color: #297a4c;
   text-align: left;
-  padding: 40px 5% 80px 5%;
+  padding: 10px 5% 10px 5%;
 }
 /* ********************
  end size specific css 

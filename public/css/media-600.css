@@ -39,13 +39,13 @@
     padding-bottom: 0px;
   }
   .header-large {
-    height: 35px;
+    height: 40px;
   }
   .header-small {
-    height: 35px;
+    height: 40px;
   }
   .site-logo {
-    height: 35px;
+    height: 40px;
     margin-right: -7px;
   }
   .arrow-link {
@@ -57,7 +57,7 @@
   #sticky-header {
     padding-bottom: 6px;
     padding-right: 0px;
-    height: 35px;
+    height: 40px;
   }
   .bags-transparent-panel {
     font-size: 20px;
@@ -76,7 +76,7 @@
     font-weight: 500;
   }
   #index-container {
-    margin-top: 35px;
+    margin-top: 40px;
   }
   .bags-page {
     padding: 20px 5px 5px 5px;
@@ -104,18 +104,9 @@
     margin-bottom: 14px;
     border-top: 1px solid #3c3c3c;
   }
-  /*    #page-next {
-        font-size: 1.0em;
-        height: auto;
-        min-height: calc(100% - 35px);
-        padding: 10px 30px 10px 30px;
-    }*/
-  /*    #page-next .col-sm-7 {
-        padding: 0px;
-    }*/
   #page-next-2 {
     height: auto;
-    min-height: calc(100% - 35px);
+    min-height: calc(100% - 40px);
     padding: 10px 5% 10px 5%;
   }
   #page-next-2-inner {
@@ -126,7 +117,7 @@
   }
   #page-next-3 {
     height: auto;
-    min-height: calc(100% - 35px);
+    min-height: calc(100% - 40px);
     padding: auto;
     background-image: url('../img/city-silhouette-604.png');
   }
@@ -137,7 +128,7 @@
   }
   #page-next-4 {
     height: auto;
-    min-height: calc(100% - 35px);
+    min-height: calc(100% - 40px);
     padding: 10px 5% 10px 5%;
   }
   #page-next-4-inner {
