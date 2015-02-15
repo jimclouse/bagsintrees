@@ -5,4 +5,4 @@ source ~/.nvm/nvm.sh
 nvm use 0.10.3
 
 source ~/environment
-node ./lib/server.js ${1}
+gulp && node ./lib/server.js ${1}
