@@ -4,7 +4,7 @@ var path = require('path');
 var watch = require('gulp-watch');
  
 gulp.task('less', function () {
-    gulp.src('./public/less/**/*.less')
+    gulp.src(['./public/less/**/*.less', '!./public/less/variables.less'])
 
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
