@@ -1,3 +1,4 @@
+/**** Variables *****/
 @media (max-width: 600px) {
   /* mobile */
   body {
@@ -14,7 +15,7 @@
     font-size: 1.0em;
   }
   .whitelink {
-    color: #fff;
+    color: #ffffff;
   }
   .neo-hr {
     margin-right: 5%;

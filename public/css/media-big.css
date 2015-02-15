@@ -1,3 +1,4 @@
+/**** Variables *****/
 @media (min-width: 1500px) {
   /* medium */
   h1 {
@@ -8,7 +9,7 @@
     font-size: 44px;
   }
   .whitelink {
-    color: #fff;
+    color: #ffffff;
   }
   .header-large {
     height: 70px;

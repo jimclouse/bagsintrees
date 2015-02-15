@@ -1,11 +1,4 @@
-/* 
-orange: #ff-5d22;
-teal: #43-c0f4;
-dark teal: 266b6d;
-blue: 0978a7;
-title grey: #3c3c3c;
-green: 006e00;
-*/
+/**** Variables *****/
 html {
   height: 100%;
 }
@@ -91,7 +84,7 @@ table {
   padding-top: 10px;
 }
 .white {
-  color: #fff;
+  color: #ffffff;
 }
 .right-align {
   text-align: right;
@@ -113,7 +106,7 @@ table {
   margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 5px;
-  border-top: 1px solid #000;
+  border-top: 1px solid #000000;
 }
 .col-inherit {
   position: inherit;
@@ -164,7 +157,7 @@ table {
   /*(96, 170, 133, .7); 60/141/197*/
 }
 .header-small {
-  background-color: #fff;
+  background-color: #ffffff;
   /* #e7e7e7 */
   border-bottom: 1px solid #bdbdbd;
 }
@@ -173,7 +166,7 @@ table {
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
-  color: #000;
+  color: #000000;
   font-size: 0.7em;
   border-top: 1px solid #bdbdbd;
 }
@@ -201,7 +194,7 @@ table {
 }
 .navigation {
   margin-top: 38px;
-  color: #4D4834;
+  color: #3c3c3c;
 }
 .navigation a {
   color: #3c3c3c;
@@ -213,14 +206,7 @@ table {
   margin-top: 25px;
   margin-right: 6px;
   padding-top: 5px;
-  color: #4D4834;
-}
-.navigation-mobile a {
   color: #3c3c3c;
-}
-.navigation-mobile a:hover {
-  text-decoration: underline;
-  color: #0978a7;
 }
 .navLinkName {
   padding: 2px 10px 2px 10px;
@@ -236,7 +222,7 @@ table {
   border-radius: 5px;
 }
 .twitter-link {
-  color: #9AE4E8;
+  color: #9ae4e8;
 }
 #panel {
   padding: 0px;
@@ -381,13 +367,13 @@ table {
 .user-photo {
   width: 100px;
   height: 100px;
-  border: 1px solid #767676;
+  border: 1px solid #656565;
 }
 /*******************
 * platform dependent styles
 *******************/
 .whiteLink {
-  color: #fff;
+  color: #ffffff;
   text-decoration: underline;
 }
 .whiteLink:hover {
@@ -623,7 +609,7 @@ table {
   height: calc(100% - 35px);
 }
 .version-mobile .segment-two {
-  color: #fff;
+  color: #ffffff;
   background-color: #006e00;
   text-align: left;
   padding: 40px 5% 80px 5%;

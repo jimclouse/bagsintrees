@@ -1,3 +1,4 @@
+/**** Variables *****/
 @media (max-width: 900px) {
   /* medium */
   h1 {
@@ -8,7 +9,7 @@
     font-size: 40px;
   }
   .whitelink {
-    color: #fff;
+    color: #ffffff;
   }
   .pageTitle {
     line-height: 1;
