@@ -235,7 +235,7 @@ table {
     border-radius: 10px;
 }
 .navlinkName:hover {
-    background-color: green;
+    background-color: @bit-green;
     color: @bit-white;
 }
 
@@ -575,48 +575,49 @@ table {
  ***********************/
 .version-mobile {
     display: none;
- }
-.version-mobile .img-1 {
-    height: 160px;
-    background-image: url('../img/city-bag-md.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.version-mobile .number-panel {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-.version-mobile .number-item {
-    padding-bottom: 12px;
-}
-.version-mobile .number-circle {
-    width: 30px;
-    height: 30px;
-    padding: 3px;
-    margin: 0px 10px 1em 2px;
-    font: 20px Arial, sans-serif;
-    font-weight: 500;
-}
-.version-mobile .number-item {
-    padding-bottom: 12px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-.version-mobile .number-text {
-    line-height: 1.3em;
-    vertical-align: top;
-    padding-top: 0.4em;
-}
-.version-mobile .full-height {
-    height: ~"calc(100% - 35px)";
-}
-.version-mobile .segment-two {
-    color: @bit-white;
-    background-color: @bit-green;
-    text-align: left;
-    padding: 40px 5% 80px 5%;
+    .img-1 {
+        height: 160px;
+        background-image: url('../img/city-bag-md.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .number-panel {
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .number-item {
+        padding-bottom: 12px;
+    }
+    .number-circle {
+        width: 30px;
+        height: 30px;
+        padding: 3px;
+        margin: 0px 10px 1em 2px;
+        font: 20px Arial, sans-serif;
+        font-weight: 500;
+    }
+    .number-item {
+        padding-bottom: 12px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .number-text {
+        line-height: 1.3em;
+        vertical-align: top;
+        padding-top: 0.4em;
+    }
+    .full-height {
+        min-height: ~"calc(100% - 35px)";
+    }
+    .segment-two {
+        color: @bit-white;
+        background-color: @bit-green;
+        text-align: left;
+        padding: 40px 5% 80px 5%;
+    }
 }
 
 

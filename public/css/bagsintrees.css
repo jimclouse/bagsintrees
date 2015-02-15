@@ -12,10 +12,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 a {
-  color: #006e00;
+  color: #297a4c;
 }
 a:hover {
-  color: #008800;
+  color: #003d1b;
 }
 .row {
   margin-right: 0px;
@@ -100,7 +100,7 @@ table {
   margin-bottom: 30px;
   margin-right: 30%;
   margin-left: 30%;
-  border-top: 8px solid #006e00;
+  border-top: 8px solid #297a4c;
 }
 .footer-hr {
   margin-right: 5%;
@@ -186,11 +186,11 @@ table {
 }
 .pageTitle a:hover span {
   text-decoration: none;
-  color: #006e00;
+  color: #297a4c;
 }
 .pageTitle a:hover {
   text-decoration: none;
-  color: #006e00;
+  color: #297a4c;
 }
 .navigation {
   margin-top: 38px;
@@ -213,7 +213,7 @@ table {
   border-radius: 10px;
 }
 .navlinkName:hover {
-  background-color: green;
+  background-color: #297a4c;
   color: #ffffff;
 }
 .navItemInner {
@@ -258,7 +258,7 @@ table {
   border-radius: 50%;
   behavior: url(PIE.htc);
   /* remove if you don't care about IE8 */
-  background: #006e00;
+  background: #297a4c;
   color: #ffffff;
   text-align: center;
   display: inline-block;
@@ -606,11 +606,11 @@ table {
   padding-top: 0.4em;
 }
 .version-mobile .full-height {
-  height: calc(100% - 35px);
+  min-height: calc(100% - 35px);
 }
 .version-mobile .segment-two {
   color: #ffffff;
-  background-color: #006e00;
+  background-color: #297a4c;
   text-align: left;
   padding: 40px 5% 80px 5%;
 }
