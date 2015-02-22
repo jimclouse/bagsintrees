@@ -3,7 +3,7 @@
         <div class="user-profile">
             <div class="flex-container">
                 <div>
-                    <img src="{{user.profilePicture}}" class="user-profile-image bordered-img">
+                    <img ng-src="{{user.profilePicture}}" class="user-profile-image bordered-img">
                 </div>
                 <div>
                     <div class="h7">{{user.name}}</div>
@@ -18,7 +18,7 @@
                     <nobr>
                         <img src="../img/removed-check-30.png" ng-if="bag.isRemoved" class="removed-check" data-toggle="tooltip" title="This bag has been removed!">
                         <img src="../img/no-geo-tag-icon-30.png" ng-if="!bag.latitude" class="removed-check" data-toggle="tooltip" title="This image was not geo-tagged">
-                        <a href="/#/full/{{bag.id}}"><img  src="{{bag.lowResUrl}}" class="bordered-img user-photo-img" style="vertical-align: inherit;" onError="this.src='../img/not-found.png'"></a>
+                        <a href="/#/full/{{bag.id}}"><img ng-src="{{bag.lowResUrl}}" class="bordered-img user-photo-img" style="vertical-align: inherit;" onError="this.onerror=null;this.src='../img/not-found.png'"></a>
                     </nobr>
                 </span>
             </span>

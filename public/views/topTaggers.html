@@ -4,7 +4,7 @@
     <div class="thick-hr"></div>
     <div width="100%" class="top-taggers-list">
         <div ng-repeat="user in topTaggers" class="row alternating-color-row" ng-click="goToUser(user)">
-                <a href="/#/user/{{user.id}}"><img src="{{user.profilePicture}}" class="pull-left user-photo" style="margin-right:5px;"></a>
+                <a href="/#/user/{{user.id}}"><img ng-src="{{user.profilePicture}}" class="pull-left user-photo" style="margin-right:5px;"></a>
         
                     <a href="/#/user/{{user.id}}">{{user.name}}</a>
                     <br/>
