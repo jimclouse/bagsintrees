@@ -52,3 +52,14 @@ function scrollNext(loc) {
         scrollTop: $('#' + loc).offset().top - (headerHeight || 70)
     }, 800);
 }
+
+var analytics = {
+    send: function() {
+        // allow me to turn off analytics so I don't add hits to the site
+        if (!localStorage || !localStorage.getItem('bagsintrees_analytics_off')) {
+            var slice = [].slice;
+            var args = 1 <= arguments.length ? slice.call(arguments, 0) : [];
+            window.ga.apply(null,arguments);
+        }
+    }
+};

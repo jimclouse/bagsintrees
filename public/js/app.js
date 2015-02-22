@@ -51,11 +51,12 @@ angular.module('bagsInTrees',
             path = next.$$route.originalPath;
           }
           if (next.params) {
-            for (key in next.params) { 
+            for (key in next.params) {
               path = path.replace(':' + key, next.params[key]);
             }
           }
-          $window.ga('send', 'pageview', {page: path});
+          analytics.send('send', 'pageview', {page: path});
+
         });
   }])
   .directive('onFinishRender', function ($timeout) {
@@ -68,7 +69,7 @@ angular.module('bagsInTrees',
                 });
             }
         }
-    }
+    };
   });
 
 
