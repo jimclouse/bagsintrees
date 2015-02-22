@@ -614,6 +614,46 @@ table {
   text-align: left;
   padding: 10px 5% 10px 5%;
 }
+.version-mobile .bags-transparent-panel {
+  font-size: 20px;
+  font-weight: 500;
+  -moz-border-radius: 4px;
+  border-radius: 25px;
+  width: 90%;
+  padding: 1px 15px 8px 15px;
+}
+.version-mobile .number-circle {
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  margin: 8px;
+  font: 20px Arial, sans-serif;
+  font-weight: 500;
+}
+.heading-mobile .pageTitle {
+  line-height: 1;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.heading-mobile .section-title {
+  padding-bottom: 0px;
+}
+.heading-mobile .header-large {
+  height: 40px;
+}
+.heading-mobile .header-small {
+  height: 40px;
+}
+.heading-mobile .site-logo {
+  height: 40px;
+  margin-right: -7px;
+  cursor: pointer;
+}
+.heading-mobile #sticky-header {
+  padding-bottom: 6px;
+  padding-right: 0px;
+  height: 40px;
+}
 /* ********************
  end size specific css 
  ******************** */

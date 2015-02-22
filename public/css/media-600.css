@@ -11,6 +11,12 @@
   h2 {
     font-size: 25px;
   }
+  .heading-normal {
+    display: none;
+  }
+  .heading-mobile {
+    display: block;
+  }
   .h7 {
     font-size: 1.0em;
   }
@@ -30,50 +36,11 @@
     margin-left: 5%;
     border-top: 2px solid #297a4c;
   }
-  .pageTitle {
-    line-height: 1;
-    font-weight: 700;
-    font-size: 1.8em;
-  }
-  .section-title {
-    padding-bottom: 0px;
-  }
-  .header-large {
-    height: 40px;
-  }
-  .header-small {
-    height: 40px;
-  }
-  .site-logo {
-    height: 40px;
-    margin-right: -7px;
-  }
   .arrow-link {
     padding-top: 4px;
   }
   .number-item {
     padding-bottom: 12px;
-  }
-  #sticky-header {
-    padding-bottom: 6px;
-    padding-right: 0px;
-    height: 40px;
-  }
-  .bags-transparent-panel {
-    font-size: 20px;
-    font-weight: 500;
-    -moz-border-radius: 4px;
-    border-radius: 25px;
-    width: 90%;
-    padding: 1px 15px 8px 15px;
-  }
-  .number-circle {
-    width: 30px;
-    height: 30px;
-    padding: 3px;
-    margin: 8px;
-    font: 20px Arial, sans-serif;
-    font-weight: 500;
   }
   #index-container {
     margin-top: 40px;
@@ -85,12 +52,6 @@
     background-image: url('../img/starburst-background-m.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .heading-normal {
-    display: none;
-  }
-  .heading-mobile {
-    display: block;
   }
   .navigation-mobile {
     margin-top: 2px;
