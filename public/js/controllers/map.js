@@ -114,7 +114,7 @@ bagsInTreesControllers.controller('mapController', function ($scope, $http, $q, 
         });
         markers.push(marker);
       }
-      var mc = new MarkerClusterer($scope.globalMap, markers, {minimumClusterSize: 4, styles: styles});
+      var mc = new MarkerClusterer($scope.globalMap, markers, {minimumClusterSize: 10, styles: styles});
     });
   };
 
