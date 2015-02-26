@@ -1,5 +1,5 @@
 /**** Variables *****/
-@media (min-width: 1500px) {
+@media (min-height: 1700px) {
   /* medium */
   h1 {
     font-size: 28px;
@@ -52,22 +52,22 @@
   }
   .page-main {
     padding: 5%px 0 0 0;
-    margin-top: calc(40% -60px);
+    margin-top: 70px;
   }
   #page-next {
-    height: calc(40%);
+    height: 60%;
     margin-top: 100px;
   }
   #page-next-2 {
-    height: calc(40%);
+    height: 60%;
     margin-top: 100px;
   }
   #page-next-3 {
-    height: calc(40%);
+    height: 60%;
     margin-top: 50px;
   }
   #page-next-4 {
-    height: calc(40%);
+    height: 60%;
     padding: 100px 10% 0px 10%;
   }
   .bags-page {
