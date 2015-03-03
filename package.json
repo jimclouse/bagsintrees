@@ -26,5 +26,8 @@
     "xml2json": "0.5.1"
   },
   "author": "Jim Clouse <bagsintrees@mail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": { 
+    "node": "0.10.36" 
+  }
 }
