@@ -16,6 +16,29 @@ Cities can leverage the geo-tagged data of plastic bags in trees to locate and r
 All you need is an Instagram account and your smart phone. Visit http://wwww.bagsintrees.org to get started!
 
 
+## Installation
+
+Installation steps are not quite complete. I'll add more over time.
+* Clone this repo
+* Install mysql
+* Run the sql/create.sql script on your mysql database
+* npm install
+* Create a folder called etc under the root, save the following exports to a file called 'environment' under ./etc
+
+```
+  export ENVIRONMENT=development/production
+  export CLIENT_ID=
+  export GOOGLE_API_KEY=
+  export mysqlUser=
+  export mysqlPassword=
+  export mysqlHost=localhost
+  export mysqlDatabase=bagsintrees
+  export msyqlConnectionPoolLimit=250
+```
+
+
+## Starting
+Locally: ./dev_start
 
 
 #### License
