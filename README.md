@@ -20,7 +20,9 @@ All you need is an Instagram account and your smart phone. Visit http://wwww.bag
 
 Installation steps are not quite complete. I'll add more over time.
 * Clone this repo
+* Install npm and node (https://github.com/creationix/nvm is an easy method)
 * Install mysql
+* Install gulp 'npm install -g gulp'
 * Run the sql/create.sql script on your mysql database
 * npm install
 * Create a folder called etc under the root, save the following exports to a file called 'environment' under ./etc
