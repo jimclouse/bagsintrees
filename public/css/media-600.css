@@ -45,6 +45,9 @@
   #index-container {
     margin-top: 40px;
   }
+  #map-canvas {
+    height: calc(100% - 40px);
+  }
   .bags-page {
     padding: 20px 5px 5px 5px;
   }

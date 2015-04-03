@@ -19,17 +19,17 @@
         font-size: 2.3em;
     }
     .header-large {
-        height: 60px;
+        height: @mobile-header-height;
     }
     .header-small {
-        height: 60px;
+        height: @mobile-header-height;
     }
     .site-logo {
-        height: 60px;
+        height: @mobile-header-height;
     }
     #sticky-header {
         padding-bottom: 6px;
-        height: 60px;
+        height: @mobile-header-height;
     }
     .page-main .bags-transparent-panel {
         font-size: 22px;
@@ -52,25 +52,27 @@
         margin-top: 15px;
     }
     #index-container {
-        margin-top: 60px;
+        margin-top: @mobile-header-height;
+    }
+    #map-canvas { 
+        height: calc(~"100%" - @mobile-header-height);
     }
     .page-main {
-        margin-top: -60px;
-        
+        margin-top: -@mobile-header-height;
         background-image: url('../img/city-bag-900.jpg');
     }
     .page-next {
-        height: ~"calc(100% - 60px)";
+        height: calc(~"100%" - @mobile-header-height);
     }
     #page-next-2 {
-        height: ~"calc(100% - 60px)";
+        height: calc(~"100%" - @mobile-header-height);
     }
     #page-next-3 {
-        height: ~"calc(100% - 60px)";
+        height: calc(~"100%" - @mobile-header-height);
         background-image: url('../img/city-silhouette-960.png');
     }
     #page-next-4 {
-        height: ~"calc(100% - 60px)";
+        height: calc(~"100%" - @mobile-header-height);
     }
     .bags-page {
         padding: 40px 10px 10px 10px;
@@ -82,7 +84,7 @@
         display: block;
     }
     .navigation-mobile {
-        margin-top: 15px;
+        margin-top: 10px;
     }
     .full-size-img {
         width: 500px;
