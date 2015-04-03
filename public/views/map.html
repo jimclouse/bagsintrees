@@ -3,8 +3,8 @@
     <div class="map-detail pull-right">
         <div class="map-detail-inner">
             <img src="{{mapDetail.photo.lowResUrl}}" class="map-detail-image" ng-show="mapDetail" onError="this.src='../img/not-found-large.png'">
-            <img src="img/loading.gif" class="map-detail-image" ng-hide="mapDetail">
-            <span ng-show="mapDetail">
+            <img src="img/loading.gif" class="map-detail-image bordered-img" ng-hide="mapDetail">
+            <div class="photo-meta-data" ng-show="mapDetail">
                 <div class="font-medium">{{mapDetail.photo.caption}}</div>
                 <div class="font-small muted"><em>bag tagged by: <a href="/#/user/{{mapDetail.photo.userId}}">{{mapDetail.photo.userName}}</a></em><br/>
                     {{formatInstagramDate(mapDetail.photo.created)}}
@@ -14,7 +14,7 @@
                     </div>
                     <a href="" ng-click="closeMapDetail()" class="pull-right size-boost" style="margin-right: 3px; margin-bottom: 3px; padding-top: 8px; padding-left: 15px;"><i class="fa fa-times"></i></a>
                 </div>
-            </span>
+            </div>
             <span ng-hide="mapDetail">
                 <em>Loading bag details...</em>
             </span>

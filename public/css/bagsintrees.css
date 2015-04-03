@@ -137,7 +137,12 @@ table {
   margin: 4px;
 }
 .map-detail-image {
+  min-width: 8em;
   width: 100%;
+  padding-bottom: 4px;
+}
+.photo-meta-data {
+  min-height: 3em;
 }
 #sticky-header {
   width: 100%;
