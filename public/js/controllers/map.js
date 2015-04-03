@@ -90,7 +90,7 @@ bagsInTreesControllers.controller('mapController', function ($scope, $http, $q, 
     var opts = {
       position:   new google.maps.LatLng(data.latitude, data.longitude),
       id:         data.id
-    }
+    };
     if (data.isRemoved) {
       opts.fillColor = '#C0C0C0';
       opts.icon = './img/green-dot.png';
@@ -118,11 +118,26 @@ bagsInTreesControllers.controller('mapController', function ($scope, $http, $q, 
     });
   };
 
+  var loadingImage = {
+    photo: {
+      lowResUrl: '../../img/loading.gif',
+      caption: 'Loading...'
+    }
+  };
+
   $scope.showMapDetail = function (id) {
-    $scope.mapDetail = null;
     $('.map-detail').show();
+    if ($scope.mapDetail) {
+      $('.map-detail-load-mask').css('opacity', 0);
+      $scope.mapDetail.photo = _.extend($scope.mapDetail.photo, loadingImage.photo);
+    }
+    else {
+      $scope.mapDetail = loadingImage;
+    }
+    
     bagService.fetchData('/bags/one/' + id, function (data) {
       $scope.mapDetail = data;
+      $('.map-detail-load-mask').css('opacity', 1);
     });
     analytics.send('send','event', 'map', 'click', id);
   };
