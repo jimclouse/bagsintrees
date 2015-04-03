@@ -1,5 +1,5 @@
 <div id="page-user" class="bags-page">
-    <div class="flex-container page-container">
+    <div class="page-container">
         <div class="user-profile">
             <div class="flex-container">
                 <div>
@@ -7,12 +7,13 @@
                 </div>
                 <div>
                     <div class="h7">{{user.name}}</div>
-                    <div class="font-medium-large"># of Bags Tagged: {{user.tagCount}}</div>
+                    <div class="font-medium-large">{{user.tagCount}} Bag<span ng-if="user.tagCount > 1">s</span> Tagged</div>
                     <br/><a href="javascript: window.history.back();"><i class="fa fa-arrow-left"></i> Back</a>
                 </div>
             </div>
         </div>
-        <div class="user-images">
+    
+        <div>
              <span ng-repeat="bag in userBags" on-finish-render="ngRepeatFinished">
                 <span>
                     <nobr>
