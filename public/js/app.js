@@ -16,16 +16,14 @@ angular.module('bagsInTrees',
         controller  : 'mapController'
       })
       .when('/recent', {
-        templateUrl : 'views/recent.html'
+        templateUrl : 'views/recent.html',
+        controller  : 'recentsController'
       })
       .when('/top', {
         templateUrl : 'views/topTaggers.html'
       })
       .when('/help', {
         templateUrl : 'views/help.html'
-      })
-      .when('/full/:id', {
-        templateUrl : 'views/fullSize.html'
       })
       .when('/user/:userid', {
         templateUrl : 'views/user.html',

@@ -1,4 +1,4 @@
-<div id="page-full" ng-controller="fullSizeController">
+<div id="page-full">
     <div class="page-container">
         <div class="flex-container">
             <div class="full-size-img-flex">
@@ -22,12 +22,10 @@
                         <em><a href="/#/user/{{comment.userId}}">{{comment.name}}</a>: </em>{{comment.comment}}
                     </div>
                 </div>
-
+                <div>
+                    <a href="" ng-click="backToUser()"><i class="fa fa-arrow-left"></i> Back</a>
+                </div>
             </div>
-        </div>
-        <div>
-            <a href="javascript: window.history.back();"><i class="fa fa-arrow-left"></i> Back</a>
         </div>
     </div>
 </div>
-<div ng-include="'views/footer.html'"></div>

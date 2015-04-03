@@ -1,4 +1,4 @@
-<div id="page-recent" ng-controller="recentsController">
+<div id="page-recent" class="bags-page" ng-hide="detailImageId">
     <br/>
     <h4>Recent Bag Tags</h4>
     <div class="thick-hr"></div>
@@ -8,10 +8,11 @@
                 <nobr>
                     <img src="../img/removed-check-30.png" ng-if="bag.isRemoved" class="removed-check" data-toggle="tooltip" title="This bag has been removed!">
                     <img src="../img/no-geo-tag-icon-30.png" ng-if="!bag.latitude" class="removed-check" data-toggle="tooltip" title="This image was not geo-tagged">
-                    <a href="/#/full/{{bag.id}}"><img ng-src="{{bag.lowResUrl}}" class="bordered-img user-photo-img" style="vertical-align: inherit;" onError="this.onerror=null;this.src='../img/not-found.png'"></a>
+                    <a href=""><img ng-src="{{bag.lowResUrl}}" class="bordered-img user-photo-img" style="vertical-align: inherit;" onError="this.onerror=null;this.src='../img/not-found.png'" ng-click="selectFullSize(bag)"></a>
                 </nobr>
             </span>         
         </div>
     </div>
 </div>
+<div ng-include="'views/fullSize.html'" ng-show="detailImageId"></div>
 <div ng-include="'views/footer.html'"></div>
