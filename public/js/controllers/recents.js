@@ -2,7 +2,7 @@ bagsInTreesControllers.controller('recentsController', function ($scope, bagServ
   var scrollPosition;
   
   var getAllBags = function () {
-    bagService.fetchData('/bags/recent', function (data) {
+    bagService.fetchData('/bags/page/0/100', function (data) {
       $scope.recentBags = data;
     });
   };
