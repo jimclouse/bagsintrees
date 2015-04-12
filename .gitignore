@@ -1,4 +1,5 @@
 etc/*
+local-files/*
 .DS_Store
 unusedImages
 npm-debug.log
