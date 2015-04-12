@@ -68,17 +68,6 @@
     margin-bottom: 14px;
     border-top: 1px solid #3c3c3c;
   }
-  #page-next-2 {
-    height: auto;
-    min-height: calc(100% - 40px);
-    padding: 10px 5% 10px 5%;
-  }
-  #page-next-2-inner {
-    font-size: 1.0em;
-    padding: 2%;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-  }
   #page-next-3 {
     height: auto;
     min-height: calc(100% - 40px);

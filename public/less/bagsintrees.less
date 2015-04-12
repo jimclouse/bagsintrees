@@ -524,25 +524,7 @@ table {
     background-color: rgb(255,255,255);
     padding: 40px 5% 80px 5%;
 }
-#page-next-2 {
-    height: ~"calc(100% - 70px)";
-    text-align: center;
-    padding: 60px 5% 60px 5%;
-    background-image: url('../img/bag-tree-4-lg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-#page-next-2-inner {
-    font-size: 1.3em;
-    text-align: center;
-    padding: 10px 5% 10px 5%;
-    color: @bit-grey;
-    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(255,255,255, .8);
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-}
+
 #page-next-3 {
     height: ~"calc(100% - 70px)";
     background-image: url('../img/city-silhouette-1400.png');
@@ -573,6 +555,31 @@ table {
     background: rgba(255,255,255, .8);
     -moz-border-radius: 50px;
     border-radius: 50px;
+}
+
+/************************
+Desktop Only styles
+************************/
+.version-desktop {
+    #page-next-2 {
+        height: ~"calc(100% - 70px)";
+        text-align: center;
+        padding: 60px 5% 60px 5%;
+        background-image: url('../img/bag-tree-4-lg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    #page-next-2-inner {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 10px 5% 10px 5%;
+        color: @bit-grey;
+        background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+        background: rgba(255,255,255, .8);
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+    }
 }
 
 /*************************
@@ -638,6 +645,27 @@ table {
         font: 20px Arial, sans-serif;
         font-weight: 500;
     }
+    .red-bag-spacer {
+        min-height: 175px;
+        max-height: calc(~"50%" - @mobile-header-height);
+        background-image: url('../img/red-bag.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .segment-three {
+        min-height: calc(~"100%" - @mobile-header-height);
+        text-align: center;
+        padding: 10px 5% 10px 5%;
+        border-bottom: solid 1px @bit-green;
+        position: relative;
+        .bag-icon {
+            position: absolute;
+            bottom: 0;
+            right: 15;
+            width: 40px;
+        }
+    }
+
 }
 
 .heading-mobile {

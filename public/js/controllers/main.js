@@ -21,4 +21,16 @@ bagsInTreesControllers.controller('mainController', function($scope, $rootScope,
     $scope.mailLink = function() {
         $window.location = "mailto:bagsintrees@mail.com?subject=Bags In Trees Are Everywhere!";
     };
+
+    //Load site content
+    // need to put this in a yaml and load it on startup
+    $scope.content = {};
+
+    $scope.content.section2 = 'Cities throughout The United States and other countries are moving to ban or dis-incentivize the use of plastic bags. \
+            Most recently, the state of California passed legislation halting the use of single-use plastic bags at grocery stores. \
+            <br/>Data from Bags In Trees can be used as evidence by groups promoting such causes to show the prevelance and distribution \
+            of bags.<br/><br/> \
+            Do you know of a group that could use this data? Send them an email <a href="mailto:" class="blackLink">telling them about Bags In Trees</a>.';
+    
+
 });
