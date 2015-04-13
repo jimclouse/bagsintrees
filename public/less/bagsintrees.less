@@ -525,31 +525,14 @@ table {
     padding: 40px 5% 80px 5%;
 }
 
-#page-next-4 {
-    height: ~"calc(100% - 70px)";
-    background-image: url('../img/bag-tree-3-lg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 8% 10% 0px 10%;
-}
-#page-next-4-inner {
-    font-size: 1.3em;
-    text-align: center;
-    padding: 3%;
-    color: @bit-grey;
-    background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
-    background: rgba(255,255,255, .8);
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-}
+
 
 /************************
 Desktop Only styles
 ************************/
 .version-desktop {
     #page-next-2 {
-        height: ~"calc(100% - 70px)";
+        height: calc(~"100%" - @standard-header-height);
         text-align: center;
         padding: 60px 5% 60px 5%;
         background-image: url('../img/bag-tree-4-lg.jpg');
@@ -568,7 +551,7 @@ Desktop Only styles
         border-radius: 50px;
     }
     #page-next-3 {
-        height: ~"calc(100% - 70px)";
+        height: calc(~"100%" - @standard-header-height);
         background-image: url('../img/city-silhouette-1400.png');
         background-repeat: no-repeat;
         background-repeat-x: initial;
@@ -579,6 +562,24 @@ Desktop Only styles
         text-align: center;
         height: 100%;
         padding: 15px 5% 15px 5%;
+    }
+    #page-next-4 {
+        height: calc(~"100%" - @standard-header-height);
+        background-image: url('../img/bag-tree-3-lg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding: 8% 10% 0px 10%;
+    }
+    #page-next-4-inner {
+        font-size: 1.3em;
+        text-align: center;
+        padding: 3%;
+        color: @bit-grey;
+        background: rgb(255, 255, 255); /* Fall-back for browsers that don't support rgba */
+        background: rgba(255,255,255, .8);
+        -moz-border-radius: 50px;
+        border-radius: 50px;
     }
 }
 
@@ -661,7 +662,7 @@ Desktop Only styles
         .bag-icon {
             position: absolute;
             bottom: 0;
-            right: 15;
+            right: 30;
             width: 40px;
         }
     }
@@ -675,6 +676,20 @@ Desktop Only styles
         height: auto;
         padding: auto;
 
+    }
+    .segment-five {
+        min-height: calc(~"100%" - @mobile-header-height);
+        height: auto;
+        text-align: center;
+        padding: auto;
+        border-bottom: solid 1px @bit-green;
+        position: relative;
+        .bag-icon {
+            position: absolute;
+            bottom: 0;
+            right: 20;
+            width: 40px;
+        }
     }
 }
 

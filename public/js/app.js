@@ -68,6 +68,29 @@ angular.module('bagsInTrees',
             }
         }
     };
-  });
+  })
+  .directive('dynamicElement', ['$compile', '$window', function ($compile, $window) {
+      return {
+        restrict: 'E',
+        scope: {
+            message: "="
+        },
+        replace: true,
+        link: function(scope, element, attrs) {
+            var template = $compile(scope.message)(scope);
+            element.replaceWith(template);
+        },
+        controller: ['$scope', function($scope) {
+           $scope.mailLink = function() {
+              $window.location = "mailto:bagsintrees@mail.com?subject=Bags In Trees Are Everywhere!";
+          };
+        }]
+      };
+  }]);
+
+
+  // .controller("DemoController", ["$scope", function($scope){
+  //     $scope.htmlString = '<div><input type="button" ng-click="clickMe()" value="click me!"/> </div>';
+  // }])
 
 

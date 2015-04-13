@@ -47,8 +47,7 @@
             <br/>
             <div class="row centered">
                 <a href="javascript:scrollNext('segment-four');" class="arrow-link"><span class="fa fa-angle-double-down fa-2x"></span></a>
-            </div>
-            
+            </div>            
             <img src="img/bagsintrees-bag-icon-60.png" class="bag-icon">
         </div>
         <div class="container-fluid segment-four" id="segment-four">
@@ -56,11 +55,16 @@
             <p ng-bind-html="content.segment4"></p>
             <br/>
             <div class="row centered">
-                <a href="javascript:scrollNext('page-next-4');" class="arrow-link"><span class="fa fa-angle-double-down fa-2x"></span></a>
+                <a href="javascript:scrollNext('segment-five');" class="arrow-link"><span class="fa fa-angle-double-down fa-2x"></span></a>
             </div>
         </div>
+        <div class="container-fluid segment-five" id="segment-five">
+            <h2 class="section-title">Get Started Tagging Plastic Bags!</h2>
+            <dynamic-element message='content.segment5'></dynamic-element>
+            <img src="img/bagsintrees-bag-icon-60.png" class="bag-icon">
+        </div>
     </div>
-
+    <!-- begin desktop version -->
     <div class="version-desktop">
         <div class="page-main">
             <div class="bags-transparent-panel">
@@ -132,16 +136,14 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!--div class="mobile-hr"></div-->
-    <div class="js-Parallaxify" id="page-next-4">
-        <div id="page-next-4-inner">
-            <h2 class="section-title">Get Started Tagging Plastic Bags!</h2>
-            All you need is an Instagram account and your smart phone. However, be sure to check out the <a href="/#/tips" class="blackLink">bag tagging tips</a> to make sure every one of your photos of plastic bags in trees appears on the bag map!</a><br/><br/>
-            To learn more about Bags In Trees and why plastic pollution is a big problem, read the <a href="/#/about" class="blackLink">About page</a>.<br/><br/>
-            Finally, I'm sure there are many other uses for this data that I haven't thought of. Please <a href="" ng-click="mailLink()" class="blackLink">share your thoughts and ideas</a> with me..
+        <div class="js-Parallaxify" id="page-next-4">
+            <div id="page-next-4-inner">
+                <h2 class="section-title">Get Started Tagging Plastic Bags!</h2>
+                <dynamic-element message='content.segment5'></dynamic-element>
+            </div>
         </div>
     </div>
+    
 <div ng-include="'views/footer.html'"></div>
 <script>
     new Parallaxify({

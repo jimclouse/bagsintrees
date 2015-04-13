@@ -36,6 +36,11 @@ bagsInTreesControllers.controller('mainController', function($scope, $rootScope,
             This is already being done in New York by the "Bag Snaggers" at the <a href="http://www.nyrp.org/greening_sustainability/bag_snagging_program" class="blackLink" target="blank">New York Restoration Project (NYRP)</a>. \
             NYRP relies on phone calls and emails to locate the bags, but may be able to rely on #bagsintrees in the future.<br/><br/> \
             <strong>Does your city have a bag removal initiative?</strong>';
+
+    $scope.content.segment5 = '<p>All you need is an Instagram account and your smart phone. However, be sure to check out the <a href="/#/tips" class="blackLink">bag tagging tips</a> \
+            to make sure every one of your photos of plastic bags in trees appears on the bag map!</a><br/><br/> \
+            To learn more about Bags In Trees and why plastic pollution is a big problem, read the <a href="/#/about" class="blackLink">About page</a>.<br/><br/> \
+            Finally, I\'m sure there are many other uses for this data that I haven\'t thought of. Please <a href="" ng-click="mailLink()" class="blackLink">share your thoughts and ideas</a> with me.</p>';
     
 
 });
