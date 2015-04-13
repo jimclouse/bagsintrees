@@ -518,19 +518,6 @@ table {
   background-color: #ffffff;
   padding: 40px 5% 80px 5%;
 }
-#page-next-3 {
-  height: calc(100% - 70px);
-  background-image: url('../img/city-silhouette-1400.png');
-  background-repeat: no-repeat;
-  background-repeat-x: initial;
-  background-position: bottom;
-}
-#page-next-3-inner {
-  font-size: 1.3em;
-  text-align: center;
-  height: 100%;
-  padding: 15px 5% 15px 5%;
-}
 #page-next-4 {
   height: calc(100% - 70px);
   background-image: url('../img/bag-tree-3-lg.jpg');
@@ -571,6 +558,19 @@ Desktop Only styles
   background: rgba(255, 255, 255, 0.8);
   -moz-border-radius: 50px;
   border-radius: 50px;
+}
+.version-desktop #page-next-3 {
+  height: calc(100% - 70px);
+  background-image: url('../img/city-silhouette-1400.png');
+  background-repeat: no-repeat;
+  background-repeat-x: initial;
+  background-position: bottom;
+}
+.version-desktop #page-next-3-inner {
+  font-size: 1.3em;
+  text-align: center;
+  height: 100%;
+  padding: 15px 5% 15px 5%;
 }
 /*************************
  new mobile stuff 
@@ -654,6 +654,16 @@ Desktop Only styles
   bottom: 0;
   right: 15;
   width: 40px;
+}
+.version-mobile .segment-four {
+  min-height: calc(100% - 40px);
+  background-image: url('../img/city-silhouette-604.png');
+  background-repeat: no-repeat;
+  background-repeat-x: initial;
+  background-position: bottom;
+  text-align: center;
+  height: auto;
+  padding: auto;
 }
 .heading-mobile .pageTitle {
   line-height: 1;

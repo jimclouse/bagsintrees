@@ -32,5 +32,10 @@ bagsInTreesControllers.controller('mainController', function($scope, $rootScope,
             of bags.<br/><br/> \
             Do you know of a group that could use this data? Send them an email <a href="mailto:" class="blackLink">telling them about Bags In Trees</a>.';
     
+    $scope.content.segment4 = 'Your organization can leverage the geo-tagged data of plastic bags in trees to locate and remove plastic bags.<br/><br/> \
+            This is already being done in New York by the "Bag Snaggers" at the <a href="http://www.nyrp.org/greening_sustainability/bag_snagging_program" class="blackLink" target="blank">New York Restoration Project (NYRP)</a>. \
+            NYRP relies on phone calls and emails to locate the bags, but may be able to rely on #bagsintrees in the future.<br/><br/> \
+            <strong>Does your city have a bag removal initiative?</strong>';
+    
 
 });
