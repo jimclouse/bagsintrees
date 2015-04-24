@@ -22,9 +22,9 @@ bagsInTreesControllers.controller('mapController', function ($scope, $http, $q, 
       width: 36
     },
     {
-      height: 78,
-      url: "http://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/images/m4.png",
-      width: 78
+      height: 42,
+      url: "../../img/clusterIcon-04-purple.png",
+      width: 42
     },
     {
       height: 90,
